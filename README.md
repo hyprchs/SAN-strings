@@ -1,92 +1,167 @@
 # SAN Strings
 
-This simple script generates all 12,432 possible Standard Algebraic Notation (SAN) strings for chess moves, with some special logic to
-avoid listing SAN strings that can never actually occur for geometric reasons.
+This simple script generates all **29,274** possible [Standard Algebraic Notation (SAN)](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#:~:text=Algebraic%20notation%20(or%20AN)%20is,books%2C%20magazines%2C%20and%20newspapers.) 
+strings for chess moves, with logic to avoid listing SAN strings that can never actually occur for geometric reasons.
 
-If someone notices a mistake in my logic (that some strings are generated that would never occur), please open an issue.
+If someone notices missing strings, or strings which are generated but can never occur, please open an issue!*
+
+###### * But after the last update, I truly think I got them all!
 
 ### Note
-Check (`+`) and checkmate (`#`) symbols are omitted. However, it is fairly easy to convince yourself that no special logic is required
-to determine which subset of all SAN moves could deliver check/mate: all moves can deliver either check or mate at least via a discovery.
-Therefore, `san_strings_with_symbols.txt` is three times the length of `san_strings.txt` as it makes a copy of each move for `+` and `#`.
+Check (`+`) and checkmate (`#`) symbols are omitted in `san_strings.txt` but included in `san_strings_with_symbols.txt`. It is fairly easy 
+to convince yourself that no special logic is required to determine which subset of all SAN moves could deliver check/mate: all moves can 
+deliver either check or checkmate at least via a discovery. Therefore, `san_strings_with_symbols.txt` (29,274 lines) is exactly three times the 
+length of `san_strings.txt` (9,758 lines) as it simply makes two additional copies of each SAN move, one appending `+` and one appending `#`.
+SANs in both files are sorted by the key `(len(san), san)`.
 
-
+# Run it yourself
 ```sh
+git clone https://github.com/jacksonthall22/SAN-strings.git && cd SAN-strings
 pip install -r requirements.txt
-python3 gen_san_strings.py
+python gen_san_strings.py
 ```
 
-## Discriminators
+# How it works
+## What are discriminators?
+Generating every possible SAN move in chess would be simple if not for discriminators, which occasionally
+must be inserted into the "standard" SAN move to disambiguate between multiple legal options.
+ - N**b**d2:
 
-The only considerations beyond the naive "move every piece from every square to every other legal square" approach has to do
-with discriminators: some are legal syntactically but could never occur. The logic is slightly different for each piece.
+   ![image](https://backscattering.de/web-boardimage/board.svg?size=200&coordinates=true&fen=8/8/8/8/8/5N2/8/1N6&arrows=Gb1d2)
+ - R**5**e2:
 
-### Bishops
-Bishops are the most complicated. For example, in the rare situation where a promotion to a bishop leaves two same-colored
-bishops on the board, a bishop move to ranks `1` or `8` can require a discriminator, but will never require a rank discriminator
-(ex. `B3d1`). At most two diagonal rays protrude from the destination square, and only one bishop occupying each diagonal
-could ever move to that square. Since the two bishops will never be on the same file, we can fully disambiguate the move
-using only the file of the source piece (ex. `Bcd1`). Although specifying only the rank is sometimes also sufficient, [the 
-file will always be preferred](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#Disambiguating_moves).
+   ![image](https://backscattering.de/web-boardimage/board.svg?size=200&coordinates=true&fen=8/8/8/4R3/8/8/8/4R3&arrows=Ge5e2)
+ - Q**b6**e3:
 
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=8/8/8/8/6B1/1B6/8/8&arrows=Gb3d1,Gd1)
+   ![image](https://backscattering.de/web-boardimage/board.svg?size=200&coordinates=true&fen=8/8/1Q5Q/8/8/1Q6/8/8&arrows=Gb6e3)
 
-Similarly, a bishop moving to the corner never requires a discriminator, since only one diagonal ray protrudes
-from the destination square and you can't jump your own pieces.
+If we have a `piece`, a `from_square`, and a `to_square`, how do we decide which (if any) discriminators
+the SAN move might require? I'm glad you asked—this repo has the answer.
 
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=8/8/8/8/4B3/5B2/8/8&arrows=Ge4a8)
+## SAN generation algorithms
+In a previous version of this code, special logic was used to manually handle all the edge cases
+for the different piece types. Unfortunately, this failed miserably, generating some syntactically-legal
+SAN moves that could never actually occur and failing to generate some that could. When I dug into the issues
+more deeply, I realized this problem is quite difficult to reason through.
 
-Bishops moving to `a2-a7` or `h2-h7` require three special cases corresponding to the following three sets of squares that the bishop is landing on:
-- `a2`/`a7`/`h2`/`h7`
-- `a3`/`a6`/`h3`/`h6`
-- `a4`/`a5`/`h4`/`h5`
+Now, the code uses three much more logical and generalized algorithms that were designed to resemble how a human 
+might decide whether a particular `from_square` -> `to_square` move by a certain `piece` type could
+require a rank, file, and/or full-square discriminator respectively, based on which other squares a piece of
+the same type could come from when moving to `to_square`. Read on for the pseudocode, as well as some more
+intuitive explanations.
 
-![image](https://backscattering.de/web-boardimage/board.svg?size=300&coordinates=true&fen=8/8/8/8/8/8/8/8&arrows=a2,a7,h2,h7) ![image](https://backscattering.de/web-boardimage/board.svg?size=300&coordinates=true&fen=8/8/8/8/8/8/8/8&arrows=a3,a6,h3,h6) ![image](https://backscattering.de/web-boardimage/board.svg?size=300&coordinates=true&fen=8/8/8/8/8/8/8/8&arrows=a4,a5,h4,h5)
+Note that only knight, bishop, rook, and queen moves ever use discriminators. Pawns have their own special 
+move syntax and there is never more than one king per color. The details about how SAN strings are generated
+for these piece types is omitted below because it is straightforward and comparatively uninteresting. However,
+you can find the implementations in `gen_san_strings.py` at `get_pawn_sans()` and `get_king_sans()`.
 
-These moves can always be disambiguated using the rank, and sometimes the file, by the same logic as above. However, since using the file
-is prefered over the rank when available in SAN syntax, we *only sometimes* must generate both, ex. `Beh6` and `B4h6`:
+### Pseudocode
+#### File discriminators
+- Given `piece` (must be a `N`, `B`, `R`, or `Q`)
+- For each `to_square` in the board:
+  - Initialize an empty board `b`
+  - Place a `piece` on `b` at `to_square`
+  - Get the `attacks` bitboard for `to_square`, a 64-bit binary number representing squares the `piece` could move to
+  - For each `from_square` in `attacks`:
+    - Define a bitboard `ray` whose truthy bits start at `to_square` and extend toward `from_square`, continuing past it until reaching a board edge
+    - Remove all truthy bits in `ray` from `attacks`
+    - Remove all truthy bits on the same file as `from_square` from `attacks`
+    - If any file in `attacks` has any truthy bit, this move can require a file discriminator
 
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=8/6B1/8/8/5B2/8/8/8&arrows=Gf4h6,h6,Bf1f8) ![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=5B2/8/8/8/5B2/8/8/8&arrows=Gf4h6,h6,Ba4h4)
+#### Rank discriminators
+- Given `piece` (must be a `N`, `B`, `R`, or `Q`)
+- For each `to_square` in the board:
+    - Initialize an empty board `b`
+    - Place a `piece` on `b` at `to_square`
+    - Get the `attacks` bitboard for `to_square`, a 64-bit binary number representing squares the `piece` could move to
+    - For each `from_square` in `attacks`:
+      - Define a bitboard `ray` whose truthy bits start at `to_square` and move toward `from_square`, continuing past it until reaching a board edge
+      - Remove all truthy bits in `ray` from `attacks`
+      - Remove all truthy bits **not** on the same file as `from_square` from `attacks`
+      - If any rank in `attacks` has any truthy bit, this move can require a rank discriminator
 
-However, for example, the "valid" SAN string `B3h6` is not possible. The presence of a rank discriminator implies that using the file
-would not have been enough to fully disambiguate the source piece (since using the file is preferred). Therefore, we know the following:
-- There is a bishop on rank `3` rank that can move to `h6`. The only square where this is possible is `e3`.
-- There must be another bishops on the same file as the source bishop (the `e` file), since otherwise the source file would have been
-the disambiguator.
+#### Full-square discriminators
+- Given `piece` (must be a `N`, `B`, `R`, or `Q`)
+- For each `to_square` in the board:
+  - Initialize an empty board `b`
+  - Place a `piece` on `b` at `to_square`
+  - Get the `attacks` bitboard for `to_square` a 64-bit binary number representing squares the `piece` could move to
+  - For each `from_square` in `attacks`:
+    - Define a bitboard `ray` whose truthy bits start at `to_square` and move toward `from_square`, continuing past it until reaching a board edge
+    - Remove all truthy bits in `ray` from `attacks`
+    - If there is any truthy bit in `from_square`'s rank and also in `from_square`'s file, this move can require a full-square discriminator
 
-but these facts already make a contradiction. It is also visually not possible—we would need an `e9` square to put another bishop on 
-the `e` file that can move to `h6`:
+### Intuitive explanations
+To really understand the code in this repo, we need to understand the algorithm a human uses
+to determine whether a move from a `from_square` to a `to_square` might require a file, rank,
+and/or full-square discriminator.
 
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=5B2/8/8/8/8/4B3/8/8&arrows=Ge3h6,h6,Rh6f8)
+First we should consider that if moving from `from_square` to `to_square` is a legal
+move, then even if there is another piece of the same type and color on the ray which extends 
+from `to_square` to `from_square` and continues on to an edge of the board, moving that piece 
+to `to_square` would be illegal. If this piece falls between `from_square` and `to_square`,
+then the original move would not be legal, so we have a contradiction. If it is past 
+`from_square` (on the extension of the ray between the squares that continues to the edge of 
+the board), then it is not legal because it cannot jump over the piece at `from_square` to 
+reach `to_square`.
 
-The general rule is that we always generate a string for the file discriminator, but only generate one for the rank discriminator 
-if the rank of the source piece is within *d* ranks of the destination piece, where *d* is the length of the shortest diagonal protruding
-from the destination square:
+This is important when considering disriminators because we are only interested in squares
+from which another `piece` can legally move to `to_square`, and those which might create
+a situation where a rank, file, or full-square discriminator is necessary.
 
-![image](https://backscattering.de/web-boardimage/board.svg?size=300&coordinates=true&fen=6B1/8/6B1/8/8/8/8/8&arrows=Gh7g8,h7,Rh7b1,Gh8a8,h7a7,h6a6,Rh5a5,Rh4a4,Rh3a3,Rh2a2,Rh1a1) ![image](https://backscattering.de/web-boardimage/board.svg?size=300&coordinates=true&fen=5B2/8/8/8/5B2/8/8/8&arrows=Gh6f8,h6,Rh6c1,Gh8a8,h7a7,h6a6,h5a5,h4a4,Rh3a3,Rh2a2,Rh1a1) ![image](https://backscattering.de/web-boardimage/board.svg?size=300&coordinates=true&fen=4B3/8/8/8/8/8/4B3/8&arrows=Gh5e8,h5,Rh5d1,Gh8a8,h7a7,h6a6,h5a5,h4a4,h3a3,h2a2,Rh1a1)
+#### File discriminators
+With this in mind, the algorithm for determining whether we need a **file** discriminator
+is as follows:
+- Take an empty board and place a `piece` on `to_square`, then get a bitboard `attacks`
+  of all the squares it can move to. These may all be considered possible `from_square`s.
+- Consider each `from_square` in `attacks`:
+    - Assume the move from `from_square` to `to_square` is legal. Then we know that 
+      no other `piece` on the ray from `to_square` to `from_square` is relevant because
+      its move to `to_square` would be illegal. Therefore, we can subtract the bitmask 
+      of that ray from `attacks` for the next step, creating a bitboard representing all
+      the other possible locations of a `piece` that could legally move to `to_square` 
+      given that a `piece` can legally move from `from_square` to `to_square`.
+    - We also know that any squares in this bitmask which fall on the same file as
+      `from_square` are not relevant for determining whether a file discriminator might be 
+      required: if another `piece` were to occupy one of those squares, then its move to
+      `to_square` would necessarily require a rank discriminator, not a file discriminator.
+      Therefore we subtract the bitmask of all squares in `from_square`'s file from the 
+      bitboard in the previous step as well.
+    - We now have a bitboard of all squares from which a `piece` can legally move to 
+      `to_square` (given that the move `piece` from `from_square` to `to_square` is legal)
+      such that, if a `piece` really were to occupy any one of those squares, it has 
+      potential to create a situation where a file discriminator is necessary. All that
+      is left to do is check whether one or more files in this bitboard have any truthy bits.
+      If so, then the `from_square` for this iteration can require a file discriminator.
 
-### Rooks
-Rooks are more straighforward. Their only restriction on discriminators is that if a rook is landing on ranks `1` or `8`, it will never require 
-a rank discriminator. If another rook can move to the same backrank destination square, it must not already be on that rank, so the file will always be
-the preferred discriminator. Therefore a full-square discriminator will never be required for these moves either.
+#### Rank discriminators
+The algorithm for determining whether we need a **rank** discriminator is similar, but
+has some differences which account for the fact that a file discriminator is preferred
+over a rank discriminator when both can disambiguate the move:
+- Take an empty board and place a `piece` on `to_square`, then get a bitboard `attacks`
+  of all the squares it can move to. These may all be considered possible `from_square`s.
+- Consider each `from_square` in `attacks`:
+    - Subtract the extended ray from `to_square` towards `from_square` from `attacks`
+      by the same logic as above.
+    - This time, we know that any squares that **do not** fall on the same file as 
+      `from_square` are not relevant for determining whether a rank discriminator might be 
+      required: if another `piece` were to occupy one of those squares, then its move to
+      `to_square` would necessarily preference the file discriminator, not the rank discriminator.
+      Therefore we use a logical AND between the bitboard from the previous step and the
+      bitmask of all squares in `from_square`'s file.
+    - By the same logic as above, all that is left to do is check whether one or more ranks
+      in this bitboard have any truthy bits. If so, then the `from_square` for this 
+      iteration can require a rank discriminator.
 
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=R6R/8/8/8/8/8/5R2/5R2&arrows=f8,a8f8,h8f8,f2f8,Rf1)
-
-The same is not true of the `a` and `h` files, which can require a file, rank, or full-square discriminator.
-
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=7R/8/RR6/8/8/8/8/7R&arrows=h6,b6h6,h1h6,h8h6)
-
-### Knights
-Knights moving to ranks 1 or 8 never require a rank or full-square descriminator since the knights that can move there are never on the same file.
-
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=8/2N3N1/1N3N2/8/8/8/8/8&arrows=b6a8,c7a8,Bc7e8,Bd6e8,Bf6e8,Bg7e8)
-
-### Queens
-Queens have no restrictions because at least three rays protrude from each square in the directions of the queen's movement, so we can always
-construct a scenario where a file, rank, or full-square disambiguator is necessary.
-
-![image](https://backscattering.de/web-boardimage/board.svg?size=400&coordinates=true&fen=8/3Q4/8/8/8/3Q3Q/8/8&arrows=d3h7,h7)
-
-### Pawns
-Pawns have no restrictions. We just have to be sure not to double-count the same strings, since for example the pawn moves `a2a4`/`a3a4`
-(by white) and `a5a4` (by black) would all be notated in SAN as `a4`.
+#### Full-square discriminator
+Determining whether we need a **full-square** discriminator is actually the simplest:
+- Take an empty board and place a `piece` on `to_square`, then get a bitboard `attacks`
+  of all the squares it can move to. These may all be considered possible `from_square`s.
+- Consider each `from_square` in `attacks`:
+    - Subtract the extended ray from `to_square` towards `from_square` from `attacks`
+      by the same logic as above.
+    - A full-square discriminator is required when there is another `piece` on `from_square`'s
+      same file and another one on its same rank that can both move to `to_square`. Therefore,
+      can use a logical AND between `attacks` and the bitmask of all squares in `from_square`'s
+      file, then do the same for its rank, and if both of these have truthy bits, then the
+      `from_square` for this iteration can require a full-square discriminator.
