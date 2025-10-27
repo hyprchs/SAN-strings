@@ -226,6 +226,7 @@ def get_piece_sans(symbol: Literal["N", "B", "R", "Q"]) -> Set[str]:
             # File Discriminator
             bb = bb_attacks
             if is_sliding_piece:
+                # noinspection PyUnboundLocalVariable
                 bb &= ~bb_ray
             else:
                 bb &= ~chess.BB_SQUARES[from_square]
