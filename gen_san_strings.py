@@ -24,14 +24,14 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
     >>> chess.C3 + 9 == chess.D4
     True
     """
-    assert s1 != s2, "s1 and s2 must be different squares"
+    assert s1 != s2, 's1 and s2 must be different squares'
 
     x_delta = chess.square_file(s2) - chess.square_file(s1)
     y_delta = chess.square_rank(s2) - chess.square_rank(s1)
 
     assert 0 in (x_delta, y_delta) or abs(x_delta) == abs(y_delta), (
-        "s1 and s2 must be on the same file, rank, or diagonal; got "
-        f"{chess.square_name(s1)} and {chess.square_name(s2)}"
+        's1 and s2 must be on the same file, rank, or diagonal; got '
+        f'{chess.square_name(s1)} and {chess.square_name(s2)}'
     )
 
     x_delta = _sign(x_delta)
@@ -72,8 +72,8 @@ def get_pawn_sans(only_for_color: chess.Color | None = None) -> Set[str]:
 
     pawn_occupiable = chess.SquareSet(chess.BB_ALL - chess.BB_BACKRANKS)
 
-    w_pawn = chess.Piece.from_symbol("P")
-    b_pawn = chess.Piece.from_symbol("p")
+    w_pawn = chess.Piece.from_symbol('P')
+    b_pawn = chess.Piece.from_symbol('p')
 
     def add_pawn_sans_for_color(color: chess.Color):
         _b.turn = color
@@ -102,16 +102,16 @@ def get_pawn_sans(only_for_color: chess.Color | None = None) -> Set[str]:
     return sans
 
 
-def get_piece_sans(symbol: Literal["N", "B", "R", "Q"]) -> Set[str]:
+def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> Set[str]:
     """
     Get all possible SAN strings for piece types that might require a
     discriminator—namely knights, bishops, rooks, and queens.
     """
     assert symbol in (
-        "N",
-        "B",
-        "R",
-        "Q",
+        'N',
+        'B',
+        'R',
+        'Q',
     ), f'Invalid piece symbol {symbol}, must be in ("N", "B", "R", "Q")'
 
     sans = set()
@@ -122,12 +122,12 @@ def get_piece_sans(symbol: Literal["N", "B", "R", "Q"]) -> Set[str]:
         one for a non-capturing move and one for a capturing move.
         """
         to_square_name = chess.square_name(to_square)
-        for capture in ("", "x"):
-            sans.add(f"{symbol}{discriminator}{capture}{to_square_name}")
+        for capture in ('', 'x'):
+            sans.add(f'{symbol}{discriminator}{capture}{to_square_name}')
 
     for to_square in chess.SQUARES:
         # We always add the un-discriminated move and capturing move
-        add_sans("", to_square)
+        add_sans('', to_square)
 
         """
         To really understand the code below, we need to understand the algorithm a human uses
@@ -271,22 +271,22 @@ def get_king_sans() -> Set[str]:
     for to_square in chess.SQUARES:
         # Add the capturing and non-capturing SANs
         to_square_name = chess.square_name(to_square)
-        sans.add(f"K{to_square_name}")
-        sans.add(f"Kx{to_square_name}")
+        sans.add(f'K{to_square_name}')
+        sans.add(f'Kx{to_square_name}')
 
     # Add castling moves
-    sans.add("O-O")
-    sans.add("O-O-O")
+    sans.add('O-O')
+    sans.add('O-O-O')
 
     return sans
 
 
 def main():
     pawn_sans = get_pawn_sans()
-    knight_sans = get_piece_sans("N")
-    bishop_sans = get_piece_sans("B")
-    rook_sans = get_piece_sans("R")
-    queen_sans = get_piece_sans("Q")
+    knight_sans = get_piece_sans('N')
+    bishop_sans = get_piece_sans('B')
+    rook_sans = get_piece_sans('R')
+    queen_sans = get_piece_sans('Q')
     king_sans = get_king_sans()
     all_sans = (
         pawn_sans | knight_sans | bishop_sans | rook_sans | queen_sans | king_sans
@@ -297,17 +297,17 @@ def main():
 
     all_sans = sorted(all_sans, key=sort_key)
     all_sans_with_symbols = sorted(
-        [san + symbol for symbol in ("", "+", "#") for san in all_sans], key=sort_key
+        [san + symbol for symbol in ('', '+', '#') for san in all_sans], key=sort_key
     )
 
-    with open("san_strings.txt", "w") as f:
-        f.write("\n".join(all_sans))
+    with open('san_strings.txt', 'w') as f:
+        f.write('\n'.join(all_sans))
 
-    with open("san_strings_with_symbols.txt", "w") as f:
-        f.write("\n".join(all_sans_with_symbols))
+    with open('san_strings_with_symbols.txt', 'w') as f:
+        f.write('\n'.join(all_sans_with_symbols))
 
-    print("Done!")
+    print('Done!')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

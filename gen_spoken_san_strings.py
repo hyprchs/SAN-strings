@@ -41,13 +41,15 @@ for i, san_string in enumerate(san_strings):
                     words.append('takes')
 
             # Destination of capture
-            file, rank = san_string[idx+1: idx+3]
+            file, rank = san_string[idx + 1 : idx + 3]
             assert file in 'abcdefgh'
             assert rank in '12345678'
             idx += 3
 
             # Ex. 'rook takes' or 'rook takes e 4' or 'rook takes rook'
-            words.append(('', f'{file} {rank}', 'pawn', 'knight', 'bishop', 'rook', 'queen'))
+            words.append(
+                ('', f'{file} {rank}', 'pawn', 'knight', 'bishop', 'rook', 'queen')
+            )
         elif c == '=':
             words.append(('', 'equals'))
             # break
@@ -61,13 +63,16 @@ for i, san_string in enumerate(san_strings):
         continue
 
     # Enumerate every combination of different ways of saying each phrase
-    for phrase_combo in list(list(e) for e in itertools.product(*(w for w in words if not isinstance(w, str)))):
+    for phrase_combo in list(
+        list(e)
+        for e in itertools.product(*(w for w in words if not isinstance(w, str)))
+    ):
         phrase_words = []
         for word in words:
             if isinstance(word, str):
                 phrase_words.append(word)
                 continue
-            
+
             phrase_words.append(phrase_combo.pop(0))
 
         assert not phrase_combo
