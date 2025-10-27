@@ -10,7 +10,7 @@ def _sign(x: int) -> Literal[-1, 0, 1]:
     """
     Get the sign of `x` as -1, 0, or 1.
     """
-    return (x > 0) - (x < 0)
+    return 0 if x == 0 else 1 if x > 0 else -1
 
 
 def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
