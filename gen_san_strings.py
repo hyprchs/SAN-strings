@@ -143,7 +143,7 @@ def get_piece_sans(symbol: Literal["N", "B", "R", "Q"]) -> Set[str]:
         the board), then it is not legal because it cannot jump over the piece at `from_square` to 
         reach `to_square`.
 
-        This is important when considering disriminators because we are only interested in squares
+        This is important when considering discriminators because we are only interested in squares
         from which another `piece` can legally move to `to_square`, and those which might create 
         a situation where a rank, file, or full-square discriminator is necessary.
 
