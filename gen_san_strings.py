@@ -58,6 +58,7 @@ def _extend_ray_from_towards(
     . . . . . . . .
     """
     d = _sliding_delta(from_sq, towards_sq)
+    # noinspection PyProtectedMember
     return chess._sliding_attacks(from_sq, 0, [d]) | chess.BB_SQUARES[from_sq]
 
 
