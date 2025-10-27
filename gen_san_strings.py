@@ -70,7 +70,7 @@ def get_pawn_sans(only_for_color: chess.Color | None = None) -> Set[str]:
     """
     sans = set()
 
-    PAWN_OCCUPIABLE = chess.SquareSet(chess.BB_ALL - chess.BB_BACKRANKS)
+    pawn_occupiable = chess.SquareSet(chess.BB_ALL - chess.BB_BACKRANKS)
 
     w_pawn = chess.Piece.from_symbol("P")
     b_pawn = chess.Piece.from_symbol("p")
@@ -80,7 +80,7 @@ def get_pawn_sans(only_for_color: chess.Color | None = None) -> Set[str]:
         self_pawn = w_pawn if color == chess.WHITE else b_pawn
         other_pawn = b_pawn if color == chess.WHITE else w_pawn
 
-        for from_square in PAWN_OCCUPIABLE:
+        for from_square in pawn_occupiable:
             _b.clear_board()
             _b.set_piece_at(from_square, self_pawn)
             attacks = _b.attacks(from_square)
