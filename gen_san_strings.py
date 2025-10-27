@@ -19,7 +19,7 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
     one step from `s1` toward `s2`. Raises `AssertionError` if `s1`
     and `s2` are not on the same file, rank, or diagonal.
 
-    >>> delta(chess.C3, chess.F6)
+    >>> _sliding_delta(chess.C3, chess.F6)
     9
     >>> chess.C3 + 9 == chess.D4
     True
