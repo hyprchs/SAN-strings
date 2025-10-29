@@ -41,7 +41,8 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
 
 
 def _extend_ray_from_towards(
-        from_sq: chess.Square, towards_sq: chess.Square
+    from_sq: chess.Square,
+    towards_sq: chess.Square,
 ) -> chess.Bitboard:
     """
     Get a `chess.Bitboard` of all the squares from (and including) `from_sq`
@@ -135,16 +136,16 @@ def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> Set[str]:
         file, rank, and/or full-square discriminator.
 
         First we should consider that if moving from `from_square` to `to_square` is a legal
-        move, then even if there is another piece of the same type and color on the ray which extends 
-        from `to_square` to `from_square` and continues on to an edge of the board, moving that piece 
+        move, then even if there is another piece of the same type and color on the ray which extends
+        from `to_square` to `from_square` and continues on to an edge of the board, moving that piece
         to `to_square` would be illegal. If this piece falls between `from_square` and `to_square`,
-        then the original move would not be legal, so we have a contradiction. If it is past 
-        `from_square` (on the extension of the ray between the squares that continues to the edge of 
-        the board), then it is not legal because it cannot jump over the piece at `from_square` to 
+        then the original move would not be legal, so we have a contradiction. If it is past
+        `from_square` (on the extension of the ray between the squares that continues to the edge of
+        the board), then it is not legal because it cannot jump over the piece at `from_square` to
         reach `to_square`.
 
         This is important when considering discriminators because we are only interested in squares
-        from which another `piece` can legally move to `to_square`, and those which might create 
+        from which another `piece` can legally move to `to_square`, and those which might create
         a situation where a rank, file, or full-square discriminator is necessary.
 
         With this in mind, the algorithm for determining whether we need a **file** discriminator
@@ -156,10 +157,10 @@ def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> Set[str]:
                 no other `piece` on the ray from `to_square` towards `from_square` is relevant because
                 its move to `to_square` would be illegal. Therefore, we can subtract the bitmask
                 of that ray from `attacks` for the next step, creating a bitboard representing all
-                the other possible locations of a `piece` that could legally move to `to_square` 
+                the other possible locations of a `piece` that could legally move to `to_square`
                 given that a `piece` can legally move from `from_square` to `to_square`.
               - We also know that any squares in this bitmask which fall on the same file as
-                `from_square` are not relevant for determining whether a file discriminator might be 
+                `from_square` are not relevant for determining whether a file discriminator might be
                 required: if another `piece` were to occupy one of those squares, then its move to
                 `to_square` would necessarily require a rank discriminator, not a file discriminator.
                 Therefore we subtract the bitmask of all squares in `from_square`'s file from the
@@ -289,7 +290,7 @@ def main():
     queen_sans = get_piece_sans('Q')
     king_sans = get_king_sans()
     all_sans = (
-            pawn_sans | knight_sans | bishop_sans | rook_sans | queen_sans | king_sans
+        pawn_sans | knight_sans | bishop_sans | rook_sans | queen_sans | king_sans
     )
 
     def sort_key(s):
