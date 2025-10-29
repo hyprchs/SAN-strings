@@ -60,7 +60,7 @@ def _extend_ray_from_towards(
     return chess._sliding_attacks(from_sq, 0, [d]) | chess.BB_SQUARES[from_sq]
 
 
-def get_pawn_sans(only_for_color: chess.Color | None = None) -> Set[str]:
+def get_pawn_sans(only_for_color: chess.Color | None = None) -> set[str]:
     """
     Get all possible SAN strings for pawn moves. If `only_for_color` is
     specified, then only return pawn moves for that color; otherwise return
@@ -100,7 +100,7 @@ def get_pawn_sans(only_for_color: chess.Color | None = None) -> Set[str]:
     return sans
 
 
-def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> Set[str]:
+def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> set[str]:
     """
     Get all possible SAN strings for piece types that might require a
     discriminator—namely knights, bishops, rooks, and queens.
@@ -260,7 +260,7 @@ def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> Set[str]:
     return sans
 
 
-def get_king_sans() -> Set[str]:
+def get_king_sans() -> set[str]:
     """
     Get all possible SAN strings for king moves.
     """
