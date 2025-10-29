@@ -1,6 +1,5 @@
 import itertools
 
-
 with open('san_strings.txt', 'r') as f:
     san_strings = f.read().splitlines()
 
