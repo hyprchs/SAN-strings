@@ -1,9 +1,8 @@
-from typing import Literal
+import math
 from functools import cache
+from typing import Literal
 
 import chess
-import math
-
 
 _b = chess.Board.empty()
 """ A blank `chess.Board` to use for generating moves. """
