@@ -15,3 +15,7 @@ dev = [
 
 [tool.ruff.format]
 quote-style = "single"
+
+[tool.ruff.lint]
+# Extend the default selected rules to include import sorting (I)
+extend-select = ["I"]
