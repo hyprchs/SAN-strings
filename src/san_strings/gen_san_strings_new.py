@@ -1,3 +1,4 @@
+from typing import Literal
 from functools import cache
 
 import chess
