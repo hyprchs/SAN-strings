@@ -19,3 +19,9 @@ quote-style = "single"
 [tool.ruff.lint]
 # Extend the default selected rules to include import sorting (I)
 extend-select = ["I"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = false
+incremental = true
+cache_dir = ".mypy_cache"
