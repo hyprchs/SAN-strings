@@ -1,3 +1,5 @@
+from functools import cache
+
 import chess
 from typing import Literal, Set
 
@@ -13,6 +15,7 @@ def _sign(x: int) -> Literal[-1, 0, 1]:
     return 0 if x == 0 else 1 if x > 0 else -1
 
 
+@cache
 def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
     """
     Get the delta of the index in `chess.SQUARES` required to move
@@ -40,6 +43,7 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
     return y_delta * 8 + x_delta
 
 
+@cache
 def _extend_ray_from_towards(
     from_sq: chess.Square,
     towards_sq: chess.Square,
