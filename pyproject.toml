@@ -1,21 +1,29 @@
 [project]
-name = "san-strings"
+name = "san_strings"
 version = "0.1.0"
-description = "Add your description here"
+description = "Small lib for generating all possible Standard Algebraic Notation (SAN) chess move strings."
 requires-python = ">=3.13"
 dependencies = [
     "chess>=1.11.2",
     "chess_action_space>=1.1.0",
 ]
 
-[tool.uv.sources]
-chess_action_space = { path = "src/chess_action_space", editable = true }
-
 [dependency-groups]
 dev = [
     "mypy>=1.18.2",
     "ruff>=0.14.2",
+    "uv-build>=0.9.5",
 ]
+
+[tool.uv.sources]
+chess_action_space = { path = "src/chess_action_space", editable = true }
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = ["san_strings"]
 
 [tool.ruff.format]
 quote-style = "single"
@@ -28,4 +36,4 @@ extend-select = ["I"]
 python_version = "3.13"
 strict = false
 incremental = true
-cache_dir = ".mypy_cache"
+#cache_dir = ".mypy_cache"
