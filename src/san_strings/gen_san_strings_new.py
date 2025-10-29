@@ -1,18 +1,11 @@
 from functools import cache
 
 import chess
-from typing import Literal, Set
+import math
 
 
 _b = chess.Board.empty()
 """ A blank `chess.Board` to use for generating moves. """
-
-
-def _sign(x: int) -> Literal[-1, 0, 1]:
-    """
-    Get the sign of `x` as -1, 0, or 1.
-    """
-    return 0 if x == 0 else 1 if x > 0 else -1
 
 
 @cache
@@ -37,8 +30,8 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
         f'{chess.square_name(s1)} and {chess.square_name(s2)}'
     )
 
-    x_delta = _sign(x_delta)
-    y_delta = _sign(y_delta)
+    x_delta = int(math.copysign(1, x_delta))
+    y_delta = int(math.copysign(1, y_delta))
 
     return y_delta * 8 + x_delta
 
