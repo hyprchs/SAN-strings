@@ -37,7 +37,7 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
 
 
 @cache
-def _extend_ray_from_towards(
+def _extend_ray(
     from_sq: chess.Square,
     towards_sq: chess.Square,
 ) -> chess.Bitboard:
@@ -45,7 +45,7 @@ def _extend_ray_from_towards(
     Get a `chess.Bitboard` of all the squares from (and including) `from_sq`
     toward `towards_sq` and continuing on to an edge of the board.
 
-    >>> print(chess.SquareSet(_extend_ray_from_towards(chess.C3, chess.F6)))
+    >>> print(chess.SquareSet(_extend_ray(chess.C3, chess.F6)))
     . . . . . . . 1
     . . . . . . 1 .
     . . . . . 1 . .
@@ -216,7 +216,7 @@ def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> set[str]:
             from_square_rank = chess.square_rank(from_square)
 
             if is_sliding_piece:
-                bb_ray = _extend_ray_from_towards(to_square, from_square)
+                bb_ray = _extend_ray(to_square, from_square)
 
             bb_from_square_file = chess.BB_FILES[from_square_file]
             bb_from_square_rank = chess.BB_RANKS[from_square_rank]
