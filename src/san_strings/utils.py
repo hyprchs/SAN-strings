@@ -60,14 +60,12 @@ def _assert_from_to_squares_different(move: chess.Move) -> None:
 
 
 def is_diagonal_slide(move: chess.Move) -> bool:
-    _assert_from_to_squares_different(move)
     return abs(
         chess.square_file(move.from_square) - chess.square_file(move.to_square)
     ) == abs(chess.square_rank(move.from_square) - chess.square_rank(move.to_square))
 
 
 def is_horizontal_or_vertical_slide(move: chess.Move) -> bool:
-    _assert_from_to_squares_different(move)
     return chess.square_file(move.from_square) == chess.square_file(
         move.to_square
     ) or chess.square_rank(move.from_square) == chess.square_rank(move.to_square)
@@ -134,8 +132,7 @@ def can_be_pawn_move(
 
 
 def can_be_knight_move(move: chess.Move) -> bool:
-    if move.from_square == move.to_square:
-        raise RuntimeError('Unexpected same-square move')
+    _assert_from_to_squares_different(move)
     df, dr = file_rank_deltas(move)
     df = abs(df)
     dr = abs(dr)
@@ -143,20 +140,21 @@ def can_be_knight_move(move: chess.Move) -> bool:
 
 
 def can_be_bishop_move(move: chess.Move) -> bool:
+    _assert_from_to_squares_different(move)
     return is_diagonal_slide(move)
 
 
 def can_be_rook_move(move: chess.Move) -> bool:
+    _assert_from_to_squares_different(move)
     return is_horizontal_or_vertical_slide(move)
 
 
 def can_be_queen_move(move: chess.Move) -> bool:
+    _assert_from_to_squares_different(move)
     return is_diagonal_slide(move) or is_horizontal_or_vertical_slide(move)
 
 
 def can_be_king_move(move: chess.Move) -> bool:
-    if move.from_square == move.to_square:
-        return False
-    df = abs(chess.square_file(move.from_square) - chess.square_file(move.to_square))
-    dr = abs(chess.square_rank(move.from_square) - chess.square_rank(move.to_square))
-    return max(df, dr) == 1  # One square any direction (ignoring castling)
+    _assert_from_to_squares_different(move)
+    df, dr = file_rank_deltas(move)
+    return max(abs(df), abs(dr)) == 1  # One square any direction (ignoring castling)
