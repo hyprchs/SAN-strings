@@ -154,7 +154,23 @@ def can_be_queen_move(move: chess.Move) -> bool:
     return is_diagonal_slide(move) or is_horizontal_or_vertical_slide(move)
 
 
-def can_be_king_move(move: chess.Move) -> bool:
+def can_be_king_move(
+    move: chess.Move,
+    *,
+    enforce_is_castling_as: bool | None = None,
+) -> bool:
     _assert_from_to_squares_different(move)
     df, dr = file_rank_deltas(move)
-    return max(abs(df), abs(dr)) == 1  # One square any direction (ignoring castling)
+    can_be_non_castling_king_move = max(abs(df), abs(dr)) == 1
+    can_be_castling_king_move = (move.from_square, move.to_square) in (
+        (chess.E1, chess.G1),
+        (chess.E1, chess.C1),
+        (chess.E8, chess.G8),
+        (chess.E8, chess.C8),
+    )
+    if enforce_is_castling_as is not None:
+        if enforce_is_castling_as:
+            return can_be_castling_king_move
+        else:
+            return can_be_non_castling_king_move
+    return can_be_castling_king_move or can_be_non_castling_king_move
