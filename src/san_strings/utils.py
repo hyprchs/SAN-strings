@@ -4,7 +4,6 @@ from functools import cache
 import chess
 
 
-@cache
 def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
     """
     Get the delta of the index in `chess.SQUARES` required to move
@@ -32,7 +31,6 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
     return y_delta * 8 + x_delta
 
 
-@cache
 def extend_ray(
     from_sq: chess.Square,
     towards_sq: chess.Square,
