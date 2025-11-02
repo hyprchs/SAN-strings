@@ -1,255 +1,213 @@
-from typing import Literal
-
 import chess
 
-from san_strings.utils import extend_ray
+from chess_action_space import iter_action_space
+from san_strings.constants import PROMOTION_PIECE_TYPES
+from san_strings.utils import (
+    can_be_king_move,
+    can_be_nbrq_move_by,
+    can_be_pawn_move,
+    can_require_file_disambiguator,
+    can_require_full_square_disambiguator,
+    can_require_rank_disambiguator,
+)
+from san_strings.utils.san_parts import (
+    KingSanParts,
+    NBRQSanParts,
+    PawnSanParts,
+    SanParts,
+)
 
 _b = chess.Board.empty()
 """ A blank `chess.Board` to use for generating moves. """
 
 
-def get_pawn_sans(only_for_color: chess.Color | None = None) -> set[str]:
-    """
-    Get all possible SAN strings for pawn moves. If `only_for_color` is
-    specified, then only return pawn moves for that color; otherwise return
-    pawn moves for both colors.
-    """
-    sans = set()
+def gen_sans() -> set[str]:
+    sans: set[str] = set()
 
-    pawn_occupiable = chess.SquareSet(chess.BB_ALL - chess.BB_BACKRANKS)
+    for move in iter_action_space():
+        move_sans: set[str] = set()
 
-    w_pawn = chess.Piece.from_symbol('P')
-    b_pawn = chess.Piece.from_symbol('p')
+        def add_san(san_parts: SanParts) -> None:
+            san_parts = san_parts.copy()
+            if san_parts.check_or_mate is not None:
+                raise ValueError('Should only pass non-check/mate `SanParts`')
+            move_sans.add(san_parts.rendered)
+            if san_parts.can_cause_check:
+                # TODO: Prove that a SAN can cause check if and only if it can cause checkmate
+                san_parts.check_or_mate = '+'
+                move_sans.add(san_parts.rendered)
+                san_parts.check_or_mate = '#'
+                move_sans.add(san_parts.rendered)
 
-    def add_pawn_sans_for_color(color: chess.Color):
-        _b.turn = color
-        self_pawn = w_pawn if color == chess.WHITE else b_pawn
-        other_pawn = b_pawn if color == chess.WHITE else w_pawn
+        # Set vars we might use later.
+        from_file = chess.square_file(move.from_square)
+        from_rank = chess.square_rank(move.from_square)
 
-        for from_square in pawn_occupiable:
-            _b.clear_board()
-            _b.set_piece_at(from_square, self_pawn)
-            attacks = _b.attacks(from_square)
+        #################
+        #     Pawns     #
+        #################
+        if can_be_pawn_move(
+            move,
+            enforce_is_capture_as=False,
+            enforce_is_promotion_as=False,
+        ):
+            add_san(PawnSanParts(to_square=move.to_square))
 
-            # Set enemy pawns at the diagonal attacked squares
-            for s in attacks:
-                _b.set_piece_at(s, other_pawn)
+        if can_be_pawn_move(
+            move,
+            enforce_is_capture_as=True,
+            enforce_is_promotion_as=False,
+        ):
+            add_san(
+                PawnSanParts(
+                    file_disambiguator=from_file,
+                    to_square=move.to_square,
+                    is_capture=True,
+                )
+            )
 
-            # Now forward moves and the diagonal captures are legal,
-            # so we can just add all legal SAN moves
-            for move in _b.legal_moves:
-                sans.add(_b.san(move))
+        if can_be_pawn_move(
+            move,
+            enforce_is_capture_as=False,
+            enforce_is_promotion_as=True,
+        ):
+            for promotion_piece_type in PROMOTION_PIECE_TYPES:
+                add_san(
+                    PawnSanParts(
+                        to_square=move.to_square,
+                        promotion_piece_type=promotion_piece_type,
+                    )
+                )
 
-    if only_for_color in (chess.WHITE, None):
-        add_pawn_sans_for_color(chess.WHITE)
-    if only_for_color in (chess.BLACK, None):
-        add_pawn_sans_for_color(chess.BLACK)
+        if can_be_pawn_move(
+            move,
+            enforce_is_capture_as=True,
+            enforce_is_promotion_as=True,
+        ):
+            for promotion_piece_type in PROMOTION_PIECE_TYPES:
+                add_san(
+                    PawnSanParts(
+                        file_disambiguator=from_file,
+                        is_capture=True,
+                        to_square=move.to_square,
+                        promotion_piece_type=promotion_piece_type,
+                    )
+                )
 
-    return sans
+        #################
+        #     Kings     #
+        #################
+        # Non-castling
+        if can_be_king_move(
+            move,
+            enforce_is_kingside_castling_as=False,
+            enforce_is_queenside_castling_as=False,
+        ):
+            add_san(KingSanParts(to_square=move.to_square))
+            # Capture king moves are trivially possible when non-capture is possible - TODO: prove with FENs
+            add_san(KingSanParts(is_capture=True, to_square=move.to_square))
 
+        # Kingside castling
+        if can_be_king_move(
+            move,
+            enforce_is_kingside_castling_as=True,
+            enforce_is_queenside_castling_as=False,
+        ):
+            san = 'O-O'
+            move_sans.add(san)
+            # Capture/check castling SANs are trivially possible - TODO: prove with FENs
+            move_sans.add(f'{san}+')
+            move_sans.add(f'{san}#')
 
-def get_piece_sans(symbol: Literal['N', 'B', 'R', 'Q']) -> set[str]:
-    """
-    Get all possible SAN strings for piece types that might require a
-    discriminator—namely knights, bishops, rooks, and queens.
-    """
-    assert symbol in (
-        'N',
-        'B',
-        'R',
-        'Q',
-    ), f'Invalid piece symbol {symbol}, must be in ("N", "B", "R", "Q")'
+        # Queenside castling
+        if can_be_king_move(
+            move,
+            enforce_is_kingside_castling_as=False,
+            enforce_is_queenside_castling_as=True,
+        ):
+            san = 'O-O-O'
+            move_sans.add(san)
+            # Capture/check castling SANs are trivially possible - TODO: prove with FENs
+            move_sans.add(f'{san}+')
+            move_sans.add(f'{san}#')
 
-    sans = set()
+        ########################################
+        #     Knights/Bishops/Rooks/Queens     #
+        ########################################
+        for piece_type in (chess.KNIGHT, chess.BISHOP, chess.ROOK, chess.QUEEN):
+            if can_be_nbrq_move_by(piece_type, move):
+                # Non-disambiguated
+                #   - captures
+                #   - capture checks
+                #   - capture checkmates
+                #   - non-capture checks
+                #   - non-capture checkmates
+                # are trivially always possible for these piece types.
+                # This is because non-disambiguated moves can always cause new squares to be attacked.
+                # TODO: Prove with FENs
+                add_san(NBRQSanParts(piece_type=piece_type, to_square=move.to_square))
+                add_san(
+                    NBRQSanParts(
+                        piece_type=piece_type, is_capture=True, to_square=move.to_square
+                    )
+                )
 
-    def add_sans(discriminator: str, to_square: chess.Square):
-        """
-        Add two SAN strings to `sans` for the given `discriminator` and `to_square`:
-        one for a non-capturing move and one for a capturing move.
-        """
-        to_square_name = chess.square_name(to_square)
-        for capture in ('', 'x'):
-            sans.add(f'{symbol}{discriminator}{capture}{to_square_name}')
+                for is_capture in (False, True):
+                    if can_require_file_disambiguator(move=move, piece_type=piece_type):
+                        add_san(
+                            NBRQSanParts(
+                                piece_type=piece_type,
+                                file_disambiguator=from_file,
+                                is_capture=is_capture,
+                                to_square=move.to_square,
+                            )
+                        )
 
-    for to_square in chess.SQUARES:
-        # We always add the un-discriminated move and capturing move
-        add_sans('', to_square)
+                    if can_require_rank_disambiguator(move=move, piece_type=piece_type):
+                        add_san(
+                            NBRQSanParts(
+                                piece_type=piece_type,
+                                rank_disambiguator=from_rank,
+                                is_capture=is_capture,
+                                to_square=move.to_square,
+                            )
+                        )
 
-        """
-        To really understand the code below, we need to understand the algorithm a human uses
-        to determine whether a move from a `from_square` to a `to_square` might require a
-        file, rank, and/or full-square discriminator.
+                    if can_require_full_square_disambiguator(
+                        move=move,
+                        piece_type=piece_type,
+                    ):
+                        add_san(
+                            NBRQSanParts(
+                                piece_type=piece_type,
+                                file_disambiguator=from_file,
+                                rank_disambiguator=from_rank,
+                                is_capture=is_capture,
+                                to_square=move.to_square,
+                            )
+                        )
 
-        First we should consider that if moving from `from_square` to `to_square` is a legal
-        move, then even if there is another piece of the same type and color on the ray which extends
-        from `to_square` to `from_square` and continues on to an edge of the board, moving that piece
-        to `to_square` would be illegal. If this piece falls between `from_square` and `to_square`,
-        then the original move would not be legal, so we have a contradiction. If it is past
-        `from_square` (on the extension of the ray between the squares that continues to the edge of
-        the board), then it is not legal because it cannot jump over the piece at `from_square` to
-        reach `to_square`.
-
-        This is important when considering discriminators because we are only interested in squares
-        from which another `piece` can legally move to `to_square`, and those which might create
-        a situation where a rank, file, or full-square discriminator is necessary.
-
-        With this in mind, the algorithm for determining whether we need a **file** discriminator
-        is as follows:
-          - Take an empty board and place a `piece` on `to_square`, then get a bitboard `attacks`
-            of all the squares it can move to. These may all be considered possible `from_square`s.
-          - Consider each `from_square` in `attacks`:
-              - Assume the move from `from_square` to `to_square` is legal. Then we know that
-                no other `piece` on the ray from `to_square` towards `from_square` is relevant because
-                its move to `to_square` would be illegal. Therefore, we can subtract the bitmask
-                of that ray from `attacks` for the next step, creating a bitboard representing all
-                the other possible locations of a `piece` that could legally move to `to_square`
-                given that a `piece` can legally move from `from_square` to `to_square`.
-              - We also know that any squares in this bitmask which fall on the same file as
-                `from_square` are not relevant for determining whether a file discriminator might be
-                required: if another `piece` were to occupy one of those squares, then its move to
-                `to_square` would necessarily require a rank discriminator, not a file discriminator.
-                Therefore we subtract the bitmask of all squares in `from_square`'s file from the
-                bitboard in the previous step as well.
-              - We now have a bitboard of all squares from which a `piece` can legally move to
-                `to_square` (given that the move `piece` from `from_square` to `to_square` is legal)
-                such that, if a `piece` really were to occupy any one of those squares, it has
-                potential to create a situation where a file discriminator is necessary. All that
-                is left to do is check whether one or more files in this bitboard have any truthy bits.
-                If so, then the `from_square` for this iteration can require a file discriminator.
-
-        The algorithm for determining whether we need a **rank** discriminator is similar, but
-        has some differences which account for the fact that a file discriminator is preferred
-        over a rank discriminator when both can disambiguate the move:
-          - Take an empty board and place a `piece` on `to_square`, then get a bitboard `attacks`
-            of all the squares it can move to. These may all be considered possible `from_square`s.
-          - Consider each `from_square` in `attacks`:
-              - Subtract the extended ray from `to_square` towards `from_square` from `attacks`
-                by the same logic as above.
-              - This time, we know that any squares that **do not** fall on the same file as
-                `from_square` are not relevant for determining whether a rank discriminator might be
-                required: if another `piece` were to occupy one of those squares, then its move to
-                `to_square` would necessarily preference the file discriminator, not the rank discriminator.
-                Therefore we use a logical AND between the bitboard from the previous step and the
-                bitmask of all squares in `from_square`'s file.
-              - By the same logic as above, all that is left to do is check whether one or more ranks
-                in this bitboard have any truthy bits. If so, then the `from_square` for this
-                iteration can require a rank discriminator.
-
-        Determining whether we need a **full-square** discriminator is actually the simplest:
-          - Take an empty board and place a `piece` on `to_square`, then get a bitboard `attacks`
-            of all the squares it can move to. These may all be considered possible `from_square`s.
-          - Consider each `from_square` in `attacks`:
-              - Subtract the extended ray from `to_square` towards `from_square` from `attacks`
-                by the same logic as above.
-              - A full-square discriminator is required when there is another `piece` on `from_square`'s
-                same file and another one on its same rank that can both move to `to_square`. Therefore,
-                we can use a logical AND between `attacks` and the bitmask of all squares in `from_square`'s
-                file, then do the same for its rank, and if both of these have truthy bits, then the
-                `from_square` for this iteration can require a full-square discriminator.
-
-        The logic for all three of these cases can be combined into a single loop, which is what
-        happens in the code below.
-        """
-
-        piece = chess.Piece.from_symbol(symbol)
-        is_sliding_piece = piece.piece_type != chess.KNIGHT
-
-        _b.clear_board()
-        _b.set_piece_at(to_square, piece)
-        attacks = _b.attacks(to_square)
-        bb_attacks = int(attacks)
-
-        for from_square in attacks:
-            from_square_file = chess.square_file(from_square)
-            from_square_rank = chess.square_rank(from_square)
-
-            if is_sliding_piece:
-                bb_ray = extend_ray(to_square, from_square)
-
-            bb_from_square_file = chess.BB_FILES[from_square_file]
-            bb_from_square_rank = chess.BB_RANKS[from_square_rank]
-
-            # File Discriminator
-            bb = bb_attacks
-            if is_sliding_piece:
-                # noinspection PyUnboundLocalVariable
-                bb &= ~bb_ray
-            else:
-                bb &= ~chess.BB_SQUARES[from_square]
-            bb &= ~bb_from_square_file
-
-            if any(bb_file & bb for bb_file in chess.BB_FILES):
-                discriminator = chess.FILE_NAMES[from_square_file]
-                add_sans(discriminator, to_square)
-
-            # Rank Discriminator
-            bb = bb_attacks
-            if is_sliding_piece:
-                bb &= ~bb_ray
-            else:
-                bb &= ~chess.BB_SQUARES[from_square]
-            bb &= bb_from_square_file
-
-            if any(bb_rank & bb for bb_rank in chess.BB_RANKS):
-                discriminator = chess.RANK_NAMES[from_square_rank]
-                add_sans(discriminator, to_square)
-
-            # Full-Square Discriminator
-            bb = bb_attacks
-            if is_sliding_piece:
-                bb &= ~bb_ray
-            else:
-                bb &= ~chess.BB_SQUARES[from_square]
-
-            if (bb & bb_from_square_file) and (bb & bb_from_square_rank):
-                discriminator = chess.SQUARE_NAMES[from_square]
-                add_sans(discriminator, to_square)
-
-    return sans
-
-
-def get_king_sans() -> set[str]:
-    """
-    Get all possible SAN strings for king moves.
-    """
-    sans = set()
-
-    for to_square in chess.SQUARES:
-        # Add the capturing and non-capturing SANs
-        to_square_name = chess.square_name(to_square)
-        sans.add(f'K{to_square_name}')
-        sans.add(f'Kx{to_square_name}')
-
-    # Add castling moves
-    sans.add('O-O')
-    sans.add('O-O-O')
+        assert move_sans, f'Action {move} did not generate any SANs'
+        sans.update(move_sans)
 
     return sans
 
 
 def main():
-    pawn_sans = get_pawn_sans()
-    knight_sans = get_piece_sans('N')
-    bishop_sans = get_piece_sans('B')
-    rook_sans = get_piece_sans('R')
-    queen_sans = get_piece_sans('Q')
-    king_sans = get_king_sans()
-    all_sans = (
-        pawn_sans | knight_sans | bishop_sans | rook_sans | queen_sans | king_sans
-    )
+    all_sans = gen_sans()
 
     def sort_key(s):
-        return (len(s), s)
+        return len(s), s
 
     all_sans = sorted(all_sans, key=sort_key)
     all_sans_with_symbols = sorted(
         [san + symbol for symbol in ('', '+', '#') for san in all_sans], key=sort_key
     )
 
-    with open('san_strings.txt', 'w') as f:
+    with open('new_san_strings.txt', 'w') as f:
         f.write('\n'.join(all_sans))
 
-    with open('san_strings_with_symbols.txt', 'w') as f:
+    with open('new_san_strings_with_symbols.txt', 'w') as f:
         f.write('\n'.join(all_sans_with_symbols))
 
     print('Done!')
