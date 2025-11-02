@@ -200,15 +200,12 @@ def main():
         return len(s), s
 
     all_sans = sorted(all_sans, key=sort_key)
-    all_sans_with_symbols = sorted(
-        [san + symbol for symbol in ('', '+', '#') for san in all_sans], key=sort_key
-    )
 
-    with open('new_san_strings.txt', 'w') as f:
+    with open('san_strings.txt', 'w') as f:
+        f.write('\n'.join(san for san in all_sans if '+' not in san and '#' not in san))
+
+    with open('san_strings_with_symbols.txt', 'w') as f:
         f.write('\n'.join(all_sans))
-
-    with open('new_san_strings_with_symbols.txt', 'w') as f:
-        f.write('\n'.join(all_sans_with_symbols))
 
     print('Done!')
 
