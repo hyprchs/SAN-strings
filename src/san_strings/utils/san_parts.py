@@ -199,7 +199,7 @@ class PawnSanParts(SanParts):
     @property
     def rendered(self) -> str:
         return (
-            f'{f"{chess.FILE_NAMES[self.file_disambiguator]}x" if self.file_disambiguator else ""}'
+            f'{f"{chess.FILE_NAMES[self.file_disambiguator]}x" if self.file_disambiguator is not None else ""}'
             f'{chess.square_name(self.to_square)}'
             f'{f"={chess.piece_symbol(self.promotion_piece_type).upper()}" if self.promotion_piece_type is not None else ""}'
             f'{self.check_or_mate if self.check_or_mate is not None else ""}'
@@ -1112,7 +1112,7 @@ class KingSanParts(SanParts):
 
 
 if __name__ == '__main__':
-    for san in ('c1',):
+    for san in ('axb2',):
         print('=' * (len(san) + 6))
         print(f'{san = }')
         print('=' * (len(san) + 6))
