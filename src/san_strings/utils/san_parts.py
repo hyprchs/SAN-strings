@@ -68,16 +68,14 @@ class SanParts(ABC):
         place_kings: bool = True,
     ) -> Iterable[tuple[chess.Board, chess.Move]]:
         """
-        Iterate over positions with only the moving piece type and kings that can cause the given SAN,
+        Iterate over positions with only the moving piece type that can cause the given SAN,
         considering any disambiguators. Expects valid non-check/mate SANs.
-
-        TODO: Support check/mate here to prove check/mate SANs.
         """
         ...
 
     @property
     @abstractmethod
-    def can_cause_discovered_attack(self):
+    def can_cause_discovered_attack(self) -> bool:
         """
         Return `True` iff the move can cause a discovered attack.
 
@@ -121,7 +119,7 @@ class SanParts(ABC):
         ...
 
     @property
-    def can_cause_check(self):
+    def can_cause_check(self) -> bool:
         """
         Return `True` iff the move can cause check either directly by attacking new squares or with a discovery.
         """
