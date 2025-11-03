@@ -200,20 +200,10 @@ def gen_sans() -> set[str]:
     return sans
 
 
-def main():
+def write_output_files():
     all_sans = gen_sans()
 
     def sort_key(s: str) -> tuple:
-        # def is_check(s):
-        #     return s.endswith('+')
-        #
-        # def is_mate(s):
-        #     return s.endswith('#')
-        #
-        # def is_plain(s):
-        #     return not is_check(s) and not is_mate(s)
-        #
-        # return is_mate(s), is_check(s), is_plain(s), len(s), s
         return len(s), s
 
     all_sans = sorted(all_sans, key=sort_key)
@@ -228,4 +218,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    write_output_files()
