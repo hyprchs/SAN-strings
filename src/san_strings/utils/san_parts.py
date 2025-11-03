@@ -26,6 +26,9 @@ from san_strings.utils import (
 
 
 class SanParts(ABC):
+    _moving_piece_can_cause_non_mate_check: bool
+    _moving_piece_can_cause_checkmate: bool
+
     def __init_subclass__(cls, **kwargs):
         super().__init_subclass__()
         if not hasattr(cls, 'from_san'):
@@ -41,13 +44,31 @@ class SanParts(ABC):
         to_square: chess.Square,
         check_or_mate: str | None = None,
     ):
-        self.piece_type = piece_type
-        self.is_capture = is_capture
-        self.to_square = to_square
-        self.check_or_mate = check_or_mate
+        self._piece_type = piece_type
+        self._is_capture = is_capture
+        self._to_square = to_square
+        self._check_or_mate = check_or_mate
+
+    def __reset_cache(self) -> None:
+        (
+            self._moving_piece_can_cause_non_mate_check,
+            self._moving_piece_can_cause_checkmate,
+        ) = self._moving_piece_can_cause_non_mate_check_and_checkmate
 
     @property
-    def check_or_mate(self):
+    def piece_type(self) -> chess.PieceType:
+        return self._piece_type
+
+    @property
+    def is_capture(self) -> bool:
+        return self._is_capture
+
+    @property
+    def to_square(self) -> chess.Square:
+        return self._to_square
+
+    @property
+    def check_or_mate(self) -> str | None:
         return self._check_or_mate
 
     @check_or_mate.setter
@@ -111,7 +132,7 @@ class SanParts(ABC):
 
     @property
     @abstractmethod
-    def moving_piece_can_cause_check_and_checkmate(self) -> tuple[bool, bool]:
+    def _moving_piece_can_cause_non_mate_check_and_checkmate(self) -> tuple[bool, bool]:
         """
         Return two bools indicating whether the moving piece can directly (not via discoveries)
         cause check (excluding checkmates) and checkmate, respectively.
@@ -124,15 +145,35 @@ class SanParts(ABC):
         ...
 
     @property
+    def moving_piece_can_cause_non_mate_check(self) -> bool:
+        if self.check_or_mate is not None:
+            raise RuntimeError(
+                'This property is not yet supported while `check_or_mate` is not set'
+            )
+        if not hasattr(self, '_moving_piece_can_cause_non_mate_check'):
+            self.__reset_cache()
+        return self._moving_piece_can_cause_non_mate_check
+
+    @property
+    def moving_piece_can_cause_checkmate(self) -> bool:
+        if self.check_or_mate is not None:
+            raise RuntimeError(
+                'This property is not yet supported while `check_or_mate` is not set'
+            )
+        if not hasattr(self, '_moving_piece_can_cause_checkmate'):
+            self.__reset_cache()
+        return self._moving_piece_can_cause_checkmate
+
+    @property
     def can_cause_check(self) -> bool:
         """
         Return `True` iff the move can cause check either directly by attacking new squares or with a discovery.
         Returns `False` if the move can only cause checkmate but not check.
         """
-        moving_piece_can_cause_check, moving_piece_can_cause_checkmate = (
-            self.moving_piece_can_cause_check_and_checkmate
+        return (
+            self.can_cause_discovered_attack
+            or self.moving_piece_can_cause_non_mate_check
         )
-        return self.can_cause_discovered_attack or moving_piece_can_cause_check
 
     @property
     def can_cause_checkmate(self) -> bool:
@@ -141,10 +182,7 @@ class SanParts(ABC):
         Note: assumes all moves that can make discoveries can cause checkmate - should be trivially true but
         TODO: prove.
         """
-        moving_piece_can_cause_check, moving_piece_can_cause_checkmate = (
-            self.moving_piece_can_cause_check_and_checkmate
-        )
-        return self.can_cause_discovered_attack or moving_piece_can_cause_checkmate
+        return self.can_cause_discovered_attack or self.moving_piece_can_cause_checkmate
 
     @classmethod
     def from_san(cls, san: str) -> SanParts:
@@ -206,8 +244,16 @@ class PawnSanParts(SanParts):
             to_square=to_square,
             check_or_mate=check_or_mate,
         )
-        self.file_disambiguator = file_disambiguator
-        self.promotion_piece_type = promotion_piece_type
+        self._file_disambiguator = file_disambiguator
+        self._promotion_piece_type = promotion_piece_type
+
+    @property
+    def file_disambiguator(self) -> int | None:
+        return self._file_disambiguator
+
+    @property
+    def promotion_piece_type(self) -> chess.PieceType | None:
+        return self._promotion_piece_type
 
     @property
     def rendered(self) -> str:
@@ -331,7 +377,7 @@ class PawnSanParts(SanParts):
         return chess.square_file(self.to_square) not in (0, 7)
 
     @property
-    def moving_piece_can_cause_check_and_checkmate(self) -> tuple[bool, bool]:
+    def _moving_piece_can_cause_non_mate_check_and_checkmate(self) -> tuple[bool, bool]:
         # Pawns always cause new squares to be attacked. This is trivially true for both non-promotions
         # and for promotions because the promoted piece will attack new squares.
         return True, True
@@ -393,8 +439,16 @@ class NBRQSanParts(SanParts):
             to_square=to_square,
             check_or_mate=check_or_mate,
         )
-        self.file_disambiguator = file_disambiguator
-        self.rank_disambiguator = rank_disambiguator
+        self._file_disambiguator = file_disambiguator
+        self._rank_disambiguator = rank_disambiguator
+
+    @property
+    def file_disambiguator(self) -> int | None:
+        return self._file_disambiguator
+
+    @property
+    def rank_disambiguator(self) -> int | None:
+        return self._rank_disambiguator
 
     @property
     def rendered(self) -> str:
@@ -703,7 +757,7 @@ class NBRQSanParts(SanParts):
         )
 
     @property
-    def moving_piece_can_cause_check_and_checkmate(self) -> tuple[bool, bool]:
+    def _moving_piece_can_cause_non_mate_check_and_checkmate(self) -> tuple[bool, bool]:
         can_cause_check = False
         can_cause_mate = False
 
@@ -884,7 +938,7 @@ class KingSanParts(SanParts):
         return True
 
     @property
-    def moving_piece_can_cause_check_and_checkmate(self):
+    def _moving_piece_can_cause_non_mate_check_and_checkmate(self):
         # A king causing direct check/mate would mean stepping into check.
         return False, False
 
