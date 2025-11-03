@@ -111,10 +111,15 @@ class SanParts(ABC):
 
     @property
     @abstractmethod
-    def moving_piece_can_cause_check(self):
+    def moving_piece_can_cause_check_and_checkmate(self) -> tuple[bool, bool]:
         """
-        Return `True` iff the moving piece can directly cause new squares to be attacked on the board
-        (not via discoveries).
+        Return two bools indicating whether the moving piece can directly (not via discoveries)
+        cause check (excluding checkmates) and checkmate, respectively.
+
+        This function currently assumes all moves that can cause check can cause checkmate - TODO: prove.
+        However, there are surprisingly some moves that can cause checkmate but not check, like `Qc5a2`,
+        where the only square that becomes newly-attacked is `b1`, from which a king will be checkmated
+        due to other queens that must sit on `d2` and `a5` restricting the escape squares.
         """
         ...
 
@@ -122,8 +127,24 @@ class SanParts(ABC):
     def can_cause_check(self) -> bool:
         """
         Return `True` iff the move can cause check either directly by attacking new squares or with a discovery.
+        Returns `False` if the move can only cause checkmate but not check.
         """
-        return self.can_cause_discovered_attack or self.moving_piece_can_cause_check
+        moving_piece_can_cause_check, moving_piece_can_cause_checkmate = (
+            self.moving_piece_can_cause_check_and_checkmate
+        )
+        return self.can_cause_discovered_attack or moving_piece_can_cause_check
+
+    @property
+    def can_cause_checkmate(self) -> bool:
+        """
+        Return `True` iff the move can cause checkmate either directly by attacking new squares or with a discovery.
+        Note: assumes all moves that can make discoveries can cause checkmate - should be trivially true but
+        TODO: prove.
+        """
+        moving_piece_can_cause_check, moving_piece_can_cause_checkmate = (
+            self.moving_piece_can_cause_check_and_checkmate
+        )
+        return self.can_cause_discovered_attack or moving_piece_can_cause_checkmate
 
     @classmethod
     def from_san(cls, san: str) -> SanParts:
@@ -310,10 +331,10 @@ class PawnSanParts(SanParts):
         return chess.square_file(self.to_square) not in (0, 7)
 
     @property
-    def moving_piece_can_cause_check(self):
-        # Pawns always cause new squares to be attacked. This is trivially true for non-promotions
-        # and true for promotions because the promoted piece must attack new squares.
-        return True
+    def moving_piece_can_cause_check_and_checkmate(self) -> tuple[bool, bool]:
+        # Pawns always cause new squares to be attacked. This is trivially true for both non-promotions
+        # and for promotions because the promoted piece will attack new squares.
+        return True, True
 
     @classmethod
     def from_san(cls, san: str) -> PawnSanParts:
@@ -682,20 +703,66 @@ class NBRQSanParts(SanParts):
         )
 
     @property
-    def moving_piece_can_cause_check(self):
+    def moving_piece_can_cause_check_and_checkmate(self) -> tuple[bool, bool]:
+        can_cause_check = False
+        can_cause_mate = False
+
         for b, move in self.iter_positions:
+            # Get squares where a king could get checked/mated on.
             occupied_before = b.occupied
             attacked_by_mask_before = attacked_by_mask(b, chess.WHITE)
+
             b.push(move)
             occupied_after = b.occupied
             attacked_by_mask_after = attacked_by_mask(b, chess.WHITE)
-            if (
+            b.pop()
+
+            candidate_king_squares = (
                 attacked_by_mask_after
                 & ~attacked_by_mask_before
                 & ~(occupied_before | occupied_after)
-            ):
-                return True
-        return False
+            )
+
+            # Remove any squares that lie between any of the ambiguity-causing pieces and `to_square`.
+            our_piece = b.piece_at(move.from_square)
+            assert our_piece is not None, (
+                'Expected piece to exist at `move.from_square`'
+            )
+            our_piece_type = our_piece.piece_type
+            assert our_piece_type == self.piece_type, (
+                'Expected piece to exist at `our_piece_type`'
+            )
+            our_color = our_piece.color
+            for from_square in b.pieces(our_piece_type, our_color):
+                assert b.is_legal(chess.Move(from_square, self.to_square)), (
+                    f'Expected all {chess.PIECE_NAMES[our_piece_type]}s to be able to move to '
+                    f'{chess.square_name(self.to_square)}'
+                )
+                candidate_king_squares &= ~chess.between(from_square, self.to_square)
+
+            if not candidate_king_squares:
+                continue
+
+            # Try to put a king on each square and then make the move.
+            # When we find a check, assume a checkmate is also possible and break early.
+            # This assumption seems impossible to be wrong but TODO: prove.
+            for sq in chess.SquareSet(candidate_king_squares):
+                b.set_piece_at(sq, chess.Piece(chess.KING, not our_color))
+                b.push(move)
+                try:
+                    is_check = b.is_check()
+                    is_mate = b.is_checkmate()
+                    if is_check and not is_mate:
+                        can_cause_check = True
+                        can_cause_mate = True
+                        break
+                    if is_mate:
+                        can_cause_mate = True
+                finally:
+                    b.pop()
+                    b.remove_piece_at(sq)
+
+        return can_cause_check, can_cause_mate
 
     @classmethod
     def from_san(cls, san: str) -> NBRQSanParts:
@@ -817,9 +884,9 @@ class KingSanParts(SanParts):
         return True
 
     @property
-    def moving_piece_can_cause_check(self):
-        # A king causing check would mean stepping into check
-        return False
+    def moving_piece_can_cause_check_and_checkmate(self):
+        # A king causing direct check/mate would mean stepping into check.
+        return False, False
 
     @classmethod
     def from_san(cls, san: str) -> KingSanParts:
@@ -852,7 +919,7 @@ class KingSanParts(SanParts):
 
 
 if __name__ == '__main__':
-    for san in ('axb2',):
+    for san in ('Qd5a2',):
         print('=' * (len(san) + 6))
         print(f'{san = }')
         print('=' * (len(san) + 6))

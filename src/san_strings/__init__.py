@@ -39,9 +39,10 @@ def gen_sans_for_move(
             raise ValueError('Should only pass non-check/mate `SanParts`')
         move_sans.add(san_parts.rendered)
         if san_parts.can_cause_check:
-            # TODO: Prove that a SAN can cause check if and only if it can cause checkmate
             san_parts.check_or_mate = '+'
             move_sans.add(san_parts.rendered)
+        san_parts.check_or_mate = None
+        if san_parts.can_cause_checkmate:
             san_parts.check_or_mate = '#'
             move_sans.add(san_parts.rendered)
 

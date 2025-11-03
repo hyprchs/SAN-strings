@@ -8157,7 +8157,6 @@ Q1xh6
 Q1xh7
 Q1xh8
 Q2a1#
-Q2a1+
 Q2a2#
 Q2a2+
 Q2a3#
@@ -8261,7 +8260,6 @@ Q2g7+
 Q2g8#
 Q2g8+
 Q2h1#
-Q2h1+
 Q2h2#
 Q2h2+
 Q2h3#
@@ -9107,7 +9105,6 @@ Q7a6+
 Q7a7#
 Q7a7+
 Q7a8#
-Q7a8+
 Q7b1#
 Q7b1+
 Q7b2#
@@ -9211,7 +9208,6 @@ Q7h6+
 Q7h7#
 Q7h7+
 Q7h8#
-Q7h8+
 Q7xa1
 Q7xa2
 Q7xa3
@@ -18389,7 +18385,6 @@ Q1xh7+
 Q1xh8#
 Q1xh8+
 Q2xa1#
-Q2xa1+
 Q2xa2#
 Q2xa2+
 Q2xa3#
@@ -18493,7 +18488,6 @@ Q2xg7+
 Q2xg8#
 Q2xg8+
 Q2xh1#
-Q2xh1+
 Q2xh2#
 Q2xh2+
 Q2xh3#
@@ -19027,7 +19021,6 @@ Q7xa6+
 Q7xa7#
 Q7xa7+
 Q7xa8#
-Q7xa8+
 Q7xb1#
 Q7xb1+
 Q7xb2#
@@ -19131,7 +19124,6 @@ Q7xh6+
 Q7xh7#
 Q7xh7+
 Q7xh8#
-Q7xh8+
 Q8xa1#
 Q8xa1+
 Q8xa2#
@@ -19263,7 +19255,6 @@ Qa1a7+
 Qa1b1#
 Qa1b1+
 Qa1b2#
-Qa1b2+
 Qa1c1#
 Qa1c1+
 Qa1c3#
@@ -19358,7 +19349,6 @@ Qa2xf7
 Qa2xg2
 Qa2xg8
 Qa3a2#
-Qa3a2+
 Qa3a4#
 Qa3a4+
 Qa3a5#
@@ -19513,7 +19503,6 @@ Qa6a4+
 Qa6a5#
 Qa6a5+
 Qa6a7#
-Qa6a7+
 Qa6b5#
 Qa6b5+
 Qa6b6#
@@ -19622,7 +19611,6 @@ Qa8a6+
 Qa8a7#
 Qa8a7+
 Qa8b7#
-Qa8b7+
 Qa8b8#
 Qa8b8+
 Qa8c6#
@@ -19900,7 +19888,6 @@ Qb2xg2
 Qb2xg7
 Qb2xh8
 Qb3a2#
-Qb3a2+
 Qb3a4#
 Qb3a4+
 Qb3b2#
@@ -20067,7 +20054,6 @@ Qb5xf5
 Qb6a5#
 Qb6a5+
 Qb6a7#
-Qb6a7+
 Qb6b2#
 Qb6b2+
 Qb6b3#
@@ -20359,7 +20345,6 @@ Qbxh8+
 Qc1a3#
 Qc1a3+
 Qc1b1#
-Qc1b1+
 Qc1b2#
 Qc1b2+
 Qc1c2#
@@ -20410,7 +20395,6 @@ Qc1xh6
 Qc2a4#
 Qc2a4+
 Qc2b1#
-Qc2b1+
 Qc2b2#
 Qc2b2+
 Qc2b3#
@@ -20467,7 +20451,6 @@ Qc2xh7
 Qc3a5#
 Qc3a5+
 Qc3b2#
-Qc3b2+
 Qc3b3#
 Qc3b3+
 Qc3b4#
@@ -20497,7 +20480,6 @@ Qc3e5+
 Qc3f3#
 Qc3f3+
 Qc3f6#
-Qc3f6+
 Qc3g3#
 Qc3g3+
 Qc3g7#
@@ -20554,11 +20536,9 @@ Qc4e4+
 Qc4e6#
 Qc4e6+
 Qc4f1#
-Qc4f1+
 Qc4f4#
 Qc4f4+
 Qc4f7#
-Qc4f7+
 Qc4g4#
 Qc4g4+
 Qc4g8#
@@ -20615,11 +20595,9 @@ Qc5e5+
 Qc5e7#
 Qc5e7+
 Qc5f2#
-Qc5f2+
 Qc5f5#
 Qc5f5+
 Qc5f8#
-Qc5f8+
 Qc5g1#
 Qc5g1+
 Qc5g5#
@@ -20652,7 +20630,6 @@ Qc6b5+
 Qc6b6#
 Qc6b6+
 Qc6b7#
-Qc6b7+
 Qc6c2#
 Qc6c2+
 Qc6c3#
@@ -20676,7 +20653,6 @@ Qc6e6+
 Qc6e8#
 Qc6e8+
 Qc6f3#
-Qc6f3+
 Qc6f6#
 Qc6f6+
 Qc6g2#
@@ -20711,7 +20687,6 @@ Qc7b6+
 Qc7b7#
 Qc7b7+
 Qc7b8#
-Qc7b8+
 Qc7c2#
 Qc7c2+
 Qc7c3#
@@ -20766,7 +20741,6 @@ Qc8a6+
 Qc8b7#
 Qc8b7+
 Qc8b8#
-Qc8b8+
 Qc8c3#
 Qc8c3+
 Qc8c4#
@@ -21043,7 +21017,6 @@ Qd2xg2
 Qd2xg5
 Qd2xh6
 Qd3a6#
-Qd3a6+
 Qd3b3#
 Qd3b3+
 Qd3b5#
@@ -21079,7 +21052,6 @@ Qd3f5+
 Qd3g3#
 Qd3g3+
 Qd3g6#
-Qd3g6+
 Qd3h7#
 Qd3h7+
 Qd3xa6
@@ -21104,7 +21076,6 @@ Qd3xg3
 Qd3xg6
 Qd3xh7
 Qd4a7#
-Qd4a7+
 Qd4b4#
 Qd4b4+
 Qd4b6#
@@ -21138,11 +21109,9 @@ Qd4f4+
 Qd4f6#
 Qd4f6+
 Qd4g1#
-Qd4g1+
 Qd4g4#
 Qd4g4+
 Qd4g7#
-Qd4g7+
 Qd4xa1
 Qd4xa7
 Qd4xb2
@@ -21167,7 +21136,6 @@ Qd4xg4
 Qd4xg7
 Qd4xh8
 Qd5a2#
-Qd5a2+
 Qd5b3#
 Qd5b3+
 Qd5b5#
@@ -21201,11 +21169,9 @@ Qd5f5+
 Qd5f7#
 Qd5f7+
 Qd5g2#
-Qd5g2+
 Qd5g5#
 Qd5g5+
 Qd5g8#
-Qd5g8+
 Qd5xa2
 Qd5xa8
 Qd5xb3
@@ -21230,7 +21196,6 @@ Qd5xg5
 Qd5xg8
 Qd5xh1
 Qd6a3#
-Qd6a3+
 Qd6b4#
 Qd6b4+
 Qd6b6#
@@ -21264,7 +21229,6 @@ Qd6f6+
 Qd6f8#
 Qd6f8+
 Qd6g3#
-Qd6g3+
 Qd6g6#
 Qd6g6+
 Qd6h2#
@@ -21627,7 +21591,6 @@ Qe3a7+
 Qe3b3#
 Qe3b3+
 Qe3b6#
-Qe3b6+
 Qe3c1#
 Qe3c1+
 Qe3c3#
@@ -21661,7 +21624,6 @@ Qe3g3+
 Qe3g5#
 Qe3g5+
 Qe3h6#
-Qe3h6+
 Qe3xa7
 Qe3xb3
 Qe3xb6
@@ -21684,11 +21646,9 @@ Qe3xg3
 Qe3xg5
 Qe3xh6
 Qe4b1#
-Qe4b1+
 Qe4b4#
 Qe4b4+
 Qe4b7#
-Qe4b7+
 Qe4c2#
 Qe4c2+
 Qe4c4#
@@ -21722,7 +21682,6 @@ Qe4g4+
 Qe4g6#
 Qe4g6+
 Qe4h7#
-Qe4h7+
 Qe4xa8
 Qe4xb1
 Qe4xb4
@@ -21747,11 +21706,9 @@ Qe4xg6
 Qe4xh1
 Qe4xh7
 Qe5b2#
-Qe5b2+
 Qe5b5#
 Qe5b5+
 Qe5b8#
-Qe5b8+
 Qe5c3#
 Qe5c3+
 Qe5c5#
@@ -21785,7 +21742,6 @@ Qe5g3+
 Qe5g5#
 Qe5g5+
 Qe5h2#
-Qe5h2+
 Qe5xa1
 Qe5xb2
 Qe5xb5
@@ -21812,7 +21768,6 @@ Qe5xh8
 Qe6a2#
 Qe6a2+
 Qe6b3#
-Qe6b3+
 Qe6b6#
 Qe6b6+
 Qe6c4#
@@ -21848,7 +21803,6 @@ Qe6g4+
 Qe6g6#
 Qe6g6+
 Qe6h3#
-Qe6h3+
 Qe6xa2
 Qe6xb3
 Qe6xb6
@@ -22129,7 +22083,6 @@ Qf1f5+
 Qf1f6#
 Qf1f6+
 Qf1g1#
-Qf1g1+
 Qf1g2#
 Qf1g2+
 Qf1h3#
@@ -22182,7 +22135,6 @@ Qf2f6+
 Qf2f7#
 Qf2f7+
 Qf2g1#
-Qf2g1+
 Qf2g2#
 Qf2g2+
 Qf2g3#
@@ -22215,7 +22167,6 @@ Qf3b7+
 Qf3c3#
 Qf3c3+
 Qf3c6#
-Qf3c6+
 Qf3d1#
 Qf3d1+
 Qf3d3#
@@ -22239,7 +22190,6 @@ Qf3f6+
 Qf3f7#
 Qf3f7+
 Qf3g2#
-Qf3g2+
 Qf3g3#
 Qf3g3+
 Qf3g4#
@@ -22272,11 +22222,9 @@ Qf4b4+
 Qf4b8#
 Qf4b8+
 Qf4c1#
-Qf4c1+
 Qf4c4#
 Qf4c4+
 Qf4c7#
-Qf4c7+
 Qf4d2#
 Qf4d2+
 Qf4d4#
@@ -22333,11 +22281,9 @@ Qf5b1+
 Qf5b5#
 Qf5b5+
 Qf5c2#
-Qf5c2+
 Qf5c5#
 Qf5c5+
 Qf5c8#
-Qf5c8+
 Qf5d3#
 Qf5d3+
 Qf5d5#
@@ -22394,7 +22340,6 @@ Qf6b2+
 Qf6b6#
 Qf6b6+
 Qf6c3#
-Qf6c3+
 Qf6c6#
 Qf6c6+
 Qf6d4#
@@ -22424,7 +22369,6 @@ Qf6g5+
 Qf6g6#
 Qf6g6+
 Qf6g7#
-Qf6g7+
 Qf6h4#
 Qf6h4+
 Qf6xa1
@@ -22483,7 +22427,6 @@ Qf7g6+
 Qf7g7#
 Qf7g7+
 Qf7g8#
-Qf7g8+
 Qf7h5#
 Qf7h5+
 Qf7xa2
@@ -22536,7 +22479,6 @@ Qf8f7+
 Qf8g7#
 Qf8g7+
 Qf8g8#
-Qf8g8+
 Qf8h6#
 Qf8h6+
 Qf8xa3
@@ -22826,7 +22768,6 @@ Qg3g6+
 Qg3g7#
 Qg3g7+
 Qg3h2#
-Qg3h2+
 Qg3h4#
 Qg3h4+
 Qg3xb3
@@ -22993,7 +22934,6 @@ Qg6g7+
 Qg6h5#
 Qg6h5+
 Qg6h7#
-Qg6h7+
 Qg6xb1
 Qg6xb6
 Qg6xc2
@@ -23271,7 +23211,6 @@ Qh1f3+
 Qh1g1#
 Qh1g1+
 Qh1g2#
-Qh1g2+
 Qh1h2#
 Qh1h2+
 Qh1h3#
@@ -23382,7 +23321,6 @@ Qh3g3+
 Qh3g4#
 Qh3g4+
 Qh3h2#
-Qh3h2+
 Qh3h4#
 Qh3h4+
 Qh3h5#
@@ -23537,7 +23475,6 @@ Qh6h4+
 Qh6h5#
 Qh6h5+
 Qh6h7#
-Qh6h7+
 Qh6xc1
 Qh6xc6
 Qh6xd2
@@ -23630,7 +23567,6 @@ Qh8f6+
 Qh8f8#
 Qh8f8+
 Qh8g7#
-Qh8g7+
 Qh8g8#
 Qh8g8+
 Qh8h2#
@@ -26441,7 +26377,6 @@ Qa2xg2+
 Qa2xg8#
 Qa2xg8+
 Qa3xa2#
-Qa3xa2+
 Qa3xa4#
 Qa3xa4+
 Qa3xa5#
@@ -26547,7 +26482,6 @@ Qa6xa4+
 Qa6xa5#
 Qa6xa5+
 Qa6xa7#
-Qa6xa7+
 Qa6xb5#
 Qa6xb5+
 Qa6xb6#
@@ -26715,7 +26649,6 @@ Qb2xg2+
 Qb2xg7#
 Qb2xg7+
 Qb3xa2#
-Qb3xa2+
 Qb3xa4#
 Qb3xa4+
 Qb3xb2#
@@ -26827,7 +26760,6 @@ Qb5xf5+
 Qb6xa5#
 Qb6xa5+
 Qb6xa7#
-Qb6xa7+
 Qb6xb2#
 Qb6xb2+
 Qb6xb3#
@@ -26935,7 +26867,6 @@ Qb8xh2+
 Qc1xa3#
 Qc1xa3+
 Qc1xb1#
-Qc1xb1+
 Qc1xb2#
 Qc1xb2+
 Qc1xc2#
@@ -26969,7 +26900,6 @@ Qc1xh6+
 Qc2xa4#
 Qc2xa4+
 Qc2xb1#
-Qc2xb1+
 Qc2xb2#
 Qc2xb2+
 Qc2xb3#
@@ -27007,7 +26937,6 @@ Qc2xh7+
 Qc3xa5#
 Qc3xa5+
 Qc3xb2#
-Qc3xb2+
 Qc3xb3#
 Qc3xb3+
 Qc3xb4#
@@ -27043,7 +26972,6 @@ Qc3xg3+
 Qc3xg7#
 Qc3xg7+
 Qc4xa2#
-Qc4xa2+
 Qc4xa6#
 Qc4xa6+
 Qc4xb3#
@@ -27075,7 +27003,6 @@ Qc4xe4+
 Qc4xe6#
 Qc4xe6+
 Qc4xf1#
-Qc4xf1+
 Qc4xf4#
 Qc4xf4+
 Qc4xf7#
@@ -27087,7 +27014,6 @@ Qc4xg8+
 Qc5xa3#
 Qc5xa3+
 Qc5xa7#
-Qc5xa7+
 Qc5xb4#
 Qc5xb4+
 Qc5xb5#
@@ -27121,7 +27047,6 @@ Qc5xf2+
 Qc5xf5#
 Qc5xf5+
 Qc5xf8#
-Qc5xf8+
 Qc5xg1#
 Qc5xg1+
 Qc5xg5#
@@ -27133,7 +27058,6 @@ Qc6xb5+
 Qc6xb6#
 Qc6xb6+
 Qc6xb7#
-Qc6xb7+
 Qc6xc2#
 Qc6xc2+
 Qc6xc3#
@@ -27171,7 +27095,6 @@ Qc7xb6+
 Qc7xb7#
 Qc7xb7+
 Qc7xb8#
-Qc7xb8+
 Qc7xc2#
 Qc7xc2+
 Qc7xc3#
@@ -27207,7 +27130,6 @@ Qc8xa6+
 Qc8xb7#
 Qc8xb7+
 Qc8xb8#
-Qc8xb8+
 Qc8xc3#
 Qc8xc3+
 Qc8xc4#
@@ -27305,9 +27227,7 @@ Qd2xg5+
 Qd2xh6#
 Qd2xh6+
 Qd3xa6#
-Qd3xa6+
 Qd3xb1#
-Qd3xb1+
 Qd3xb3#
 Qd3xb3+
 Qd3xb5#
@@ -27347,9 +27267,7 @@ Qd3xg6+
 Qd3xh7#
 Qd3xh7+
 Qd4xa7#
-Qd4xa7+
 Qd4xb2#
-Qd4xb2+
 Qd4xb4#
 Qd4xb4+
 Qd4xb6#
@@ -27383,19 +27301,15 @@ Qd4xf4+
 Qd4xf6#
 Qd4xf6+
 Qd4xg1#
-Qd4xg1+
 Qd4xg4#
 Qd4xg4+
 Qd4xg7#
-Qd4xg7+
 Qd5xa2#
-Qd5xa2+
 Qd5xb3#
 Qd5xb3+
 Qd5xb5#
 Qd5xb5+
 Qd5xb7#
-Qd5xb7+
 Qd5xc4#
 Qd5xc4+
 Qd5xc5#
@@ -27425,19 +27339,15 @@ Qd5xf5+
 Qd5xf7#
 Qd5xf7+
 Qd5xg2#
-Qd5xg2+
 Qd5xg5#
 Qd5xg5+
 Qd5xg8#
-Qd5xg8+
 Qd6xa3#
-Qd6xa3+
 Qd6xb4#
 Qd6xb4+
 Qd6xb6#
 Qd6xb6+
 Qd6xb8#
-Qd6xb8+
 Qd6xc5#
 Qd6xc5+
 Qd6xc6#
@@ -27643,19 +27553,15 @@ Qe3xf3+
 Qe3xf4#
 Qe3xf4+
 Qe3xg1#
-Qe3xg1+
 Qe3xg3#
 Qe3xg3+
 Qe3xg5#
 Qe3xg5+
 Qe3xh6#
-Qe3xh6+
 Qe4xb1#
-Qe4xb1+
 Qe4xb4#
 Qe4xb4+
 Qe4xb7#
-Qe4xb7+
 Qe4xc2#
 Qe4xc2+
 Qe4xc4#
@@ -27685,19 +27591,15 @@ Qe4xf4+
 Qe4xf5#
 Qe4xf5+
 Qe4xg2#
-Qe4xg2+
 Qe4xg4#
 Qe4xg4+
 Qe4xg6#
 Qe4xg6+
 Qe4xh7#
-Qe4xh7+
 Qe5xb2#
-Qe5xb2+
 Qe5xb5#
 Qe5xb5+
 Qe5xb8#
-Qe5xb8+
 Qe5xc3#
 Qe5xc3+
 Qe5xc5#
@@ -27731,9 +27633,7 @@ Qe5xg3+
 Qe5xg5#
 Qe5xg5+
 Qe5xg7#
-Qe5xg7+
 Qe5xh2#
-Qe5xh2+
 Qe6xa2#
 Qe6xa2+
 Qe6xb3#
@@ -27773,9 +27673,7 @@ Qe6xg4+
 Qe6xg6#
 Qe6xg6+
 Qe6xg8#
-Qe6xg8+
 Qe6xh3#
-Qe6xh3+
 Qe7xa3#
 Qe7xa3+
 Qe7xb4#
@@ -27873,7 +27771,6 @@ Qf1xf5+
 Qf1xf6#
 Qf1xf6+
 Qf1xg1#
-Qf1xg1+
 Qf1xg2#
 Qf1xg2+
 Qf1xh3#
@@ -27909,7 +27806,6 @@ Qf2xf6+
 Qf2xf7#
 Qf2xf7+
 Qf2xg1#
-Qf2xg1+
 Qf2xg2#
 Qf2xg2+
 Qf2xg3#
@@ -27947,7 +27843,6 @@ Qf3xf6+
 Qf3xf7#
 Qf3xf7+
 Qf3xg2#
-Qf3xg2+
 Qf3xg3#
 Qf3xg3+
 Qf3xg4#
@@ -27959,7 +27854,6 @@ Qf4xb4+
 Qf4xb8#
 Qf4xb8+
 Qf4xc1#
-Qf4xc1+
 Qf4xc4#
 Qf4xc4+
 Qf4xc7#
@@ -27993,7 +27887,6 @@ Qf4xg4+
 Qf4xg5#
 Qf4xg5+
 Qf4xh2#
-Qf4xh2+
 Qf4xh6#
 Qf4xh6+
 Qf5xb1#
@@ -28005,7 +27898,6 @@ Qf5xc2+
 Qf5xc5#
 Qf5xc5+
 Qf5xc8#
-Qf5xc8+
 Qf5xd3#
 Qf5xd3+
 Qf5xd5#
@@ -28037,7 +27929,6 @@ Qf5xg6+
 Qf5xh3#
 Qf5xh3+
 Qf5xh7#
-Qf5xh7+
 Qf6xb2#
 Qf6xb2+
 Qf6xb6#
@@ -28073,7 +27964,6 @@ Qf6xg5+
 Qf6xg6#
 Qf6xg6+
 Qf6xg7#
-Qf6xg7+
 Qf6xh4#
 Qf6xh4+
 Qf7xa2#
@@ -28111,7 +28001,6 @@ Qf7xg6+
 Qf7xg7#
 Qf7xg7+
 Qf7xg8#
-Qf7xg8+
 Qf7xh5#
 Qf7xh5+
 Qf8xa3#
@@ -28145,7 +28034,6 @@ Qf8xf7+
 Qf8xg7#
 Qf8xg7+
 Qf8xg8#
-Qf8xg8+
 Qf8xh6#
 Qf8xh6+
 Qg1xa7#
@@ -28253,7 +28141,6 @@ Qg3xg6+
 Qg3xg7#
 Qg3xg7+
 Qg3xh2#
-Qg3xh2+
 Qg3xh4#
 Qg3xh4+
 Qg4xc4#
@@ -28365,7 +28252,6 @@ Qg6xg7+
 Qg6xh5#
 Qg6xh5+
 Qg6xh7#
-Qg6xh7+
 Qg7xb2#
 Qg7xb2+
 Qg7xb7#
@@ -28533,7 +28419,6 @@ Qh3xg3+
 Qh3xg4#
 Qh3xg4+
 Qh3xh2#
-Qh3xh2+
 Qh3xh4#
 Qh3xh4+
 Qh3xh5#
@@ -28639,7 +28524,6 @@ Qh6xh4+
 Qh6xh5#
 Qh6xh5+
 Qh6xh7#
-Qh6xh7+
 Qh7xb1#
 Qh7xb1+
 Qh7xb7#
