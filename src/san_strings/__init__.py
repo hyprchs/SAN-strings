@@ -1,3 +1,5 @@
+from typing import Collection
+
 import chess
 
 from chess_action_space import iter_action_space
@@ -21,31 +23,36 @@ _b = chess.Board.empty()
 """ A blank `chess.Board` to use for generating moves. """
 
 
-def gen_sans() -> set[str]:
-    sans: set[str] = set()
+def gen_sans_for_move(
+    move: chess.Move,
+    *,
+    piece_type_filter: Collection[chess.PieceType] | None = None,
+) -> set[str]:
+    if piece_type_filter is None:
+        piece_type_filter = [*chess.PIECE_TYPES]
 
-    for move in iter_action_space():
-        move_sans: set[str] = set()
+    move_sans: set[str] = set()
 
-        def add_san(san_parts: SanParts) -> None:
-            san_parts = san_parts.copy()
-            if san_parts.check_or_mate is not None:
-                raise ValueError('Should only pass non-check/mate `SanParts`')
+    def add_san(san_parts: SanParts) -> None:
+        san_parts = san_parts.copy()
+        if san_parts.check_or_mate is not None:
+            raise ValueError('Should only pass non-check/mate `SanParts`')
+        move_sans.add(san_parts.rendered)
+        if san_parts.can_cause_check:
+            # TODO: Prove that a SAN can cause check if and only if it can cause checkmate
+            san_parts.check_or_mate = '+'
             move_sans.add(san_parts.rendered)
-            if san_parts.can_cause_check:
-                # TODO: Prove that a SAN can cause check if and only if it can cause checkmate
-                san_parts.check_or_mate = '+'
-                move_sans.add(san_parts.rendered)
-                san_parts.check_or_mate = '#'
-                move_sans.add(san_parts.rendered)
+            san_parts.check_or_mate = '#'
+            move_sans.add(san_parts.rendered)
 
-        # Set vars we might use later.
-        from_file = chess.square_file(move.from_square)
-        from_rank = chess.square_rank(move.from_square)
+    # Set vars we might use later.
+    from_file = chess.square_file(move.from_square)
+    from_rank = chess.square_rank(move.from_square)
 
-        #################
-        #     Pawns     #
-        #################
+    #################
+    #     Pawns     #
+    #################
+    if chess.PAWN in piece_type_filter:
         if can_be_pawn_move(
             move,
             enforce_is_capture_as=False,
@@ -94,25 +101,18 @@ def gen_sans() -> set[str]:
                     )
                 )
 
-        #################
-        #     Kings     #
-        #################
+    #################
+    #     Kings     #
+    #################
+    if chess.KING in piece_type_filter:
         # Non-castling
-        if can_be_king_move(
-            move,
-            enforce_is_kingside_castling_as=False,
-            enforce_is_queenside_castling_as=False,
-        ):
+        if can_be_king_move(move, enforce_is_castling_as=False):
             add_san(KingSanParts(to_square=move.to_square))
             # Capture king moves are trivially possible when non-capture is possible - TODO: prove with FENs
             add_san(KingSanParts(is_capture=True, to_square=move.to_square))
 
         # Kingside castling
-        if can_be_king_move(
-            move,
-            enforce_is_kingside_castling_as=True,
-            enforce_is_queenside_castling_as=False,
-        ):
+        if can_be_king_move(move, enforce_is_castling_as='kingside'):
             san = 'O-O'
             move_sans.add(san)
             # Capture/check castling SANs are trivially possible - TODO: prove with FENs
@@ -120,74 +120,80 @@ def gen_sans() -> set[str]:
             move_sans.add(f'{san}#')
 
         # Queenside castling
-        if can_be_king_move(
-            move,
-            enforce_is_kingside_castling_as=False,
-            enforce_is_queenside_castling_as=True,
-        ):
+        if can_be_king_move(move, enforce_is_castling_as='queenside'):
             san = 'O-O-O'
             move_sans.add(san)
             # Capture/check castling SANs are trivially possible - TODO: prove with FENs
             move_sans.add(f'{san}+')
             move_sans.add(f'{san}#')
 
-        ########################################
-        #     Knights/Bishops/Rooks/Queens     #
-        ########################################
-        for piece_type in (chess.KNIGHT, chess.BISHOP, chess.ROOK, chess.QUEEN):
-            if can_be_nbrq_move_by(piece_type, move):
-                # Non-disambiguated
-                #   - captures
-                #   - capture checks
-                #   - capture checkmates
-                #   - non-capture checks
-                #   - non-capture checkmates
-                # are trivially always possible for these piece types.
-                # This is because non-disambiguated moves can always cause new squares to be attacked.
-                # TODO: Prove with FENs
-                add_san(NBRQSanParts(piece_type=piece_type, to_square=move.to_square))
-                add_san(
-                    NBRQSanParts(
-                        piece_type=piece_type, is_capture=True, to_square=move.to_square
-                    )
+    ########################################
+    #     Knights/Bishops/Rooks/Queens     #
+    ########################################
+    for piece_type in (chess.KNIGHT, chess.BISHOP, chess.ROOK, chess.QUEEN):
+        if piece_type not in piece_type_filter:
+            continue
+
+        if can_be_nbrq_move_by(piece_type, move):
+            # Non-disambiguated
+            #   - captures
+            #   - capture checks
+            #   - capture checkmates
+            #   - non-capture checks
+            #   - non-capture checkmates
+            # are trivially always possible for these piece types.
+            # This is because non-disambiguated moves can always cause new squares to be attacked.
+            # TODO: Prove with FENs
+            add_san(NBRQSanParts(piece_type=piece_type, to_square=move.to_square))
+            add_san(
+                NBRQSanParts(
+                    piece_type=piece_type, is_capture=True, to_square=move.to_square
                 )
+            )
 
-                for is_capture in (False, True):
-                    if can_require_file_disambiguator(move=move, piece_type=piece_type):
-                        add_san(
-                            NBRQSanParts(
-                                piece_type=piece_type,
-                                file_disambiguator=from_file,
-                                is_capture=is_capture,
-                                to_square=move.to_square,
-                            )
+            for is_capture in (False, True):
+                if can_require_file_disambiguator(move=move, piece_type=piece_type):
+                    add_san(
+                        NBRQSanParts(
+                            piece_type=piece_type,
+                            file_disambiguator=from_file,
+                            is_capture=is_capture,
+                            to_square=move.to_square,
                         )
+                    )
 
-                    if can_require_rank_disambiguator(move=move, piece_type=piece_type):
-                        add_san(
-                            NBRQSanParts(
-                                piece_type=piece_type,
-                                rank_disambiguator=from_rank,
-                                is_capture=is_capture,
-                                to_square=move.to_square,
-                            )
+                if can_require_rank_disambiguator(move=move, piece_type=piece_type):
+                    add_san(
+                        NBRQSanParts(
+                            piece_type=piece_type,
+                            rank_disambiguator=from_rank,
+                            is_capture=is_capture,
+                            to_square=move.to_square,
                         )
+                    )
 
-                    if can_require_full_square_disambiguator(
-                        move=move,
-                        piece_type=piece_type,
-                    ):
-                        add_san(
-                            NBRQSanParts(
-                                piece_type=piece_type,
-                                file_disambiguator=from_file,
-                                rank_disambiguator=from_rank,
-                                is_capture=is_capture,
-                                to_square=move.to_square,
-                            )
+                if can_require_full_square_disambiguator(
+                    move=move,
+                    piece_type=piece_type,
+                ):
+                    add_san(
+                        NBRQSanParts(
+                            piece_type=piece_type,
+                            file_disambiguator=from_file,
+                            rank_disambiguator=from_rank,
+                            is_capture=is_capture,
+                            to_square=move.to_square,
                         )
+                    )
 
-        assert move_sans, f'Action {move} did not generate any SANs'
+    return move_sans
+
+
+def gen_sans() -> set[str]:
+    sans: set[str] = set()
+
+    for move in iter_action_space():
+        move_sans = gen_sans_for_move(move)
         sans.update(move_sans)
 
     return sans

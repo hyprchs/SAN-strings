@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import math
 from functools import cache
+from typing import Literal
 
 import chess
 
@@ -79,124 +80,41 @@ def attacked_by_mask(b: chess.Board, color: chess.Color) -> int:
     return attacks
 
 
-def get_occupied_and_attacked_by_wb_masks(
+def get_occupied_and_attacked_by_us_them_masks(
     b: chess.Board,
-    move: chess.Move,
+    *,
+    pov: chess.Color = chess.WHITE,
 ) -> tuple[chess.Bitboard, chess.Bitboard, chess.Bitboard]:
     """
-    Get masks of squares that are occupied, attacked by white, and attacked by black
-    before `move` unioned with those after `move`.
+    Get masks of squares that are occupied, squares attacked by us, and squares attacked by them, where we are `pov`.
     """
-    current_occupied_mask = b.occupied
-    current_attacked_by_white_mask = attacked_by_mask(b, chess.WHITE)
-    current_attacked_by_black_mask = attacked_by_mask(b, chess.BLACK)
+    occupied_mask = b.occupied
+    attacked_by_us_mask = attacked_by_mask(b, pov)
+    attacked_by_them_mask = attacked_by_mask(b, not pov)
+    return occupied_mask, attacked_by_us_mask, attacked_by_them_mask
 
-    b.push(move)
-    next_occupied_mask = b.occupied
-    next_attacked_by_white_mask = attacked_by_mask(b, chess.WHITE)
-    next_attacked_by_black_mask = attacked_by_mask(b, chess.BLACK)
-    b.pop()
 
-    occupied_mask = current_occupied_mask | next_occupied_mask
-    attacked_by_white_mask = (
-        current_attacked_by_white_mask | next_attacked_by_white_mask
+def _file_rank_sliding_deltas(s1: chess.Square, s2: chess.Square) -> tuple[int, int]:
+    assert s1 != s2, 's1 and s2 must be different squares'
+
+    file_delta = chess.square_file(s2) - chess.square_file(s1)
+    rank_delta = chess.square_rank(s2) - chess.square_rank(s1)
+
+    assert 0 in (file_delta, rank_delta) or abs(file_delta) == abs(rank_delta), (
+        's1 and s2 must be on the same file, rank, or diagonal; got '
+        f'{chess.square_name(s1)} and {chess.square_name(s2)}'
     )
-    attacked_by_black_mask = (
-        current_attacked_by_black_mask | next_attacked_by_black_mask
-    )
 
-    return occupied_mask, attacked_by_white_mask, attacked_by_black_mask
+    file_delta = int(math.copysign(1, file_delta)) if file_delta else 0
+    rank_delta = int(math.copysign(1, rank_delta)) if rank_delta else 0
 
-
-def _place_kings(
-    b: chess.Board,
-    *,
-    move: chess.Move,
-    exclude_mask: chess.Bitboard = chess.BB_EMPTY,
-) -> chess.Board:
-    """
-    Place a white and black king on non-attacked squares on a copy of `board`, optionally excluding
-    additional squares set in `exclude_mask`. Raises `ValueError` if a valid configuration of kings
-    cannot be found.
-    """
-    if b.kings:
-        raise ValueError('Board cannot already contain kings')
-
-    b = b.copy()
-
-    occupied_mask, attacked_by_white_mask, attacked_by_black_mask = (
-        get_occupied_and_attacked_by_wb_masks(b, move)
-    )
-    base_candidates = chess.BB_ALL ^ (occupied_mask | exclude_mask)
-    if not base_candidates:
-        raise ValueError(
-            'No squares available to place any king (all excluded or occupied).'
-        )
-    w_king_candidates = base_candidates & ~attacked_by_black_mask
-    b_king_candidates = base_candidates & ~attacked_by_white_mask
-    if not w_king_candidates or not b_king_candidates:
-        raise ValueError('No legal initial candidates for placing one or both kings')
-
-    # Place white first
-    for white_king_sq in chess.scan_forward(w_king_candidates):
-        b_new = b.copy()
-
-        # Place first king.
-        b_new.set_piece_at(white_king_sq, chess.Piece(chess.KING, chess.WHITE))
-
-        # Recompute availability and second king candidates after placement.
-        new_occupied_mask, new_attacked_by_white_mask, new_attacked_by_black_mask = (
-            get_occupied_and_attacked_by_wb_masks(b_new, move)
-        )
-        new_base_candidates = chess.BB_ALL ^ (new_occupied_mask | exclude_mask)
-        if not new_base_candidates:
-            continue
-        new_w_king_candidates = new_base_candidates & ~new_attacked_by_black_mask
-        new_b_king_candidates = new_base_candidates & ~new_attacked_by_white_mask
-        if not new_w_king_candidates or not new_b_king_candidates:
-            continue
-
-        # Undo and continue the white king removed all the black king's candidate squares.
-        if not new_b_king_candidates:
-            continue
-
-        # Return first candidate if we have any.
-        b_king_sq = next(chess.scan_forward(new_b_king_candidates))
-        b_new.set_piece_at(b_king_sq, chess.Piece(chess.KING, chess.BLACK))
-        return b_new
-
-    raise ValueError('Failed to place both kings without checks.')
+    return file_delta, rank_delta
 
 
-def place_black_king(
-    b: chess.Board,
-    *,
-    move: chess.Move,
-    exclude_mask: chess.Bitboard = chess.BB_EMPTY,
-) -> chess.Board:
-    if (
-        not (b.kings & b.occupied_co[chess.WHITE])
-        or b.kings & b.occupied_co[chess.BLACK]
-    ):
-        raise ValueError(
-            'Board must contain a white king and must not contain a black king'
-        )
-
-    b = b.copy()
-    occupied_mask, attacked_by_white_mask, attacked_by_black_mask = (
-        get_occupied_and_attacked_by_wb_masks(b, move)
-    )
-    base_candidates = chess.BB_ALL ^ (occupied_mask | exclude_mask)
-    b_king_candidates = base_candidates & ~attacked_by_white_mask
-    if not b_king_candidates:
-        raise ValueError(
-            'No squares available to place black king (all are excluded, occupied, or attacked by white)'
-        )
-
-    # Return first candidate now that we know we have some.
-    b_king_sq = next(chess.scan_forward(b_king_candidates))
-    b.set_piece_at(b_king_sq, chess.Piece(chess.KING, chess.BLACK))
-    return b
+def _file_rank_sliding_delta_to_square_delta(
+    *, file_delta: int, rank_delta: int
+) -> int:
+    return rank_delta * 8 + file_delta
 
 
 def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
@@ -210,20 +128,31 @@ def _sliding_delta(s1: chess.Square, s2: chess.Square) -> int:
     >>> chess.C3 + 9 == chess.D4
     True
     """
-    assert s1 != s2, 's1 and s2 must be different squares'
-
-    x_delta = chess.square_file(s2) - chess.square_file(s1)
-    y_delta = chess.square_rank(s2) - chess.square_rank(s1)
-
-    assert 0 in (x_delta, y_delta) or abs(x_delta) == abs(y_delta), (
-        's1 and s2 must be on the same file, rank, or diagonal; got '
-        f'{chess.square_name(s1)} and {chess.square_name(s2)}'
+    file_delta, rank_delta = _file_rank_sliding_deltas(s1, s2)
+    return _file_rank_sliding_delta_to_square_delta(
+        file_delta=file_delta,
+        rank_delta=rank_delta,
     )
 
-    x_delta = int(math.copysign(1, x_delta)) if x_delta else 0
-    y_delta = int(math.copysign(1, y_delta)) if y_delta else 0
 
-    return y_delta * 8 + x_delta
+def _sliding_away_delta(s1: chess.Square, s2: chess.Square) -> int:
+    """
+    Get the delta of the index in `chess.SQUARES` required to move
+    one step from `s1` away from `s2`. Raises `AssertionError` if `s1`
+    and `s2` are not on the same file, rank, or diagonal.
+
+    >>> _sliding_away_delta(chess.D4, chess.F6)
+    -9
+    >>> chess.D4 + -9 == chess.C3
+    True
+    """
+    file_delta, rank_delta = _file_rank_sliding_deltas(s1, s2)
+    file_delta = -file_delta
+    rank_delta = -rank_delta
+    return _file_rank_sliding_delta_to_square_delta(
+        file_delta=file_delta,
+        rank_delta=rank_delta,
+    )
 
 
 def extend_ray(
@@ -245,6 +174,29 @@ def extend_ray(
     . . . . . . . .
     """
     d = _sliding_delta(from_sq, towards_sq)
+    # noinspection PyProtectedMember
+    return chess._sliding_attacks(from_sq, 0, [d]) | chess.BB_SQUARES[from_sq]
+
+
+def extend_ray_away(
+    from_sq: chess.Square,
+    away_from_sq: chess.Square,
+) -> chess.Bitboard:
+    """
+    Get a `chess.Bitboard` of all the squares from (and including) `from_sq`
+    in the opposite direction of `away_from_sq` and continuing on to an edge of the board.
+
+    >>> print(chess.SquareSet(extend_ray(chess.D4, chess.F6)))
+    . . . . . . . .
+    . . . . . . . .
+    . . . . . . . .
+    . . . . . . . .
+    . . . 1 . . . .
+    . . 1 . . . . .
+    . 1 . . . . . .
+    1 . . . . . . .
+    """
+    d = _sliding_away_delta(from_sq, away_from_sq)
     # noinspection PyProtectedMember
     return chess._sliding_attacks(from_sq, 0, [d]) | chess.BB_SQUARES[from_sq]
 
@@ -376,15 +328,8 @@ def can_be_queen_move(move: chess.Move) -> bool:
 def can_be_king_move(
     move: chess.Move,
     *,
-    enforce_is_kingside_castling_as: bool | None = None,
-    enforce_is_queenside_castling_as: bool | None = None,
+    enforce_is_castling_as: Literal['kingside', 'queenside', False, None] = None,
 ) -> bool:
-    if enforce_is_kingside_castling_as and enforce_is_queenside_castling_as:
-        raise ValueError(
-            'Cannot set both `enforce_is_kingside_castling_as` and '
-            '`enforce_is_queenside_castling_as` to `True`'
-        )
-
     _assert_from_to_squares_different(move)
     df, dr = file_rank_deltas(move)
 
@@ -397,24 +342,22 @@ def can_be_king_move(
         (chess.E1, chess.C1),
         (chess.E8, chess.C8),
     )
-
-    if enforce_is_kingside_castling_as is not None:
-        if enforce_is_kingside_castling_as:
-            return can_be_kingside_castling_move
-        else:
-            return can_be_non_castling_move
-
-    if enforce_is_queenside_castling_as is not None:
-        if enforce_is_queenside_castling_as:
-            return can_be_queenside_castling_move
-        else:
-            return can_be_non_castling_move
-
-    return (
-        can_be_non_castling_move
-        or can_be_kingside_castling_move
-        or can_be_queenside_castling_move
+    can_be_castling_move = (
+        can_be_kingside_castling_move or can_be_queenside_castling_move
     )
+
+    if enforce_is_castling_as is not None:
+        if enforce_is_castling_as == 'kingside':
+            return can_be_kingside_castling_move
+        if enforce_is_castling_as == 'queenside':
+            return can_be_queenside_castling_move
+        if enforce_is_castling_as is False:
+            return can_be_non_castling_move and not can_be_castling_move
+        raise ValueError(
+            f'Invalid `enforce_is_castling_as` option {enforce_is_castling_as}'
+        )
+
+    return can_be_non_castling_move or can_be_castling_move
 
 
 def can_require_file_disambiguator(

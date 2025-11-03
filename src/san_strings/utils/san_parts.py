@@ -10,21 +10,18 @@ from typing import Iterable
 import chess
 
 from san_strings.constants import (
-    CAPTURABLE_PIECE_TYPES,
     CORNER_SQUARES,
     EDGE_SQUARES,
     NON_PAWN_SAN_REGEX,
     PAWN_SAN_REGEX,
 )
 from san_strings.utils import (
-    _place_kings,
     attacked_by_mask,
     extend_ray,
     is_diagonal_slider,
     is_orthogonal_slider,
     is_slider,
     ordinal,
-    place_black_king,
 )
 
 
@@ -116,7 +113,7 @@ class SanParts(ABC):
 
     @property
     @abstractmethod
-    def can_cause_new_squares_to_be_attacked(self):
+    def moving_piece_can_cause_check(self):
         """
         Return `True` iff the moving piece can directly cause new squares to be attacked on the board
         (not via discoveries).
@@ -128,10 +125,7 @@ class SanParts(ABC):
         """
         Return `True` iff the move can cause check either directly by attacking new squares or with a discovery.
         """
-        return (
-            self.can_cause_discovered_attack
-            or self.can_cause_new_squares_to_be_attacked
-        )
+        return self.can_cause_discovered_attack or self.moving_piece_can_cause_check
 
     @classmethod
     def from_san(cls, san: str) -> SanParts:
@@ -246,7 +240,7 @@ class PawnSanParts(SanParts):
             from_file = self.file_disambiguator
         else:
             from_file = chess.square_file(self.to_square)
-            # Non-captures: set additional possibilities for double moves
+            # Non-captures: add possibilities for double moves
             to_rank_to_w_candidate_from_ranks_map[3].append(1)  # 2nd rank
             to_rank_to_b_candidate_from_ranks_map[4].append(6)  # 7th rank
 
@@ -283,53 +277,14 @@ class PawnSanParts(SanParts):
                     self.to_square,
                     promotion=self.promotion_piece_type,
                 )
-                exclude_mask = chess.between(from_square, self.to_square)
                 b_new = b.copy()
                 b_new.set_piece_at(from_square, chess.Piece(self.piece_type, color))
 
                 # For captures, set a black piece at `to_square`.
-                # Iterate to try all capturable black pieces in case the captured black piece
-                # restricts options for the white king. Intuitively it's probably hard or impossible
-                # for this to ever happen, but it's included for completeness.
                 if self.is_capture:
-                    b_kings = None
-                    for captured_piece_type in CAPTURABLE_PIECE_TYPES:
-                        b_new.set_piece_at(
-                            self.to_square,
-                            chess.Piece(captured_piece_type, not color),
-                        )
-
-                        if not place_kings:
-                            b_kings = b_new
-                            break
-
-                        try:
-                            b_kings = _place_kings(
-                                b_new,
-                                move=move,
-                                exclude_mask=exclude_mask,
-                            )
-                        except ValueError:
-                            continue
-                        else:
-                            break
-
-                    if b_kings is None:
-                        raise ValueError(
-                            f'Found valid piece configuration for SAN {self.rendered}, '
-                            f'but nowhere to place kings'
-                        )
-                    b_new = b_kings
-                else:
-                    if place_kings:
-                        try:
-                            b_new = _place_kings(
-                                b_new,
-                                move=move,
-                                exclude_mask=exclude_mask,
-                            )
-                        except ValueError:
-                            continue
+                    b_new.set_piece_at(
+                        self.to_square, chess.Piece(chess.KNIGHT, not color)
+                    )
 
                 actual_san = b_new.san(move)
                 if actual_san != self.rendered:
@@ -357,7 +312,7 @@ class PawnSanParts(SanParts):
         return chess.square_file(self.to_square) not in (0, 7)
 
     @property
-    def can_cause_new_squares_to_be_attacked(self):
+    def moving_piece_can_cause_check(self):
         # Pawns always cause new squares to be attacked. This is trivially true for non-promotions
         # and true for promotions because the promoted piece must attack new squares.
         return True
@@ -465,9 +420,6 @@ class NBRQSanParts(SanParts):
                 assert from_square_name in chess.SQUARE_NAMES
                 from_square = chess.parse_square(from_square_name)
                 move = chess.Move(from_square, self.to_square)
-                exclude_mask = chess.BB_ALL & chess.between(from_square, self.to_square)
-                if is_slider(self.piece_type):
-                    exclude_mask |= extend_ray(self.to_square, from_square)
 
                 # Make sure the `from_square` attacks the `to_square`, otherwise this was an invalid SAN.
                 if not to_square_attacks_mask & chess.BB_SQUARES[from_square]:
@@ -523,53 +475,12 @@ class NBRQSanParts(SanParts):
                     b_new = b.copy()
                     b_new.set_piece_at(same_file_piece_square, white_piece)
                     b_new.set_piece_at(same_rank_piece_square, white_piece)
-                    exclude_mask_new = (
-                        exclude_mask
-                        | chess.between(same_file_piece_square, self.to_square)
-                        | chess.between(same_rank_piece_square, self.to_square)
-                    )
 
                     # For captures, set a black piece at `to_square`.
-                    # Iterate to try all capturable black pieces in case the captured black piece
-                    # restricts options for the white king. Intuitively it's probably hard or impossible
-                    # for this to ever happen, but it's included for completeness.
                     if self.is_capture:
-                        b_kings = None
-
-                        for captured_piece_type in CAPTURABLE_PIECE_TYPES:
-                            b_new.set_piece_at(
-                                self.to_square,
-                                chess.Piece(captured_piece_type, chess.BLACK),
-                            )
-
-                            if not place_kings:
-                                b_kings = b_new
-                                break
-
-                            try:
-                                b_kings = _place_kings(
-                                    b_new,
-                                    move=move,
-                                    exclude_mask=exclude_mask_new,
-                                )
-                            except ValueError:
-                                continue
-                            else:
-                                break
-
-                        if b_kings is None:
-                            continue
-                        b_new = b_kings
-                    else:
-                        if place_kings:
-                            try:
-                                b_new = _place_kings(
-                                    b_new,
-                                    move=move,
-                                    exclude_mask=exclude_mask_new,
-                                )
-                            except ValueError:
-                                continue
+                        b_new.set_piece_at(
+                            self.to_square, chess.Piece(chess.KNIGHT, chess.BLACK)
+                        )
 
                     # Validate that we got a position where the SAN matches exactly.
                     actual_san = b_new.san(move)
@@ -612,13 +523,7 @@ class NBRQSanParts(SanParts):
                         candidate_other_piece_squares &= ~extend_ray(
                             self.to_square, from_square
                         )
-
                     move = chess.Move(from_square, self.to_square)
-                    exclude_mask = chess.BB_ALL & chess.between(
-                        from_square, self.to_square
-                    )
-                    if is_slider(self.piece_type):
-                        exclude_mask |= extend_ray(self.to_square, from_square)
 
                     # Place the moving piece.
                     b_from_square = b.copy()
@@ -628,54 +533,15 @@ class NBRQSanParts(SanParts):
                     for other_piece_square in candidate_other_piece_squares:
                         b_new = b_from_square.copy()
                         b_new.set_piece_at(other_piece_square, white_piece)
-                        exclude_mask_new = exclude_mask | chess.between(
-                            other_piece_square, self.to_square
-                        )
-                        if is_slider(self.piece_type):
-                            exclude_mask_new |= extend_ray(
-                                self.to_square, other_piece_square
-                            )
 
                         # For captures, set a black piece at `to_square`.
                         # Iterate to try all capturable black pieces in case the captured black piece
                         # restricts options for the white king. Intuitively it's probably hard or impossible
                         # for this to ever happen, but it's included for completeness.
                         if self.is_capture:
-                            b_kings = None
-                            for captured_piece_type in CAPTURABLE_PIECE_TYPES:
-                                b_new.set_piece_at(
-                                    self.to_square,
-                                    chess.Piece(captured_piece_type, chess.BLACK),
-                                )
-
-                                if not place_kings:
-                                    b_kings = b_new
-                                    break
-
-                                try:
-                                    b_kings = _place_kings(
-                                        b_new,
-                                        move=move,
-                                        exclude_mask=exclude_mask_new,
-                                    )
-                                except ValueError:
-                                    continue
-                                else:
-                                    break
-
-                            if b_kings is None:
-                                continue
-                            b_new = b_kings
-                        else:
-                            if place_kings:
-                                try:
-                                    b_new = _place_kings(
-                                        b_new,
-                                        move=move,
-                                        exclude_mask=exclude_mask_new,
-                                    )
-                                except ValueError:
-                                    continue
+                            b_new.set_piece_at(
+                                self.to_square, chess.Piece(chess.KNIGHT, chess.BLACK)
+                            )
 
                         # Validate that we got a position where the SAN matches exactly.
                         actual_san = b_new.san(move)
@@ -718,11 +584,6 @@ class NBRQSanParts(SanParts):
                 # Iterate over possible `from_square`s
                 for from_square in candidate_from_squares:
                     move = chess.Move(from_square, self.to_square)
-                    exclude_mask = chess.BB_ALL & chess.between(
-                        from_square, self.to_square
-                    )
-                    if is_slider(self.piece_type):
-                        exclude_mask |= extend_ray(self.to_square, from_square)
                     from_file = chess.square_file(from_square)
 
                     # Get candidate squares for the other piece that can cause rank ambiguity.
@@ -744,57 +605,12 @@ class NBRQSanParts(SanParts):
                     for other_piece_square in candidate_other_piece_squares:
                         b_new = b_from_square.copy()
                         b_new.set_piece_at(other_piece_square, white_piece)
-                        exclude_mask_new = exclude_mask | chess.between(
-                            other_piece_square, self.to_square
-                        )
-                        if is_slider(self.piece_type):
-                            exclude_mask_new |= extend_ray(
-                                self.to_square, other_piece_square
-                            )
 
                         # For captures, set a black piece at `to_square`.
-                        # Iterate to try all capturable black pieces in case the captured black piece
-                        # restricts options for the white king. Intuitively it's probably hard or impossible
-                        # for this to ever happen, but it's included for completeness.
                         if self.is_capture:
-                            b_kings = None
-                            for captured_piece_type in CAPTURABLE_PIECE_TYPES:
-                                b_new.set_piece_at(
-                                    self.to_square,
-                                    chess.Piece(captured_piece_type, chess.BLACK),
-                                )
-
-                                if not place_kings:
-                                    b_kings = b_new
-                                    break
-
-                                try:
-                                    b_kings = _place_kings(
-                                        b_new,
-                                        move=move,
-                                        exclude_mask=exclude_mask_new,
-                                    )
-                                except ValueError:
-                                    continue
-                                else:
-                                    break
-
-                            if b_kings is None:
-                                raise ValueError(
-                                    f'Found valid piece configuration for SAN {self.rendered}, '
-                                    f'but nowhere to place kings'
-                                )
-                            b_new = b_kings
-                        else:
-                            if place_kings:
-                                try:
-                                    b_new = _place_kings(
-                                        b_new,
-                                        move=move,
-                                        exclude_mask=exclude_mask_new,
-                                    )
-                                except ValueError:
-                                    continue
+                            b_new.set_piece_at(
+                                self.to_square, chess.Piece(chess.KNIGHT, chess.BLACK)
+                            )
 
                         # Validate that we got a position where the SAN matches exactly.
                         actual_san = b_new.san(move)
@@ -813,9 +629,6 @@ class NBRQSanParts(SanParts):
 
                 for from_square in candidate_from_squares:
                     move = chess.Move(from_square, self.to_square)
-                    exclude_mask = chess.between(from_square, self.to_square)
-                    if is_slider(self.piece_type):
-                        exclude_mask |= extend_ray(self.to_square, from_square)
                     b_new = b.copy()
                     b_new.set_piece_at(from_square, white_piece)
 
@@ -824,44 +637,9 @@ class NBRQSanParts(SanParts):
                     # restricts options for the white king. Intuitively it's probably hard or impossible
                     # for this to ever happen, but it's included for completeness.
                     if self.is_capture:
-                        b_kings = None
-                        for captured_piece_type in CAPTURABLE_PIECE_TYPES:
-                            b_new.set_piece_at(
-                                self.to_square,
-                                chess.Piece(captured_piece_type, chess.BLACK),
-                            )
-
-                            if not place_kings:
-                                b_kings = b_new
-                                break
-
-                            try:
-                                b_kings = _place_kings(
-                                    b_new,
-                                    move=move,
-                                    exclude_mask=exclude_mask,
-                                )
-                            except ValueError:
-                                continue
-                            else:
-                                break
-
-                        if b_kings is None:
-                            raise ValueError(
-                                f'Found valid piece configuration for SAN {self.rendered}, '
-                                f'but nowhere to place kings'
-                            )
-                        b_new = b_kings
-                    else:
-                        if place_kings:
-                            try:
-                                b_new = _place_kings(
-                                    b_new,
-                                    move=move,
-                                    exclude_mask=exclude_mask,
-                                )
-                            except ValueError:
-                                continue
+                        b_new.set_piece_at(
+                            self.to_square, chess.Piece(chess.KNIGHT, chess.BLACK)
+                        )
 
                     actual_san = b_new.san(move)
                     if actual_san != self.rendered:
@@ -906,12 +684,18 @@ class NBRQSanParts(SanParts):
         )
 
     @property
-    def can_cause_new_squares_to_be_attacked(self):
+    def moving_piece_can_cause_check(self):
         for b, move in self.iter_positions:
+            occupied_before = b.occupied
             attacked_by_mask_before = attacked_by_mask(b, chess.WHITE)
             b.push(move)
+            occupied_after = b.occupied
             attacked_by_mask_after = attacked_by_mask(b, chess.WHITE)
-            if attacked_by_mask_after & ~attacked_by_mask_before:
+            if (
+                attacked_by_mask_after
+                & ~attacked_by_mask_before
+                & ~(occupied_before | occupied_after)
+            ):
                 return True
         return False
 
@@ -1003,51 +787,14 @@ class KingSanParts(SanParts):
 
         for from_square in candidate_from_squares:
             move = chess.Move(from_square, self.to_square)
-            exclude_mask = chess.between(from_square, self.to_square)
-            if is_slider(self.piece_type):
-                exclude_mask |= extend_ray(self.to_square, from_square)
             b_new = b.copy()
             b_new.set_piece_at(from_square, white_piece)
 
             # For captures, set a black piece at `to_square`.
-            # Iterate to try all capturable black pieces in case the captured black piece
-            # restricts options for the white king. Intuitively it's probably hard or impossible
-            # for this to ever happen, but it's included for completeness.
             if self.is_capture:
-                b_kings = None
-                for captured_piece_type in CAPTURABLE_PIECE_TYPES:
-                    b_new.set_piece_at(
-                        self.to_square,
-                        chess.Piece(captured_piece_type, chess.BLACK),
-                    )
-
-                    if not place_kings:
-                        b_kings = b_new
-                        break
-
-                    try:
-                        b_kings = place_black_king(
-                            b_new,
-                            move=move,
-                            exclude_mask=exclude_mask,
-                        )
-                    except ValueError:
-                        continue
-                    else:
-                        break
-
-                if b_kings is None:
-                    raise ValueError(
-                        f'Found valid piece configuration for SAN {self.rendered}, '
-                        f'but nowhere to place kings'
-                    )
-                b_new = b_kings
-            else:
-                if place_kings:
-                    try:
-                        b_new = place_black_king(b_new, move=move)
-                    except ValueError:
-                        continue
+                b_new.set_piece_at(
+                    self.to_square, chess.Piece(chess.KNIGHT, chess.BLACK)
+                )
 
             actual_san = b_new.san(move)
             if actual_san != self.rendered:
@@ -1072,13 +819,8 @@ class KingSanParts(SanParts):
         return True
 
     @property
-    def can_cause_new_squares_to_be_attacked(self):
-        for b, move in self.iter_positions:
-            attacked_by_mask_before = attacked_by_mask(b, chess.WHITE)
-            b.push(move)
-            attacked_by_mask_after = attacked_by_mask(b, chess.WHITE)
-            if attacked_by_mask_after & ~attacked_by_mask_before:
-                return True
+    def moving_piece_can_cause_check(self):
+        # A king causing check would mean stepping into check
         return False
 
     @classmethod
