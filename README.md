@@ -1,6 +1,8 @@
 # SAN Strings
 
-This simple script generates all **29,274** possible [Standard Algebraic Notation (SAN)](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#:~:text=Algebraic%20notation%20(or%20AN)%20is,books%2C%20magazines%2C%20and%20newspapers.) 
+Small lib for generating all possible Standard Algebraic Notation (SAN) chess move strings.
+
+This code generates all **29,064** possible [Standard Algebraic Notation (SAN)](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)#:~:text=Algebraic%20notation%20(or%20AN)%20is,books%2C%20magazines%2C%20and%20newspapers.) 
 strings for chess moves, with logic to avoid listing SAN strings that can never actually occur for geometric reasons.
 
 If someone notices missing strings, or strings which are generated but can never occur, please open an issue!*

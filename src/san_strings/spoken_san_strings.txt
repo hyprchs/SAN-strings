@@ -50,6 +50,7 @@ takes
 a takes
 b takes
 c takes
+castles
 d takes
 e takes
 f takes
@@ -552,294 +553,246 @@ rook 1 h 4
 rook 1 h 5
 rook 1 h 6
 rook 1 h 7
-rook 2 a 2
 rook 2 a 3
 rook 2 a 4
 rook 2 a 5
 rook 2 a 6
 rook 2 a 7
-rook 2 b 2
 rook 2 b 3
 rook 2 b 4
 rook 2 b 5
 rook 2 b 6
 rook 2 b 7
-rook 2 c 2
 rook 2 c 3
 rook 2 c 4
 rook 2 c 5
 rook 2 c 6
 rook 2 c 7
-rook 2 d 2
 rook 2 d 3
 rook 2 d 4
 rook 2 d 5
 rook 2 d 6
 rook 2 d 7
-rook 2 e 2
 rook 2 e 3
 rook 2 e 4
 rook 2 e 5
 rook 2 e 6
 rook 2 e 7
-rook 2 f 2
 rook 2 f 3
 rook 2 f 4
 rook 2 f 5
 rook 2 f 6
 rook 2 f 7
-rook 2 g 2
 rook 2 g 3
 rook 2 g 4
 rook 2 g 5
 rook 2 g 6
 rook 2 g 7
-rook 2 h 2
 rook 2 h 3
 rook 2 h 4
 rook 2 h 5
 rook 2 h 6
 rook 2 h 7
 rook 3 a 2
-rook 3 a 3
 rook 3 a 4
 rook 3 a 5
 rook 3 a 6
 rook 3 a 7
 rook 3 b 2
-rook 3 b 3
 rook 3 b 4
 rook 3 b 5
 rook 3 b 6
 rook 3 b 7
 rook 3 c 2
-rook 3 c 3
 rook 3 c 4
 rook 3 c 5
 rook 3 c 6
 rook 3 c 7
 rook 3 d 2
-rook 3 d 3
 rook 3 d 4
 rook 3 d 5
 rook 3 d 6
 rook 3 d 7
 rook 3 e 2
-rook 3 e 3
 rook 3 e 4
 rook 3 e 5
 rook 3 e 6
 rook 3 e 7
 rook 3 f 2
-rook 3 f 3
 rook 3 f 4
 rook 3 f 5
 rook 3 f 6
 rook 3 f 7
 rook 3 g 2
-rook 3 g 3
 rook 3 g 4
 rook 3 g 5
 rook 3 g 6
 rook 3 g 7
 rook 3 h 2
-rook 3 h 3
 rook 3 h 4
 rook 3 h 5
 rook 3 h 6
 rook 3 h 7
 rook 4 a 2
 rook 4 a 3
-rook 4 a 4
 rook 4 a 5
 rook 4 a 6
 rook 4 a 7
 rook 4 b 2
 rook 4 b 3
-rook 4 b 4
 rook 4 b 5
 rook 4 b 6
 rook 4 b 7
 rook 4 c 2
 rook 4 c 3
-rook 4 c 4
 rook 4 c 5
 rook 4 c 6
 rook 4 c 7
 rook 4 d 2
 rook 4 d 3
-rook 4 d 4
 rook 4 d 5
 rook 4 d 6
 rook 4 d 7
 rook 4 e 2
 rook 4 e 3
-rook 4 e 4
 rook 4 e 5
 rook 4 e 6
 rook 4 e 7
 rook 4 f 2
 rook 4 f 3
-rook 4 f 4
 rook 4 f 5
 rook 4 f 6
 rook 4 f 7
 rook 4 g 2
 rook 4 g 3
-rook 4 g 4
 rook 4 g 5
 rook 4 g 6
 rook 4 g 7
 rook 4 h 2
 rook 4 h 3
-rook 4 h 4
 rook 4 h 5
 rook 4 h 6
 rook 4 h 7
 rook 5 a 2
 rook 5 a 3
 rook 5 a 4
-rook 5 a 5
 rook 5 a 6
 rook 5 a 7
 rook 5 b 2
 rook 5 b 3
 rook 5 b 4
-rook 5 b 5
 rook 5 b 6
 rook 5 b 7
 rook 5 c 2
 rook 5 c 3
 rook 5 c 4
-rook 5 c 5
 rook 5 c 6
 rook 5 c 7
 rook 5 d 2
 rook 5 d 3
 rook 5 d 4
-rook 5 d 5
 rook 5 d 6
 rook 5 d 7
 rook 5 e 2
 rook 5 e 3
 rook 5 e 4
-rook 5 e 5
 rook 5 e 6
 rook 5 e 7
 rook 5 f 2
 rook 5 f 3
 rook 5 f 4
-rook 5 f 5
 rook 5 f 6
 rook 5 f 7
 rook 5 g 2
 rook 5 g 3
 rook 5 g 4
-rook 5 g 5
 rook 5 g 6
 rook 5 g 7
 rook 5 h 2
 rook 5 h 3
 rook 5 h 4
-rook 5 h 5
 rook 5 h 6
 rook 5 h 7
 rook 6 a 2
 rook 6 a 3
 rook 6 a 4
 rook 6 a 5
-rook 6 a 6
 rook 6 a 7
 rook 6 b 2
 rook 6 b 3
 rook 6 b 4
 rook 6 b 5
-rook 6 b 6
 rook 6 b 7
 rook 6 c 2
 rook 6 c 3
 rook 6 c 4
 rook 6 c 5
-rook 6 c 6
 rook 6 c 7
 rook 6 d 2
 rook 6 d 3
 rook 6 d 4
 rook 6 d 5
-rook 6 d 6
 rook 6 d 7
 rook 6 e 2
 rook 6 e 3
 rook 6 e 4
 rook 6 e 5
-rook 6 e 6
 rook 6 e 7
 rook 6 f 2
 rook 6 f 3
 rook 6 f 4
 rook 6 f 5
-rook 6 f 6
 rook 6 f 7
 rook 6 g 2
 rook 6 g 3
 rook 6 g 4
 rook 6 g 5
-rook 6 g 6
 rook 6 g 7
 rook 6 h 2
 rook 6 h 3
 rook 6 h 4
 rook 6 h 5
-rook 6 h 6
 rook 6 h 7
 rook 7 a 2
 rook 7 a 3
 rook 7 a 4
 rook 7 a 5
 rook 7 a 6
-rook 7 a 7
 rook 7 b 2
 rook 7 b 3
 rook 7 b 4
 rook 7 b 5
 rook 7 b 6
-rook 7 b 7
 rook 7 c 2
 rook 7 c 3
 rook 7 c 4
 rook 7 c 5
 rook 7 c 6
-rook 7 c 7
 rook 7 d 2
 rook 7 d 3
 rook 7 d 4
 rook 7 d 5
 rook 7 d 6
-rook 7 d 7
 rook 7 e 2
 rook 7 e 3
 rook 7 e 4
 rook 7 e 5
 rook 7 e 6
-rook 7 e 7
 rook 7 f 2
 rook 7 f 3
 rook 7 f 4
 rook 7 f 5
 rook 7 f 6
-rook 7 f 7
 rook 7 g 2
 rook 7 g 3
 rook 7 g 4
 rook 7 g 5
 rook 7 g 6
-rook 7 g 7
 rook 7 h 2
 rook 7 h 3
 rook 7 h 4
 rook 7 h 5
 rook 7 h 6
-rook 7 h 7
 rook 8 a 2
 rook 8 a 3
 rook 8 a 4
@@ -1502,7 +1455,6 @@ queen 1 b 4
 queen 1 b 5
 queen 1 b 6
 queen 1 b 7
-queen 1 b 8
 queen 1 c 1
 queen 1 c 2
 queen 1 c 3
@@ -1510,7 +1462,6 @@ queen 1 c 4
 queen 1 c 5
 queen 1 c 6
 queen 1 c 7
-queen 1 c 8
 queen 1 d 1
 queen 1 d 2
 queen 1 d 3
@@ -1518,7 +1469,6 @@ queen 1 d 4
 queen 1 d 5
 queen 1 d 6
 queen 1 d 7
-queen 1 d 8
 queen 1 e 1
 queen 1 e 2
 queen 1 e 3
@@ -1526,7 +1476,6 @@ queen 1 e 4
 queen 1 e 5
 queen 1 e 6
 queen 1 e 7
-queen 1 e 8
 queen 1 f 1
 queen 1 f 2
 queen 1 f 3
@@ -1534,7 +1483,6 @@ queen 1 f 4
 queen 1 f 5
 queen 1 f 6
 queen 1 f 7
-queen 1 f 8
 queen 1 g 1
 queen 1 g 2
 queen 1 g 3
@@ -1542,7 +1490,6 @@ queen 1 g 4
 queen 1 g 5
 queen 1 g 6
 queen 1 g 7
-queen 1 g 8
 queen 1 h 1
 queen 1 h 2
 queen 1 h 3
@@ -1574,7 +1521,6 @@ queen 2 c 4
 queen 2 c 5
 queen 2 c 6
 queen 2 c 7
-queen 2 c 8
 queen 2 d 1
 queen 2 d 2
 queen 2 d 3
@@ -1582,7 +1528,6 @@ queen 2 d 4
 queen 2 d 5
 queen 2 d 6
 queen 2 d 7
-queen 2 d 8
 queen 2 e 1
 queen 2 e 2
 queen 2 e 3
@@ -1590,7 +1535,6 @@ queen 2 e 4
 queen 2 e 5
 queen 2 e 6
 queen 2 e 7
-queen 2 e 8
 queen 2 f 1
 queen 2 f 2
 queen 2 f 3
@@ -1598,7 +1542,6 @@ queen 2 f 4
 queen 2 f 5
 queen 2 f 6
 queen 2 f 7
-queen 2 f 8
 queen 2 g 1
 queen 2 g 2
 queen 2 g 3
@@ -1646,7 +1589,6 @@ queen 3 d 4
 queen 3 d 5
 queen 3 d 6
 queen 3 d 7
-queen 3 d 8
 queen 3 e 1
 queen 3 e 2
 queen 3 e 3
@@ -1654,7 +1596,6 @@ queen 3 e 4
 queen 3 e 5
 queen 3 e 6
 queen 3 e 7
-queen 3 e 8
 queen 3 f 1
 queen 3 f 2
 queen 3 f 3
@@ -1831,7 +1772,6 @@ queen 6 c 5
 queen 6 c 6
 queen 6 c 7
 queen 6 c 8
-queen 6 d 1
 queen 6 d 2
 queen 6 d 3
 queen 6 d 4
@@ -1839,7 +1779,6 @@ queen 6 d 5
 queen 6 d 6
 queen 6 d 7
 queen 6 d 8
-queen 6 e 1
 queen 6 e 2
 queen 6 e 3
 queen 6 e 4
@@ -1887,7 +1826,6 @@ queen 7 b 5
 queen 7 b 6
 queen 7 b 7
 queen 7 b 8
-queen 7 c 1
 queen 7 c 2
 queen 7 c 3
 queen 7 c 4
@@ -1895,7 +1833,6 @@ queen 7 c 5
 queen 7 c 6
 queen 7 c 7
 queen 7 c 8
-queen 7 d 1
 queen 7 d 2
 queen 7 d 3
 queen 7 d 4
@@ -1903,7 +1840,6 @@ queen 7 d 5
 queen 7 d 6
 queen 7 d 7
 queen 7 d 8
-queen 7 e 1
 queen 7 e 2
 queen 7 e 3
 queen 7 e 4
@@ -1911,7 +1847,6 @@ queen 7 e 5
 queen 7 e 6
 queen 7 e 7
 queen 7 e 8
-queen 7 f 1
 queen 7 f 2
 queen 7 f 3
 queen 7 f 4
@@ -1943,7 +1878,6 @@ queen 8 a 5
 queen 8 a 6
 queen 8 a 7
 queen 8 a 8
-queen 8 b 1
 queen 8 b 2
 queen 8 b 3
 queen 8 b 4
@@ -1951,7 +1885,6 @@ queen 8 b 5
 queen 8 b 6
 queen 8 b 7
 queen 8 b 8
-queen 8 c 1
 queen 8 c 2
 queen 8 c 3
 queen 8 c 4
@@ -1959,7 +1892,6 @@ queen 8 c 5
 queen 8 c 6
 queen 8 c 7
 queen 8 c 8
-queen 8 d 1
 queen 8 d 2
 queen 8 d 3
 queen 8 d 4
@@ -1967,7 +1899,6 @@ queen 8 d 5
 queen 8 d 6
 queen 8 d 7
 queen 8 d 8
-queen 8 e 1
 queen 8 e 2
 queen 8 e 3
 queen 8 e 4
@@ -1975,7 +1906,6 @@ queen 8 e 5
 queen 8 e 6
 queen 8 e 7
 queen 8 e 8
-queen 8 f 1
 queen 8 f 2
 queen 8 f 3
 queen 8 f 4
@@ -1983,7 +1913,6 @@ queen 8 f 5
 queen 8 f 6
 queen 8 f 7
 queen 8 f 8
-queen 8 g 1
 queen 8 g 2
 queen 8 g 3
 queen 8 g 4
@@ -2523,33 +2452,21 @@ bishop 1 a 4
 bishop 1 b 2
 bishop 1 b 3
 bishop 1 b 4
-bishop 1 b 5
-bishop 1 b 6
-bishop 1 b 7
 bishop 1 c 2
 bishop 1 c 3
 bishop 1 c 4
-bishop 1 c 5
-bishop 1 c 6
 bishop 1 d 2
 bishop 1 d 3
 bishop 1 d 4
-bishop 1 d 5
 bishop 1 e 2
 bishop 1 e 3
 bishop 1 e 4
-bishop 1 e 5
 bishop 1 f 2
 bishop 1 f 3
 bishop 1 f 4
-bishop 1 f 5
-bishop 1 f 6
 bishop 1 g 2
 bishop 1 g 3
 bishop 1 g 4
-bishop 1 g 5
-bishop 1 g 6
-bishop 1 g 7
 bishop 1 h 2
 bishop 1 h 3
 bishop 1 h 4
@@ -2559,31 +2476,21 @@ bishop 2 a 5
 bishop 2 b 3
 bishop 2 b 4
 bishop 2 b 5
-bishop 2 b 6
-bishop 2 b 7
 bishop 2 c 3
 bishop 2 c 4
 bishop 2 c 5
-bishop 2 c 6
-bishop 2 c 7
 bishop 2 d 3
 bishop 2 d 4
 bishop 2 d 5
-bishop 2 d 6
 bishop 2 e 3
 bishop 2 e 4
 bishop 2 e 5
-bishop 2 e 6
 bishop 2 f 3
 bishop 2 f 4
 bishop 2 f 5
-bishop 2 f 6
-bishop 2 f 7
 bishop 2 g 3
 bishop 2 g 4
 bishop 2 g 5
-bishop 2 g 6
-bishop 2 g 7
 bishop 2 h 3
 bishop 2 h 4
 bishop 2 h 5
@@ -2593,138 +2500,90 @@ bishop 3 a 5
 bishop 3 b 2
 bishop 3 b 4
 bishop 3 b 5
-bishop 3 b 6
-bishop 3 b 7
 bishop 3 c 2
 bishop 3 c 4
 bishop 3 c 5
-bishop 3 c 6
-bishop 3 c 7
 bishop 3 d 2
 bishop 3 d 4
 bishop 3 d 5
-bishop 3 d 6
-bishop 3 d 7
 bishop 3 e 2
 bishop 3 e 4
 bishop 3 e 5
-bishop 3 e 6
-bishop 3 e 7
 bishop 3 f 2
 bishop 3 f 4
 bishop 3 f 5
-bishop 3 f 6
-bishop 3 f 7
 bishop 3 g 2
 bishop 3 g 4
 bishop 3 g 5
-bishop 3 g 6
-bishop 3 g 7
 bishop 3 h 2
 bishop 3 h 4
 bishop 3 h 5
 bishop 4 a 3
 bishop 4 a 5
 bishop 4 a 6
-bishop 4 b 2
 bishop 4 b 3
 bishop 4 b 5
 bishop 4 b 6
-bishop 4 b 7
-bishop 4 c 2
 bishop 4 c 3
 bishop 4 c 5
 bishop 4 c 6
-bishop 4 c 7
-bishop 4 d 2
 bishop 4 d 3
 bishop 4 d 5
 bishop 4 d 6
-bishop 4 d 7
-bishop 4 e 2
 bishop 4 e 3
 bishop 4 e 5
 bishop 4 e 6
-bishop 4 e 7
-bishop 4 f 2
 bishop 4 f 3
 bishop 4 f 5
 bishop 4 f 6
-bishop 4 f 7
-bishop 4 g 2
 bishop 4 g 3
 bishop 4 g 5
 bishop 4 g 6
-bishop 4 g 7
 bishop 4 h 3
 bishop 4 h 5
 bishop 4 h 6
 bishop 5 a 3
 bishop 5 a 4
 bishop 5 a 6
-bishop 5 b 2
 bishop 5 b 3
 bishop 5 b 4
 bishop 5 b 6
-bishop 5 b 7
-bishop 5 c 2
 bishop 5 c 3
 bishop 5 c 4
 bishop 5 c 6
-bishop 5 c 7
-bishop 5 d 2
 bishop 5 d 3
 bishop 5 d 4
 bishop 5 d 6
-bishop 5 d 7
-bishop 5 e 2
 bishop 5 e 3
 bishop 5 e 4
 bishop 5 e 6
-bishop 5 e 7
-bishop 5 f 2
 bishop 5 f 3
 bishop 5 f 4
 bishop 5 f 6
-bishop 5 f 7
-bishop 5 g 2
 bishop 5 g 3
 bishop 5 g 4
 bishop 5 g 6
-bishop 5 g 7
 bishop 5 h 3
 bishop 5 h 4
 bishop 5 h 6
 bishop 6 a 4
 bishop 6 a 5
 bishop 6 a 7
-bishop 6 b 2
-bishop 6 b 3
 bishop 6 b 4
 bishop 6 b 5
 bishop 6 b 7
-bishop 6 c 2
-bishop 6 c 3
 bishop 6 c 4
 bishop 6 c 5
 bishop 6 c 7
-bishop 6 d 2
-bishop 6 d 3
 bishop 6 d 4
 bishop 6 d 5
 bishop 6 d 7
-bishop 6 e 2
-bishop 6 e 3
 bishop 6 e 4
 bishop 6 e 5
 bishop 6 e 7
-bishop 6 f 2
-bishop 6 f 3
 bishop 6 f 4
 bishop 6 f 5
 bishop 6 f 7
-bishop 6 g 2
-bishop 6 g 3
 bishop 6 g 4
 bishop 6 g 5
 bishop 6 g 7
@@ -2734,31 +2593,21 @@ bishop 6 h 7
 bishop 7 a 4
 bishop 7 a 5
 bishop 7 a 6
-bishop 7 b 2
-bishop 7 b 3
 bishop 7 b 4
 bishop 7 b 5
 bishop 7 b 6
-bishop 7 c 2
-bishop 7 c 3
 bishop 7 c 4
 bishop 7 c 5
 bishop 7 c 6
-bishop 7 d 3
 bishop 7 d 4
 bishop 7 d 5
 bishop 7 d 6
-bishop 7 e 3
 bishop 7 e 4
 bishop 7 e 5
 bishop 7 e 6
-bishop 7 f 2
-bishop 7 f 3
 bishop 7 f 4
 bishop 7 f 5
 bishop 7 f 6
-bishop 7 g 2
-bishop 7 g 3
 bishop 7 g 4
 bishop 7 g 5
 bishop 7 g 6
@@ -2768,33 +2617,21 @@ bishop 7 h 6
 bishop 8 a 5
 bishop 8 a 6
 bishop 8 a 7
-bishop 8 b 2
-bishop 8 b 3
-bishop 8 b 4
 bishop 8 b 5
 bishop 8 b 6
 bishop 8 b 7
-bishop 8 c 3
-bishop 8 c 4
 bishop 8 c 5
 bishop 8 c 6
 bishop 8 c 7
-bishop 8 d 4
 bishop 8 d 5
 bishop 8 d 6
 bishop 8 d 7
-bishop 8 e 4
 bishop 8 e 5
 bishop 8 e 6
 bishop 8 e 7
-bishop 8 f 3
-bishop 8 f 4
 bishop 8 f 5
 bishop 8 f 6
 bishop 8 f 7
-bishop 8 g 2
-bishop 8 g 3
-bishop 8 g 4
 bishop 8 g 5
 bishop 8 g 6
 bishop 8 g 7
@@ -3250,70 +3087,54 @@ knight 3 g 5
 knight 3 h 2
 knight 3 h 4
 knight 3 h 5
-knight 4 a 2
 knight 4 a 3
 knight 4 a 5
 knight 4 a 6
-knight 4 b 2
 knight 4 b 3
 knight 4 b 5
 knight 4 b 6
-knight 4 c 2
 knight 4 c 3
 knight 4 c 5
 knight 4 c 6
-knight 4 d 2
 knight 4 d 3
 knight 4 d 5
 knight 4 d 6
-knight 4 e 2
 knight 4 e 3
 knight 4 e 5
 knight 4 e 6
-knight 4 f 2
 knight 4 f 3
 knight 4 f 5
 knight 4 f 6
-knight 4 g 2
 knight 4 g 3
 knight 4 g 5
 knight 4 g 6
-knight 4 h 2
 knight 4 h 3
 knight 4 h 5
 knight 4 h 6
 knight 5 a 3
 knight 5 a 4
 knight 5 a 6
-knight 5 a 7
 knight 5 b 3
 knight 5 b 4
 knight 5 b 6
-knight 5 b 7
 knight 5 c 3
 knight 5 c 4
 knight 5 c 6
-knight 5 c 7
 knight 5 d 3
 knight 5 d 4
 knight 5 d 6
-knight 5 d 7
 knight 5 e 3
 knight 5 e 4
 knight 5 e 6
-knight 5 e 7
 knight 5 f 3
 knight 5 f 4
 knight 5 f 6
-knight 5 f 7
 knight 5 g 3
 knight 5 g 4
 knight 5 g 6
-knight 5 g 7
 knight 5 h 3
 knight 5 h 4
 knight 5 h 6
-knight 5 h 7
 knight 6 a 4
 knight 6 a 5
 knight 6 a 7
@@ -3587,685 +3408,13 @@ rook 5 takes
 rook 6 takes
 rook 7 takes
 rook 8 takes
-rook a 1 a 2
-rook a 1 a 3
-rook a 1 a 4
-rook a 1 a 5
-rook a 1 a 6
-rook a 1 a 7
-rook a 2 a 3
-rook a 2 a 4
-rook a 2 a 5
-rook a 2 a 6
-rook a 2 a 7
-rook a 2 b 2
-rook a 2 c 2
-rook a 2 d 2
-rook a 2 e 2
-rook a 2 f 2
-rook a 2 g 2
-rook a 2 h 2
-rook a 3 a 2
-rook a 3 a 4
-rook a 3 a 5
-rook a 3 a 6
-rook a 3 a 7
-rook a 3 b 3
-rook a 3 c 3
-rook a 3 d 3
-rook a 3 e 3
-rook a 3 f 3
-rook a 3 g 3
-rook a 3 h 3
-rook a 4 a 2
-rook a 4 a 3
-rook a 4 a 5
-rook a 4 a 6
-rook a 4 a 7
-rook a 4 b 4
-rook a 4 c 4
-rook a 4 d 4
-rook a 4 e 4
-rook a 4 f 4
-rook a 4 g 4
-rook a 4 h 4
-rook a 5 a 2
-rook a 5 a 3
-rook a 5 a 4
-rook a 5 a 6
-rook a 5 a 7
-rook a 5 b 5
-rook a 5 c 5
-rook a 5 d 5
-rook a 5 e 5
-rook a 5 f 5
-rook a 5 g 5
-rook a 5 h 5
-rook a 6 a 2
-rook a 6 a 3
-rook a 6 a 4
-rook a 6 a 5
-rook a 6 a 7
-rook a 6 b 6
-rook a 6 c 6
-rook a 6 d 6
-rook a 6 e 6
-rook a 6 f 6
-rook a 6 g 6
-rook a 6 h 6
-rook a 7 a 2
-rook a 7 a 3
-rook a 7 a 4
-rook a 7 a 5
-rook a 7 a 6
-rook a 7 b 7
-rook a 7 c 7
-rook a 7 d 7
-rook a 7 e 7
-rook a 7 f 7
-rook a 7 g 7
-rook a 7 h 7
-rook a 8 a 2
-rook a 8 a 3
-rook a 8 a 4
-rook a 8 a 5
-rook a 8 a 6
-rook a 8 a 7
 rook a takes
-rook b 1 b 2
-rook b 1 b 3
-rook b 1 b 4
-rook b 1 b 5
-rook b 1 b 6
-rook b 1 b 7
-rook b 2 a 2
-rook b 2 b 3
-rook b 2 b 4
-rook b 2 b 5
-rook b 2 b 6
-rook b 2 b 7
-rook b 2 c 2
-rook b 2 d 2
-rook b 2 e 2
-rook b 2 f 2
-rook b 2 g 2
-rook b 2 h 2
-rook b 3 a 3
-rook b 3 b 2
-rook b 3 b 4
-rook b 3 b 5
-rook b 3 b 6
-rook b 3 b 7
-rook b 3 c 3
-rook b 3 d 3
-rook b 3 e 3
-rook b 3 f 3
-rook b 3 g 3
-rook b 3 h 3
-rook b 4 a 4
-rook b 4 b 2
-rook b 4 b 3
-rook b 4 b 5
-rook b 4 b 6
-rook b 4 b 7
-rook b 4 c 4
-rook b 4 d 4
-rook b 4 e 4
-rook b 4 f 4
-rook b 4 g 4
-rook b 4 h 4
-rook b 5 a 5
-rook b 5 b 2
-rook b 5 b 3
-rook b 5 b 4
-rook b 5 b 6
-rook b 5 b 7
-rook b 5 c 5
-rook b 5 d 5
-rook b 5 e 5
-rook b 5 f 5
-rook b 5 g 5
-rook b 5 h 5
-rook b 6 a 6
-rook b 6 b 2
-rook b 6 b 3
-rook b 6 b 4
-rook b 6 b 5
-rook b 6 b 7
-rook b 6 c 6
-rook b 6 d 6
-rook b 6 e 6
-rook b 6 f 6
-rook b 6 g 6
-rook b 6 h 6
-rook b 7 a 7
-rook b 7 b 2
-rook b 7 b 3
-rook b 7 b 4
-rook b 7 b 5
-rook b 7 b 6
-rook b 7 c 7
-rook b 7 d 7
-rook b 7 e 7
-rook b 7 f 7
-rook b 7 g 7
-rook b 7 h 7
-rook b 8 b 2
-rook b 8 b 3
-rook b 8 b 4
-rook b 8 b 5
-rook b 8 b 6
-rook b 8 b 7
 rook b takes
-rook c 1 c 2
-rook c 1 c 3
-rook c 1 c 4
-rook c 1 c 5
-rook c 1 c 6
-rook c 1 c 7
-rook c 2 a 2
-rook c 2 b 2
-rook c 2 c 3
-rook c 2 c 4
-rook c 2 c 5
-rook c 2 c 6
-rook c 2 c 7
-rook c 2 d 2
-rook c 2 e 2
-rook c 2 f 2
-rook c 2 g 2
-rook c 2 h 2
-rook c 3 a 3
-rook c 3 b 3
-rook c 3 c 2
-rook c 3 c 4
-rook c 3 c 5
-rook c 3 c 6
-rook c 3 c 7
-rook c 3 d 3
-rook c 3 e 3
-rook c 3 f 3
-rook c 3 g 3
-rook c 3 h 3
-rook c 4 a 4
-rook c 4 b 4
-rook c 4 c 2
-rook c 4 c 3
-rook c 4 c 5
-rook c 4 c 6
-rook c 4 c 7
-rook c 4 d 4
-rook c 4 e 4
-rook c 4 f 4
-rook c 4 g 4
-rook c 4 h 4
-rook c 5 a 5
-rook c 5 b 5
-rook c 5 c 2
-rook c 5 c 3
-rook c 5 c 4
-rook c 5 c 6
-rook c 5 c 7
-rook c 5 d 5
-rook c 5 e 5
-rook c 5 f 5
-rook c 5 g 5
-rook c 5 h 5
-rook c 6 a 6
-rook c 6 b 6
-rook c 6 c 2
-rook c 6 c 3
-rook c 6 c 4
-rook c 6 c 5
-rook c 6 c 7
-rook c 6 d 6
-rook c 6 e 6
-rook c 6 f 6
-rook c 6 g 6
-rook c 6 h 6
-rook c 7 a 7
-rook c 7 b 7
-rook c 7 c 2
-rook c 7 c 3
-rook c 7 c 4
-rook c 7 c 5
-rook c 7 c 6
-rook c 7 d 7
-rook c 7 e 7
-rook c 7 f 7
-rook c 7 g 7
-rook c 7 h 7
-rook c 8 c 2
-rook c 8 c 3
-rook c 8 c 4
-rook c 8 c 5
-rook c 8 c 6
-rook c 8 c 7
 rook c takes
-rook d 1 d 2
-rook d 1 d 3
-rook d 1 d 4
-rook d 1 d 5
-rook d 1 d 6
-rook d 1 d 7
-rook d 2 a 2
-rook d 2 b 2
-rook d 2 c 2
-rook d 2 d 3
-rook d 2 d 4
-rook d 2 d 5
-rook d 2 d 6
-rook d 2 d 7
-rook d 2 e 2
-rook d 2 f 2
-rook d 2 g 2
-rook d 2 h 2
-rook d 3 a 3
-rook d 3 b 3
-rook d 3 c 3
-rook d 3 d 2
-rook d 3 d 4
-rook d 3 d 5
-rook d 3 d 6
-rook d 3 d 7
-rook d 3 e 3
-rook d 3 f 3
-rook d 3 g 3
-rook d 3 h 3
-rook d 4 a 4
-rook d 4 b 4
-rook d 4 c 4
-rook d 4 d 2
-rook d 4 d 3
-rook d 4 d 5
-rook d 4 d 6
-rook d 4 d 7
-rook d 4 e 4
-rook d 4 f 4
-rook d 4 g 4
-rook d 4 h 4
-rook d 5 a 5
-rook d 5 b 5
-rook d 5 c 5
-rook d 5 d 2
-rook d 5 d 3
-rook d 5 d 4
-rook d 5 d 6
-rook d 5 d 7
-rook d 5 e 5
-rook d 5 f 5
-rook d 5 g 5
-rook d 5 h 5
-rook d 6 a 6
-rook d 6 b 6
-rook d 6 c 6
-rook d 6 d 2
-rook d 6 d 3
-rook d 6 d 4
-rook d 6 d 5
-rook d 6 d 7
-rook d 6 e 6
-rook d 6 f 6
-rook d 6 g 6
-rook d 6 h 6
-rook d 7 a 7
-rook d 7 b 7
-rook d 7 c 7
-rook d 7 d 2
-rook d 7 d 3
-rook d 7 d 4
-rook d 7 d 5
-rook d 7 d 6
-rook d 7 e 7
-rook d 7 f 7
-rook d 7 g 7
-rook d 7 h 7
-rook d 8 d 2
-rook d 8 d 3
-rook d 8 d 4
-rook d 8 d 5
-rook d 8 d 6
-rook d 8 d 7
 rook d takes
-rook e 1 e 2
-rook e 1 e 3
-rook e 1 e 4
-rook e 1 e 5
-rook e 1 e 6
-rook e 1 e 7
-rook e 2 a 2
-rook e 2 b 2
-rook e 2 c 2
-rook e 2 d 2
-rook e 2 e 3
-rook e 2 e 4
-rook e 2 e 5
-rook e 2 e 6
-rook e 2 e 7
-rook e 2 f 2
-rook e 2 g 2
-rook e 2 h 2
-rook e 3 a 3
-rook e 3 b 3
-rook e 3 c 3
-rook e 3 d 3
-rook e 3 e 2
-rook e 3 e 4
-rook e 3 e 5
-rook e 3 e 6
-rook e 3 e 7
-rook e 3 f 3
-rook e 3 g 3
-rook e 3 h 3
-rook e 4 a 4
-rook e 4 b 4
-rook e 4 c 4
-rook e 4 d 4
-rook e 4 e 2
-rook e 4 e 3
-rook e 4 e 5
-rook e 4 e 6
-rook e 4 e 7
-rook e 4 f 4
-rook e 4 g 4
-rook e 4 h 4
-rook e 5 a 5
-rook e 5 b 5
-rook e 5 c 5
-rook e 5 d 5
-rook e 5 e 2
-rook e 5 e 3
-rook e 5 e 4
-rook e 5 e 6
-rook e 5 e 7
-rook e 5 f 5
-rook e 5 g 5
-rook e 5 h 5
-rook e 6 a 6
-rook e 6 b 6
-rook e 6 c 6
-rook e 6 d 6
-rook e 6 e 2
-rook e 6 e 3
-rook e 6 e 4
-rook e 6 e 5
-rook e 6 e 7
-rook e 6 f 6
-rook e 6 g 6
-rook e 6 h 6
-rook e 7 a 7
-rook e 7 b 7
-rook e 7 c 7
-rook e 7 d 7
-rook e 7 e 2
-rook e 7 e 3
-rook e 7 e 4
-rook e 7 e 5
-rook e 7 e 6
-rook e 7 f 7
-rook e 7 g 7
-rook e 7 h 7
-rook e 8 e 2
-rook e 8 e 3
-rook e 8 e 4
-rook e 8 e 5
-rook e 8 e 6
-rook e 8 e 7
 rook e takes
-rook f 1 f 2
-rook f 1 f 3
-rook f 1 f 4
-rook f 1 f 5
-rook f 1 f 6
-rook f 1 f 7
-rook f 2 a 2
-rook f 2 b 2
-rook f 2 c 2
-rook f 2 d 2
-rook f 2 e 2
-rook f 2 f 3
-rook f 2 f 4
-rook f 2 f 5
-rook f 2 f 6
-rook f 2 f 7
-rook f 2 g 2
-rook f 2 h 2
-rook f 3 a 3
-rook f 3 b 3
-rook f 3 c 3
-rook f 3 d 3
-rook f 3 e 3
-rook f 3 f 2
-rook f 3 f 4
-rook f 3 f 5
-rook f 3 f 6
-rook f 3 f 7
-rook f 3 g 3
-rook f 3 h 3
-rook f 4 a 4
-rook f 4 b 4
-rook f 4 c 4
-rook f 4 d 4
-rook f 4 e 4
-rook f 4 f 2
-rook f 4 f 3
-rook f 4 f 5
-rook f 4 f 6
-rook f 4 f 7
-rook f 4 g 4
-rook f 4 h 4
-rook f 5 a 5
-rook f 5 b 5
-rook f 5 c 5
-rook f 5 d 5
-rook f 5 e 5
-rook f 5 f 2
-rook f 5 f 3
-rook f 5 f 4
-rook f 5 f 6
-rook f 5 f 7
-rook f 5 g 5
-rook f 5 h 5
-rook f 6 a 6
-rook f 6 b 6
-rook f 6 c 6
-rook f 6 d 6
-rook f 6 e 6
-rook f 6 f 2
-rook f 6 f 3
-rook f 6 f 4
-rook f 6 f 5
-rook f 6 f 7
-rook f 6 g 6
-rook f 6 h 6
-rook f 7 a 7
-rook f 7 b 7
-rook f 7 c 7
-rook f 7 d 7
-rook f 7 e 7
-rook f 7 f 2
-rook f 7 f 3
-rook f 7 f 4
-rook f 7 f 5
-rook f 7 f 6
-rook f 7 g 7
-rook f 7 h 7
-rook f 8 f 2
-rook f 8 f 3
-rook f 8 f 4
-rook f 8 f 5
-rook f 8 f 6
-rook f 8 f 7
 rook f takes
-rook g 1 g 2
-rook g 1 g 3
-rook g 1 g 4
-rook g 1 g 5
-rook g 1 g 6
-rook g 1 g 7
-rook g 2 a 2
-rook g 2 b 2
-rook g 2 c 2
-rook g 2 d 2
-rook g 2 e 2
-rook g 2 f 2
-rook g 2 g 3
-rook g 2 g 4
-rook g 2 g 5
-rook g 2 g 6
-rook g 2 g 7
-rook g 2 h 2
-rook g 3 a 3
-rook g 3 b 3
-rook g 3 c 3
-rook g 3 d 3
-rook g 3 e 3
-rook g 3 f 3
-rook g 3 g 2
-rook g 3 g 4
-rook g 3 g 5
-rook g 3 g 6
-rook g 3 g 7
-rook g 3 h 3
-rook g 4 a 4
-rook g 4 b 4
-rook g 4 c 4
-rook g 4 d 4
-rook g 4 e 4
-rook g 4 f 4
-rook g 4 g 2
-rook g 4 g 3
-rook g 4 g 5
-rook g 4 g 6
-rook g 4 g 7
-rook g 4 h 4
-rook g 5 a 5
-rook g 5 b 5
-rook g 5 c 5
-rook g 5 d 5
-rook g 5 e 5
-rook g 5 f 5
-rook g 5 g 2
-rook g 5 g 3
-rook g 5 g 4
-rook g 5 g 6
-rook g 5 g 7
-rook g 5 h 5
-rook g 6 a 6
-rook g 6 b 6
-rook g 6 c 6
-rook g 6 d 6
-rook g 6 e 6
-rook g 6 f 6
-rook g 6 g 2
-rook g 6 g 3
-rook g 6 g 4
-rook g 6 g 5
-rook g 6 g 7
-rook g 6 h 6
-rook g 7 a 7
-rook g 7 b 7
-rook g 7 c 7
-rook g 7 d 7
-rook g 7 e 7
-rook g 7 f 7
-rook g 7 g 2
-rook g 7 g 3
-rook g 7 g 4
-rook g 7 g 5
-rook g 7 g 6
-rook g 7 h 7
-rook g 8 g 2
-rook g 8 g 3
-rook g 8 g 4
-rook g 8 g 5
-rook g 8 g 6
-rook g 8 g 7
 rook g takes
-rook h 1 h 2
-rook h 1 h 3
-rook h 1 h 4
-rook h 1 h 5
-rook h 1 h 6
-rook h 1 h 7
-rook h 2 a 2
-rook h 2 b 2
-rook h 2 c 2
-rook h 2 d 2
-rook h 2 e 2
-rook h 2 f 2
-rook h 2 g 2
-rook h 2 h 3
-rook h 2 h 4
-rook h 2 h 5
-rook h 2 h 6
-rook h 2 h 7
-rook h 3 a 3
-rook h 3 b 3
-rook h 3 c 3
-rook h 3 d 3
-rook h 3 e 3
-rook h 3 f 3
-rook h 3 g 3
-rook h 3 h 2
-rook h 3 h 4
-rook h 3 h 5
-rook h 3 h 6
-rook h 3 h 7
-rook h 4 a 4
-rook h 4 b 4
-rook h 4 c 4
-rook h 4 d 4
-rook h 4 e 4
-rook h 4 f 4
-rook h 4 g 4
-rook h 4 h 2
-rook h 4 h 3
-rook h 4 h 5
-rook h 4 h 6
-rook h 4 h 7
-rook h 5 a 5
-rook h 5 b 5
-rook h 5 c 5
-rook h 5 d 5
-rook h 5 e 5
-rook h 5 f 5
-rook h 5 g 5
-rook h 5 h 2
-rook h 5 h 3
-rook h 5 h 4
-rook h 5 h 6
-rook h 5 h 7
-rook h 6 a 6
-rook h 6 b 6
-rook h 6 c 6
-rook h 6 d 6
-rook h 6 e 6
-rook h 6 f 6
-rook h 6 g 6
-rook h 6 h 2
-rook h 6 h 3
-rook h 6 h 4
-rook h 6 h 5
-rook h 6 h 7
-rook h 7 a 7
-rook h 7 b 7
-rook h 7 c 7
-rook h 7 d 7
-rook h 7 e 7
-rook h 7 f 7
-rook h 7 g 7
-rook h 7 h 2
-rook h 7 h 3
-rook h 7 h 4
-rook h 7 h 5
-rook h 7 h 6
-rook h 8 h 2
-rook h 8 h 3
-rook h 8 h 4
-rook h 8 h 5
-rook h 8 h 6
-rook h 8 h 7
 rook h takes
 takes bishop
 takes knight
@@ -4291,7 +3440,6 @@ queen a 1 a 4
 queen a 1 a 5
 queen a 1 a 6
 queen a 1 a 7
-queen a 1 a 8
 queen a 1 b 1
 queen a 1 b 2
 queen a 1 c 1
@@ -4304,15 +3452,12 @@ queen a 1 f 1
 queen a 1 f 6
 queen a 1 g 1
 queen a 1 g 7
-queen a 1 h 1
 queen a 1 h 8
-queen a 2 a 1
 queen a 2 a 3
 queen a 2 a 4
 queen a 2 a 5
 queen a 2 a 6
 queen a 2 a 7
-queen a 2 a 8
 queen a 2 b 1
 queen a 2 b 2
 queen a 2 b 3
@@ -4326,14 +3471,11 @@ queen a 2 f 2
 queen a 2 f 7
 queen a 2 g 2
 queen a 2 g 8
-queen a 2 h 2
-queen a 3 a 1
 queen a 3 a 2
 queen a 3 a 4
 queen a 3 a 5
 queen a 3 a 6
 queen a 3 a 7
-queen a 3 a 8
 queen a 3 b 2
 queen a 3 b 3
 queen a 3 b 4
@@ -4346,15 +3488,11 @@ queen a 3 e 3
 queen a 3 e 7
 queen a 3 f 3
 queen a 3 f 8
-queen a 3 g 3
-queen a 3 h 3
-queen a 4 a 1
 queen a 4 a 2
 queen a 4 a 3
 queen a 4 a 5
 queen a 4 a 6
 queen a 4 a 7
-queen a 4 a 8
 queen a 4 b 3
 queen a 4 b 4
 queen a 4 b 5
@@ -4366,16 +3504,11 @@ queen a 4 d 4
 queen a 4 d 7
 queen a 4 e 4
 queen a 4 e 8
-queen a 4 f 4
-queen a 4 g 4
-queen a 4 h 4
-queen a 5 a 1
 queen a 5 a 2
 queen a 5 a 3
 queen a 5 a 4
 queen a 5 a 6
 queen a 5 a 7
-queen a 5 a 8
 queen a 5 b 4
 queen a 5 b 5
 queen a 5 b 6
@@ -4387,16 +3520,11 @@ queen a 5 d 5
 queen a 5 d 8
 queen a 5 e 1
 queen a 5 e 5
-queen a 5 f 5
-queen a 5 g 5
-queen a 5 h 5
-queen a 6 a 1
 queen a 6 a 2
 queen a 6 a 3
 queen a 6 a 4
 queen a 6 a 5
 queen a 6 a 7
-queen a 6 a 8
 queen a 6 b 5
 queen a 6 b 6
 queen a 6 b 7
@@ -4409,15 +3537,11 @@ queen a 6 e 2
 queen a 6 e 6
 queen a 6 f 1
 queen a 6 f 6
-queen a 6 g 6
-queen a 6 h 6
-queen a 7 a 1
 queen a 7 a 2
 queen a 7 a 3
 queen a 7 a 4
 queen a 7 a 5
 queen a 7 a 6
-queen a 7 a 8
 queen a 7 b 6
 queen a 7 b 7
 queen a 7 b 8
@@ -4431,8 +3555,6 @@ queen a 7 f 2
 queen a 7 f 7
 queen a 7 g 1
 queen a 7 g 7
-queen a 7 h 7
-queen a 8 a 1
 queen a 8 a 2
 queen a 8 a 3
 queen a 8 a 4
@@ -4452,9 +3574,7 @@ queen a 8 f 8
 queen a 8 g 2
 queen a 8 g 8
 queen a 8 h 1
-queen a 8 h 8
 queen a takes
-queen b 1 a 1
 queen b 1 a 2
 queen b 1 b 2
 queen b 1 b 3
@@ -4462,7 +3582,6 @@ queen b 1 b 4
 queen b 1 b 5
 queen b 1 b 6
 queen b 1 b 7
-queen b 1 b 8
 queen b 1 c 1
 queen b 1 c 2
 queen b 1 d 1
@@ -4473,18 +3592,14 @@ queen b 1 f 1
 queen b 1 f 5
 queen b 1 g 1
 queen b 1 g 6
-queen b 1 h 1
 queen b 1 h 7
 queen b 2 a 1
-queen b 2 a 2
 queen b 2 a 3
-queen b 2 b 1
 queen b 2 b 3
 queen b 2 b 4
 queen b 2 b 5
 queen b 2 b 6
 queen b 2 b 7
-queen b 2 b 8
 queen b 2 c 1
 queen b 2 c 2
 queen b 2 c 3
@@ -4496,18 +3611,14 @@ queen b 2 f 2
 queen b 2 f 6
 queen b 2 g 2
 queen b 2 g 7
-queen b 2 h 2
 queen b 2 h 8
 queen b 3 a 2
-queen b 3 a 3
 queen b 3 a 4
-queen b 3 b 1
 queen b 3 b 2
 queen b 3 b 4
 queen b 3 b 5
 queen b 3 b 6
 queen b 3 b 7
-queen b 3 b 8
 queen b 3 c 2
 queen b 3 c 3
 queen b 3 c 4
@@ -4520,17 +3631,13 @@ queen b 3 f 3
 queen b 3 f 7
 queen b 3 g 3
 queen b 3 g 8
-queen b 3 h 3
 queen b 4 a 3
-queen b 4 a 4
 queen b 4 a 5
-queen b 4 b 1
 queen b 4 b 2
 queen b 4 b 3
 queen b 4 b 5
 queen b 4 b 6
 queen b 4 b 7
-queen b 4 b 8
 queen b 4 c 3
 queen b 4 c 4
 queen b 4 c 5
@@ -4542,18 +3649,13 @@ queen b 4 e 4
 queen b 4 e 7
 queen b 4 f 4
 queen b 4 f 8
-queen b 4 g 4
-queen b 4 h 4
 queen b 5 a 4
-queen b 5 a 5
 queen b 5 a 6
-queen b 5 b 1
 queen b 5 b 2
 queen b 5 b 3
 queen b 5 b 4
 queen b 5 b 6
 queen b 5 b 7
-queen b 5 b 8
 queen b 5 c 4
 queen b 5 c 5
 queen b 5 c 6
@@ -4565,18 +3667,13 @@ queen b 5 e 5
 queen b 5 e 8
 queen b 5 f 1
 queen b 5 f 5
-queen b 5 g 5
-queen b 5 h 5
 queen b 6 a 5
-queen b 6 a 6
 queen b 6 a 7
-queen b 6 b 1
 queen b 6 b 2
 queen b 6 b 3
 queen b 6 b 4
 queen b 6 b 5
 queen b 6 b 7
-queen b 6 b 8
 queen b 6 c 5
 queen b 6 c 6
 queen b 6 c 7
@@ -4589,17 +3686,13 @@ queen b 6 f 2
 queen b 6 f 6
 queen b 6 g 1
 queen b 6 g 6
-queen b 6 h 6
 queen b 7 a 6
-queen b 7 a 7
 queen b 7 a 8
-queen b 7 b 1
 queen b 7 b 2
 queen b 7 b 3
 queen b 7 b 4
 queen b 7 b 5
 queen b 7 b 6
-queen b 7 b 8
 queen b 7 c 6
 queen b 7 c 7
 queen b 7 c 8
@@ -4612,10 +3705,7 @@ queen b 7 f 7
 queen b 7 g 2
 queen b 7 g 7
 queen b 7 h 1
-queen b 7 h 7
 queen b 8 a 7
-queen b 8 a 8
-queen b 8 b 1
 queen b 8 b 2
 queen b 8 b 3
 queen b 8 b 4
@@ -4633,9 +3723,7 @@ queen b 8 f 8
 queen b 8 g 3
 queen b 8 g 8
 queen b 8 h 2
-queen b 8 h 8
 queen b takes
-queen c 1 a 1
 queen c 1 a 3
 queen c 1 b 1
 queen c 1 b 2
@@ -4644,8 +3732,6 @@ queen c 1 c 3
 queen c 1 c 4
 queen c 1 c 5
 queen c 1 c 6
-queen c 1 c 7
-queen c 1 c 8
 queen c 1 d 1
 queen c 1 d 2
 queen c 1 e 1
@@ -4654,20 +3740,16 @@ queen c 1 f 1
 queen c 1 f 4
 queen c 1 g 1
 queen c 1 g 5
-queen c 1 h 1
 queen c 1 h 6
-queen c 2 a 2
 queen c 2 a 4
 queen c 2 b 1
 queen c 2 b 2
 queen c 2 b 3
-queen c 2 c 1
 queen c 2 c 3
 queen c 2 c 4
 queen c 2 c 5
 queen c 2 c 6
 queen c 2 c 7
-queen c 2 c 8
 queen c 2 d 1
 queen c 2 d 2
 queen c 2 d 3
@@ -4677,21 +3759,17 @@ queen c 2 f 2
 queen c 2 f 5
 queen c 2 g 2
 queen c 2 g 6
-queen c 2 h 2
 queen c 2 h 7
 queen c 3 a 1
-queen c 3 a 3
 queen c 3 a 5
 queen c 3 b 2
 queen c 3 b 3
 queen c 3 b 4
-queen c 3 c 1
 queen c 3 c 2
 queen c 3 c 4
 queen c 3 c 5
 queen c 3 c 6
 queen c 3 c 7
-queen c 3 c 8
 queen c 3 d 2
 queen c 3 d 3
 queen c 3 d 4
@@ -4702,21 +3780,17 @@ queen c 3 f 3
 queen c 3 f 6
 queen c 3 g 3
 queen c 3 g 7
-queen c 3 h 3
 queen c 3 h 8
 queen c 4 a 2
-queen c 4 a 4
 queen c 4 a 6
 queen c 4 b 3
 queen c 4 b 4
 queen c 4 b 5
-queen c 4 c 1
 queen c 4 c 2
 queen c 4 c 3
 queen c 4 c 5
 queen c 4 c 6
 queen c 4 c 7
-queen c 4 c 8
 queen c 4 d 3
 queen c 4 d 4
 queen c 4 d 5
@@ -4728,20 +3802,16 @@ queen c 4 f 4
 queen c 4 f 7
 queen c 4 g 4
 queen c 4 g 8
-queen c 4 h 4
 queen c 5 a 3
-queen c 5 a 5
 queen c 5 a 7
 queen c 5 b 4
 queen c 5 b 5
 queen c 5 b 6
-queen c 5 c 1
 queen c 5 c 2
 queen c 5 c 3
 queen c 5 c 4
 queen c 5 c 6
 queen c 5 c 7
-queen c 5 c 8
 queen c 5 d 4
 queen c 5 d 5
 queen c 5 d 6
@@ -4753,20 +3823,16 @@ queen c 5 f 5
 queen c 5 f 8
 queen c 5 g 1
 queen c 5 g 5
-queen c 5 h 5
 queen c 6 a 4
-queen c 6 a 6
 queen c 6 a 8
 queen c 6 b 5
 queen c 6 b 6
 queen c 6 b 7
-queen c 6 c 1
 queen c 6 c 2
 queen c 6 c 3
 queen c 6 c 4
 queen c 6 c 5
 queen c 6 c 7
-queen c 6 c 8
 queen c 6 d 5
 queen c 6 d 6
 queen c 6 d 7
@@ -4778,19 +3844,15 @@ queen c 6 f 6
 queen c 6 g 2
 queen c 6 g 6
 queen c 6 h 1
-queen c 6 h 6
 queen c 7 a 5
-queen c 7 a 7
 queen c 7 b 6
 queen c 7 b 7
 queen c 7 b 8
-queen c 7 c 1
 queen c 7 c 2
 queen c 7 c 3
 queen c 7 c 4
 queen c 7 c 5
 queen c 7 c 6
-queen c 7 c 8
 queen c 7 d 6
 queen c 7 d 7
 queen c 7 d 8
@@ -4801,13 +3863,9 @@ queen c 7 f 7
 queen c 7 g 3
 queen c 7 g 7
 queen c 7 h 2
-queen c 7 h 7
 queen c 8 a 6
-queen c 8 a 8
 queen c 8 b 7
 queen c 8 b 8
-queen c 8 c 1
-queen c 8 c 2
 queen c 8 c 3
 queen c 8 c 4
 queen c 8 c 5
@@ -4822,9 +3880,7 @@ queen c 8 f 8
 queen c 8 g 4
 queen c 8 g 8
 queen c 8 h 3
-queen c 8 h 8
 queen c takes
-queen d 1 a 1
 queen d 1 a 4
 queen d 1 b 1
 queen d 1 b 3
@@ -4834,31 +3890,23 @@ queen d 1 d 2
 queen d 1 d 3
 queen d 1 d 4
 queen d 1 d 5
-queen d 1 d 6
-queen d 1 d 7
-queen d 1 d 8
 queen d 1 e 1
 queen d 1 e 2
 queen d 1 f 1
 queen d 1 f 3
 queen d 1 g 1
 queen d 1 g 4
-queen d 1 h 1
 queen d 1 h 5
-queen d 2 a 2
 queen d 2 a 5
 queen d 2 b 2
 queen d 2 b 4
 queen d 2 c 1
 queen d 2 c 2
 queen d 2 c 3
-queen d 2 d 1
 queen d 2 d 3
 queen d 2 d 4
 queen d 2 d 5
 queen d 2 d 6
-queen d 2 d 7
-queen d 2 d 8
 queen d 2 e 1
 queen d 2 e 2
 queen d 2 e 3
@@ -4866,9 +3914,7 @@ queen d 2 f 2
 queen d 2 f 4
 queen d 2 g 2
 queen d 2 g 5
-queen d 2 h 2
 queen d 2 h 6
-queen d 3 a 3
 queen d 3 a 6
 queen d 3 b 1
 queen d 3 b 3
@@ -4876,13 +3922,11 @@ queen d 3 b 5
 queen d 3 c 2
 queen d 3 c 3
 queen d 3 c 4
-queen d 3 d 1
 queen d 3 d 2
 queen d 3 d 4
 queen d 3 d 5
 queen d 3 d 6
 queen d 3 d 7
-queen d 3 d 8
 queen d 3 e 2
 queen d 3 e 3
 queen d 3 e 4
@@ -4891,10 +3935,8 @@ queen d 3 f 3
 queen d 3 f 5
 queen d 3 g 3
 queen d 3 g 6
-queen d 3 h 3
 queen d 3 h 7
 queen d 4 a 1
-queen d 4 a 4
 queen d 4 a 7
 queen d 4 b 2
 queen d 4 b 4
@@ -4902,13 +3944,11 @@ queen d 4 b 6
 queen d 4 c 3
 queen d 4 c 4
 queen d 4 c 5
-queen d 4 d 1
 queen d 4 d 2
 queen d 4 d 3
 queen d 4 d 5
 queen d 4 d 6
 queen d 4 d 7
-queen d 4 d 8
 queen d 4 e 3
 queen d 4 e 4
 queen d 4 e 5
@@ -4918,10 +3958,8 @@ queen d 4 f 6
 queen d 4 g 1
 queen d 4 g 4
 queen d 4 g 7
-queen d 4 h 4
 queen d 4 h 8
 queen d 5 a 2
-queen d 5 a 5
 queen d 5 a 8
 queen d 5 b 3
 queen d 5 b 5
@@ -4929,13 +3967,11 @@ queen d 5 b 7
 queen d 5 c 4
 queen d 5 c 5
 queen d 5 c 6
-queen d 5 d 1
 queen d 5 d 2
 queen d 5 d 3
 queen d 5 d 4
 queen d 5 d 6
 queen d 5 d 7
-queen d 5 d 8
 queen d 5 e 4
 queen d 5 e 5
 queen d 5 e 6
@@ -4946,22 +3982,18 @@ queen d 5 g 2
 queen d 5 g 5
 queen d 5 g 8
 queen d 5 h 1
-queen d 5 h 5
 queen d 6 a 3
-queen d 6 a 6
 queen d 6 b 4
 queen d 6 b 6
 queen d 6 b 8
 queen d 6 c 5
 queen d 6 c 6
 queen d 6 c 7
-queen d 6 d 1
 queen d 6 d 2
 queen d 6 d 3
 queen d 6 d 4
 queen d 6 d 5
 queen d 6 d 7
-queen d 6 d 8
 queen d 6 e 5
 queen d 6 e 6
 queen d 6 e 7
@@ -4971,21 +4003,16 @@ queen d 6 f 8
 queen d 6 g 3
 queen d 6 g 6
 queen d 6 h 2
-queen d 6 h 6
 queen d 7 a 4
-queen d 7 a 7
 queen d 7 b 5
 queen d 7 b 7
 queen d 7 c 6
 queen d 7 c 7
 queen d 7 c 8
-queen d 7 d 1
-queen d 7 d 2
 queen d 7 d 3
 queen d 7 d 4
 queen d 7 d 5
 queen d 7 d 6
-queen d 7 d 8
 queen d 7 e 6
 queen d 7 e 7
 queen d 7 e 8
@@ -4994,16 +4021,11 @@ queen d 7 f 7
 queen d 7 g 4
 queen d 7 g 7
 queen d 7 h 3
-queen d 7 h 7
 queen d 8 a 5
-queen d 8 a 8
 queen d 8 b 6
 queen d 8 b 8
 queen d 8 c 7
 queen d 8 c 8
-queen d 8 d 1
-queen d 8 d 2
-queen d 8 d 3
 queen d 8 d 4
 queen d 8 d 5
 queen d 8 d 6
@@ -5015,9 +4037,7 @@ queen d 8 f 8
 queen d 8 g 5
 queen d 8 g 8
 queen d 8 h 4
-queen d 8 h 8
 queen d takes
-queen e 1 a 1
 queen e 1 a 5
 queen e 1 b 1
 queen e 1 b 4
@@ -5029,16 +4049,11 @@ queen e 1 e 2
 queen e 1 e 3
 queen e 1 e 4
 queen e 1 e 5
-queen e 1 e 6
-queen e 1 e 7
-queen e 1 e 8
 queen e 1 f 1
 queen e 1 f 2
 queen e 1 g 1
 queen e 1 g 3
-queen e 1 h 1
 queen e 1 h 4
-queen e 2 a 2
 queen e 2 a 6
 queen e 2 b 2
 queen e 2 b 5
@@ -5047,21 +4062,16 @@ queen e 2 c 4
 queen e 2 d 1
 queen e 2 d 2
 queen e 2 d 3
-queen e 2 e 1
 queen e 2 e 3
 queen e 2 e 4
 queen e 2 e 5
 queen e 2 e 6
-queen e 2 e 7
-queen e 2 e 8
 queen e 2 f 1
 queen e 2 f 2
 queen e 2 f 3
 queen e 2 g 2
 queen e 2 g 4
-queen e 2 h 2
 queen e 2 h 5
-queen e 3 a 3
 queen e 3 a 7
 queen e 3 b 3
 queen e 3 b 6
@@ -5071,22 +4081,18 @@ queen e 3 c 5
 queen e 3 d 2
 queen e 3 d 3
 queen e 3 d 4
-queen e 3 e 1
 queen e 3 e 2
 queen e 3 e 4
 queen e 3 e 5
 queen e 3 e 6
 queen e 3 e 7
-queen e 3 e 8
 queen e 3 f 2
 queen e 3 f 3
 queen e 3 f 4
 queen e 3 g 1
 queen e 3 g 3
 queen e 3 g 5
-queen e 3 h 3
 queen e 3 h 6
-queen e 4 a 4
 queen e 4 a 8
 queen e 4 b 1
 queen e 4 b 4
@@ -5097,13 +4103,11 @@ queen e 4 c 6
 queen e 4 d 3
 queen e 4 d 4
 queen e 4 d 5
-queen e 4 e 1
 queen e 4 e 2
 queen e 4 e 3
 queen e 4 e 5
 queen e 4 e 6
 queen e 4 e 7
-queen e 4 e 8
 queen e 4 f 3
 queen e 4 f 4
 queen e 4 f 5
@@ -5111,10 +4115,8 @@ queen e 4 g 2
 queen e 4 g 4
 queen e 4 g 6
 queen e 4 h 1
-queen e 4 h 4
 queen e 4 h 7
 queen e 5 a 1
-queen e 5 a 5
 queen e 5 b 2
 queen e 5 b 5
 queen e 5 b 8
@@ -5124,13 +4126,11 @@ queen e 5 c 7
 queen e 5 d 4
 queen e 5 d 5
 queen e 5 d 6
-queen e 5 e 1
 queen e 5 e 2
 queen e 5 e 3
 queen e 5 e 4
 queen e 5 e 6
 queen e 5 e 7
-queen e 5 e 8
 queen e 5 f 4
 queen e 5 f 5
 queen e 5 f 6
@@ -5138,10 +4138,8 @@ queen e 5 g 3
 queen e 5 g 5
 queen e 5 g 7
 queen e 5 h 2
-queen e 5 h 5
 queen e 5 h 8
 queen e 6 a 2
-queen e 6 a 6
 queen e 6 b 3
 queen e 6 b 6
 queen e 6 c 4
@@ -5150,13 +4148,11 @@ queen e 6 c 8
 queen e 6 d 5
 queen e 6 d 6
 queen e 6 d 7
-queen e 6 e 1
 queen e 6 e 2
 queen e 6 e 3
 queen e 6 e 4
 queen e 6 e 5
 queen e 6 e 7
-queen e 6 e 8
 queen e 6 f 5
 queen e 6 f 6
 queen e 6 f 7
@@ -5164,9 +4160,7 @@ queen e 6 g 4
 queen e 6 g 6
 queen e 6 g 8
 queen e 6 h 3
-queen e 6 h 6
 queen e 7 a 3
-queen e 7 a 7
 queen e 7 b 4
 queen e 7 b 7
 queen e 7 c 5
@@ -5174,31 +4168,23 @@ queen e 7 c 7
 queen e 7 d 6
 queen e 7 d 7
 queen e 7 d 8
-queen e 7 e 1
-queen e 7 e 2
 queen e 7 e 3
 queen e 7 e 4
 queen e 7 e 5
 queen e 7 e 6
-queen e 7 e 8
 queen e 7 f 6
 queen e 7 f 7
 queen e 7 f 8
 queen e 7 g 5
 queen e 7 g 7
 queen e 7 h 4
-queen e 7 h 7
 queen e 8 a 4
-queen e 8 a 8
 queen e 8 b 5
 queen e 8 b 8
 queen e 8 c 6
 queen e 8 c 8
 queen e 8 d 7
 queen e 8 d 8
-queen e 8 e 1
-queen e 8 e 2
-queen e 8 e 3
 queen e 8 e 4
 queen e 8 e 5
 queen e 8 e 6
@@ -5208,9 +4194,7 @@ queen e 8 f 8
 queen e 8 g 6
 queen e 8 g 8
 queen e 8 h 5
-queen e 8 h 8
 queen e takes
-queen f 1 a 1
 queen f 1 a 6
 queen f 1 b 1
 queen f 1 b 5
@@ -5225,13 +4209,9 @@ queen f 1 f 3
 queen f 1 f 4
 queen f 1 f 5
 queen f 1 f 6
-queen f 1 f 7
-queen f 1 f 8
 queen f 1 g 1
 queen f 1 g 2
-queen f 1 h 1
 queen f 1 h 3
-queen f 2 a 2
 queen f 2 a 7
 queen f 2 b 2
 queen f 2 b 6
@@ -5242,19 +4222,15 @@ queen f 2 d 4
 queen f 2 e 1
 queen f 2 e 2
 queen f 2 e 3
-queen f 2 f 1
 queen f 2 f 3
 queen f 2 f 4
 queen f 2 f 5
 queen f 2 f 6
 queen f 2 f 7
-queen f 2 f 8
 queen f 2 g 1
 queen f 2 g 2
 queen f 2 g 3
-queen f 2 h 2
 queen f 2 h 4
-queen f 3 a 3
 queen f 3 a 8
 queen f 3 b 3
 queen f 3 b 7
@@ -5266,20 +4242,16 @@ queen f 3 d 5
 queen f 3 e 2
 queen f 3 e 3
 queen f 3 e 4
-queen f 3 f 1
 queen f 3 f 2
 queen f 3 f 4
 queen f 3 f 5
 queen f 3 f 6
 queen f 3 f 7
-queen f 3 f 8
 queen f 3 g 2
 queen f 3 g 3
 queen f 3 g 4
 queen f 3 h 1
-queen f 3 h 3
 queen f 3 h 5
-queen f 4 a 4
 queen f 4 b 4
 queen f 4 b 8
 queen f 4 c 1
@@ -5291,20 +4263,16 @@ queen f 4 d 6
 queen f 4 e 3
 queen f 4 e 4
 queen f 4 e 5
-queen f 4 f 1
 queen f 4 f 2
 queen f 4 f 3
 queen f 4 f 5
 queen f 4 f 6
 queen f 4 f 7
-queen f 4 f 8
 queen f 4 g 3
 queen f 4 g 4
 queen f 4 g 5
 queen f 4 h 2
-queen f 4 h 4
 queen f 4 h 6
-queen f 5 a 5
 queen f 5 b 1
 queen f 5 b 5
 queen f 5 c 2
@@ -5316,21 +4284,17 @@ queen f 5 d 7
 queen f 5 e 4
 queen f 5 e 5
 queen f 5 e 6
-queen f 5 f 1
 queen f 5 f 2
 queen f 5 f 3
 queen f 5 f 4
 queen f 5 f 6
 queen f 5 f 7
-queen f 5 f 8
 queen f 5 g 4
 queen f 5 g 5
 queen f 5 g 6
 queen f 5 h 3
-queen f 5 h 5
 queen f 5 h 7
 queen f 6 a 1
-queen f 6 a 6
 queen f 6 b 2
 queen f 6 b 6
 queen f 6 c 3
@@ -5341,21 +4305,17 @@ queen f 6 d 8
 queen f 6 e 5
 queen f 6 e 6
 queen f 6 e 7
-queen f 6 f 1
 queen f 6 f 2
 queen f 6 f 3
 queen f 6 f 4
 queen f 6 f 5
 queen f 6 f 7
-queen f 6 f 8
 queen f 6 g 5
 queen f 6 g 6
 queen f 6 g 7
 queen f 6 h 4
-queen f 6 h 6
 queen f 6 h 8
 queen f 7 a 2
-queen f 7 a 7
 queen f 7 b 3
 queen f 7 b 7
 queen f 7 c 4
@@ -5365,20 +4325,16 @@ queen f 7 d 7
 queen f 7 e 6
 queen f 7 e 7
 queen f 7 e 8
-queen f 7 f 1
 queen f 7 f 2
 queen f 7 f 3
 queen f 7 f 4
 queen f 7 f 5
 queen f 7 f 6
-queen f 7 f 8
 queen f 7 g 6
 queen f 7 g 7
 queen f 7 g 8
 queen f 7 h 5
-queen f 7 h 7
 queen f 8 a 3
-queen f 8 a 8
 queen f 8 b 4
 queen f 8 b 8
 queen f 8 c 5
@@ -5387,8 +4343,6 @@ queen f 8 d 6
 queen f 8 d 8
 queen f 8 e 7
 queen f 8 e 8
-queen f 8 f 1
-queen f 8 f 2
 queen f 8 f 3
 queen f 8 f 4
 queen f 8 f 5
@@ -5397,9 +4351,7 @@ queen f 8 f 7
 queen f 8 g 7
 queen f 8 g 8
 queen f 8 h 6
-queen f 8 h 8
 queen f takes
-queen g 1 a 1
 queen g 1 a 7
 queen g 1 b 1
 queen g 1 b 6
@@ -5417,10 +4369,7 @@ queen g 1 g 4
 queen g 1 g 5
 queen g 1 g 6
 queen g 1 g 7
-queen g 1 g 8
-queen g 1 h 1
 queen g 1 h 2
-queen g 2 a 2
 queen g 2 a 8
 queen g 2 b 2
 queen g 2 b 7
@@ -5433,17 +4382,13 @@ queen g 2 e 4
 queen g 2 f 1
 queen g 2 f 2
 queen g 2 f 3
-queen g 2 g 1
 queen g 2 g 3
 queen g 2 g 4
 queen g 2 g 5
 queen g 2 g 6
 queen g 2 g 7
-queen g 2 g 8
 queen g 2 h 1
-queen g 2 h 2
 queen g 2 h 3
-queen g 3 a 3
 queen g 3 b 3
 queen g 3 b 8
 queen g 3 c 3
@@ -5456,18 +4401,13 @@ queen g 3 e 5
 queen g 3 f 2
 queen g 3 f 3
 queen g 3 f 4
-queen g 3 g 1
 queen g 3 g 2
 queen g 3 g 4
 queen g 3 g 5
 queen g 3 g 6
 queen g 3 g 7
-queen g 3 g 8
 queen g 3 h 2
-queen g 3 h 3
 queen g 3 h 4
-queen g 4 a 4
-queen g 4 b 4
 queen g 4 c 4
 queen g 4 c 8
 queen g 4 d 1
@@ -5479,18 +4419,13 @@ queen g 4 e 6
 queen g 4 f 3
 queen g 4 f 4
 queen g 4 f 5
-queen g 4 g 1
 queen g 4 g 2
 queen g 4 g 3
 queen g 4 g 5
 queen g 4 g 6
 queen g 4 g 7
-queen g 4 g 8
 queen g 4 h 3
-queen g 4 h 4
 queen g 4 h 5
-queen g 5 a 5
-queen g 5 b 5
 queen g 5 c 1
 queen g 5 c 5
 queen g 5 d 2
@@ -5502,17 +4437,13 @@ queen g 5 e 7
 queen g 5 f 4
 queen g 5 f 5
 queen g 5 f 6
-queen g 5 g 1
 queen g 5 g 2
 queen g 5 g 3
 queen g 5 g 4
 queen g 5 g 6
 queen g 5 g 7
-queen g 5 g 8
 queen g 5 h 4
-queen g 5 h 5
 queen g 5 h 6
-queen g 6 a 6
 queen g 6 b 1
 queen g 6 b 6
 queen g 6 c 2
@@ -5525,18 +4456,14 @@ queen g 6 e 8
 queen g 6 f 5
 queen g 6 f 6
 queen g 6 f 7
-queen g 6 g 1
 queen g 6 g 2
 queen g 6 g 3
 queen g 6 g 4
 queen g 6 g 5
 queen g 6 g 7
-queen g 6 g 8
 queen g 6 h 5
-queen g 6 h 6
 queen g 6 h 7
 queen g 7 a 1
-queen g 7 a 7
 queen g 7 b 2
 queen g 7 b 7
 queen g 7 c 3
@@ -5548,18 +4475,14 @@ queen g 7 e 7
 queen g 7 f 6
 queen g 7 f 7
 queen g 7 f 8
-queen g 7 g 1
 queen g 7 g 2
 queen g 7 g 3
 queen g 7 g 4
 queen g 7 g 5
 queen g 7 g 6
-queen g 7 g 8
 queen g 7 h 6
-queen g 7 h 7
 queen g 7 h 8
 queen g 8 a 2
-queen g 8 a 8
 queen g 8 b 3
 queen g 8 b 8
 queen g 8 c 4
@@ -5570,7 +4493,6 @@ queen g 8 e 6
 queen g 8 e 8
 queen g 8 f 7
 queen g 8 f 8
-queen g 8 g 1
 queen g 8 g 2
 queen g 8 g 3
 queen g 8 g 4
@@ -5578,9 +4500,7 @@ queen g 8 g 5
 queen g 8 g 6
 queen g 8 g 7
 queen g 8 h 7
-queen g 8 h 8
 queen g takes
-queen h 1 a 1
 queen h 1 a 8
 queen h 1 b 1
 queen h 1 b 7
@@ -5600,8 +4520,6 @@ queen h 1 h 4
 queen h 1 h 5
 queen h 1 h 6
 queen h 1 h 7
-queen h 1 h 8
-queen h 2 a 2
 queen h 2 b 2
 queen h 2 b 8
 queen h 2 c 2
@@ -5615,15 +4533,11 @@ queen h 2 f 4
 queen h 2 g 1
 queen h 2 g 2
 queen h 2 g 3
-queen h 2 h 1
 queen h 2 h 3
 queen h 2 h 4
 queen h 2 h 5
 queen h 2 h 6
 queen h 2 h 7
-queen h 2 h 8
-queen h 3 a 3
-queen h 3 b 3
 queen h 3 c 3
 queen h 3 c 8
 queen h 3 d 3
@@ -5636,16 +4550,11 @@ queen h 3 f 5
 queen h 3 g 2
 queen h 3 g 3
 queen h 3 g 4
-queen h 3 h 1
 queen h 3 h 2
 queen h 3 h 4
 queen h 3 h 5
 queen h 3 h 6
 queen h 3 h 7
-queen h 3 h 8
-queen h 4 a 4
-queen h 4 b 4
-queen h 4 c 4
 queen h 4 d 4
 queen h 4 d 8
 queen h 4 e 1
@@ -5657,16 +4566,11 @@ queen h 4 f 6
 queen h 4 g 3
 queen h 4 g 4
 queen h 4 g 5
-queen h 4 h 1
 queen h 4 h 2
 queen h 4 h 3
 queen h 4 h 5
 queen h 4 h 6
 queen h 4 h 7
-queen h 4 h 8
-queen h 5 a 5
-queen h 5 b 5
-queen h 5 c 5
 queen h 5 d 1
 queen h 5 d 5
 queen h 5 e 2
@@ -5678,15 +4582,11 @@ queen h 5 f 7
 queen h 5 g 4
 queen h 5 g 5
 queen h 5 g 6
-queen h 5 h 1
 queen h 5 h 2
 queen h 5 h 3
 queen h 5 h 4
 queen h 5 h 6
 queen h 5 h 7
-queen h 5 h 8
-queen h 6 a 6
-queen h 6 b 6
 queen h 6 c 1
 queen h 6 c 6
 queen h 6 d 2
@@ -5699,14 +4599,11 @@ queen h 6 f 8
 queen h 6 g 5
 queen h 6 g 6
 queen h 6 g 7
-queen h 6 h 1
 queen h 6 h 2
 queen h 6 h 3
 queen h 6 h 4
 queen h 6 h 5
 queen h 6 h 7
-queen h 6 h 8
-queen h 7 a 7
 queen h 7 b 1
 queen h 7 b 7
 queen h 7 c 2
@@ -5720,15 +4617,12 @@ queen h 7 f 7
 queen h 7 g 6
 queen h 7 g 7
 queen h 7 g 8
-queen h 7 h 1
 queen h 7 h 2
 queen h 7 h 3
 queen h 7 h 4
 queen h 7 h 5
 queen h 7 h 6
-queen h 7 h 8
 queen h 8 a 1
-queen h 8 a 8
 queen h 8 b 2
 queen h 8 b 8
 queen h 8 c 3
@@ -5741,7 +4635,6 @@ queen h 8 f 6
 queen h 8 f 8
 queen h 8 g 7
 queen h 8 g 8
-queen h 8 h 1
 queen h 8 h 2
 queen h 8 h 3
 queen h 8 h 4
@@ -5764,371 +4657,231 @@ bishop 8 takes
 bishop a 1 b 2
 bishop a 1 c 3
 bishop a 1 d 4
-bishop a 1 e 5
-bishop a 1 f 6
-bishop a 1 g 7
 bishop a 2 b 3
 bishop a 2 c 4
 bishop a 2 d 5
-bishop a 2 e 6
-bishop a 2 f 7
 bishop a 3 b 2
 bishop a 3 b 4
 bishop a 3 c 5
-bishop a 3 d 6
-bishop a 3 e 7
 bishop a 4 b 3
 bishop a 4 b 5
-bishop a 4 c 2
 bishop a 4 c 6
-bishop a 4 d 7
 bishop a 5 b 4
 bishop a 5 b 6
 bishop a 5 c 3
-bishop a 5 c 7
-bishop a 5 d 2
 bishop a 6 b 5
 bishop a 6 b 7
 bishop a 6 c 4
-bishop a 6 d 3
-bishop a 6 e 2
 bishop a 7 b 6
 bishop a 7 c 5
 bishop a 7 d 4
-bishop a 7 e 3
-bishop a 7 f 2
 bishop a 8 b 7
 bishop a 8 c 6
 bishop a 8 d 5
-bishop a 8 e 4
-bishop a 8 f 3
-bishop a 8 g 2
 bishop a takes
 bishop b 1 c 2
 bishop b 1 d 3
 bishop b 1 e 4
-bishop b 1 f 5
-bishop b 1 g 6
 bishop b 2 c 3
 bishop b 2 d 4
 bishop b 2 e 5
-bishop b 2 f 6
-bishop b 2 g 7
 bishop b 3 c 2
 bishop b 3 c 4
 bishop b 3 d 5
-bishop b 3 e 6
-bishop b 3 f 7
 bishop b 4 c 3
 bishop b 4 c 5
-bishop b 4 d 2
 bishop b 4 d 6
-bishop b 4 e 7
 bishop b 5 c 4
 bishop b 5 c 6
 bishop b 5 d 3
-bishop b 5 d 7
-bishop b 5 e 2
 bishop b 6 c 5
 bishop b 6 c 7
 bishop b 6 d 4
-bishop b 6 e 3
-bishop b 6 f 2
 bishop b 7 c 6
 bishop b 7 d 5
 bishop b 7 e 4
-bishop b 7 f 3
-bishop b 7 g 2
 bishop b 8 c 7
 bishop b 8 d 6
 bishop b 8 e 5
-bishop b 8 f 4
-bishop b 8 g 3
 bishop b takes
 bishop c 1 b 2
 bishop c 1 d 2
 bishop c 1 e 3
-bishop c 1 f 4
-bishop c 1 g 5
 bishop c 2 b 3
 bishop c 2 d 3
 bishop c 2 e 4
-bishop c 2 f 5
-bishop c 2 g 6
 bishop c 3 b 2
 bishop c 3 b 4
 bishop c 3 d 2
 bishop c 3 d 4
 bishop c 3 e 5
-bishop c 3 f 6
-bishop c 3 g 7
 bishop c 4 b 3
 bishop c 4 b 5
 bishop c 4 d 3
 bishop c 4 d 5
-bishop c 4 e 2
 bishop c 4 e 6
-bishop c 4 f 7
 bishop c 5 b 4
 bishop c 5 b 6
 bishop c 5 d 4
 bishop c 5 d 6
 bishop c 5 e 3
-bishop c 5 e 7
-bishop c 5 f 2
 bishop c 6 b 5
 bishop c 6 b 7
 bishop c 6 d 5
 bishop c 6 d 7
 bishop c 6 e 4
-bishop c 6 f 3
-bishop c 6 g 2
 bishop c 7 b 6
 bishop c 7 d 6
 bishop c 7 e 5
-bishop c 7 f 4
-bishop c 7 g 3
 bishop c 8 b 7
 bishop c 8 d 7
 bishop c 8 e 6
-bishop c 8 f 5
-bishop c 8 g 4
 bishop c takes
-bishop d 1 b 3
 bishop d 1 c 2
 bishop d 1 e 2
 bishop d 1 f 3
-bishop d 1 g 4
-bishop d 2 b 4
 bishop d 2 c 3
 bishop d 2 e 3
 bishop d 2 f 4
-bishop d 2 g 5
-bishop d 3 b 5
 bishop d 3 c 2
 bishop d 3 c 4
 bishop d 3 e 2
 bishop d 3 e 4
 bishop d 3 f 5
-bishop d 3 g 6
-bishop d 4 b 2
-bishop d 4 b 6
 bishop d 4 c 3
 bishop d 4 c 5
 bishop d 4 e 3
 bishop d 4 e 5
-bishop d 4 f 2
 bishop d 4 f 6
-bishop d 4 g 7
-bishop d 5 b 3
-bishop d 5 b 7
 bishop d 5 c 4
 bishop d 5 c 6
 bishop d 5 e 4
 bishop d 5 e 6
 bishop d 5 f 3
-bishop d 5 f 7
-bishop d 5 g 2
-bishop d 6 b 4
 bishop d 6 c 5
 bishop d 6 c 7
 bishop d 6 e 5
 bishop d 6 e 7
 bishop d 6 f 4
-bishop d 6 g 3
-bishop d 7 b 5
 bishop d 7 c 6
 bishop d 7 e 6
 bishop d 7 f 5
-bishop d 7 g 4
-bishop d 8 b 6
 bishop d 8 c 7
 bishop d 8 e 7
 bishop d 8 f 6
-bishop d 8 g 5
 bishop d takes
-bishop e 1 b 4
 bishop e 1 c 3
 bishop e 1 d 2
 bishop e 1 f 2
-bishop e 1 g 3
-bishop e 2 b 5
 bishop e 2 c 4
 bishop e 2 d 3
 bishop e 2 f 3
-bishop e 2 g 4
-bishop e 3 b 6
 bishop e 3 c 5
 bishop e 3 d 2
 bishop e 3 d 4
 bishop e 3 f 2
 bishop e 3 f 4
-bishop e 3 g 5
-bishop e 4 b 7
-bishop e 4 c 2
 bishop e 4 c 6
 bishop e 4 d 3
 bishop e 4 d 5
 bishop e 4 f 3
 bishop e 4 f 5
-bishop e 4 g 2
-bishop e 4 g 6
-bishop e 5 b 2
 bishop e 5 c 3
-bishop e 5 c 7
 bishop e 5 d 4
 bishop e 5 d 6
 bishop e 5 f 4
 bishop e 5 f 6
-bishop e 5 g 3
-bishop e 5 g 7
-bishop e 6 b 3
 bishop e 6 c 4
 bishop e 6 d 5
 bishop e 6 d 7
 bishop e 6 f 5
 bishop e 6 f 7
-bishop e 6 g 4
-bishop e 7 b 4
 bishop e 7 c 5
 bishop e 7 d 6
 bishop e 7 f 6
-bishop e 7 g 5
-bishop e 8 b 5
 bishop e 8 c 6
 bishop e 8 d 7
 bishop e 8 f 7
-bishop e 8 g 6
 bishop e takes
-bishop f 1 b 5
-bishop f 1 c 4
 bishop f 1 d 3
 bishop f 1 e 2
 bishop f 1 g 2
-bishop f 2 b 6
-bishop f 2 c 5
 bishop f 2 d 4
 bishop f 2 e 3
 bishop f 2 g 3
-bishop f 3 b 7
-bishop f 3 c 6
 bishop f 3 d 5
 bishop f 3 e 2
 bishop f 3 e 4
 bishop f 3 g 2
 bishop f 3 g 4
-bishop f 4 c 7
-bishop f 4 d 2
 bishop f 4 d 6
 bishop f 4 e 3
 bishop f 4 e 5
 bishop f 4 g 3
 bishop f 4 g 5
-bishop f 5 c 2
 bishop f 5 d 3
-bishop f 5 d 7
 bishop f 5 e 4
 bishop f 5 e 6
 bishop f 5 g 4
 bishop f 5 g 6
-bishop f 6 b 2
-bishop f 6 c 3
 bishop f 6 d 4
 bishop f 6 e 5
 bishop f 6 e 7
 bishop f 6 g 5
 bishop f 6 g 7
-bishop f 7 b 3
-bishop f 7 c 4
 bishop f 7 d 5
 bishop f 7 e 6
 bishop f 7 g 6
-bishop f 8 b 4
-bishop f 8 c 5
 bishop f 8 d 6
 bishop f 8 e 7
 bishop f 8 g 7
 bishop f takes
-bishop g 1 b 6
-bishop g 1 c 5
 bishop g 1 d 4
 bishop g 1 e 3
 bishop g 1 f 2
-bishop g 2 b 7
-bishop g 2 c 6
 bishop g 2 d 5
 bishop g 2 e 4
 bishop g 2 f 3
-bishop g 3 c 7
-bishop g 3 d 6
 bishop g 3 e 5
 bishop g 3 f 2
 bishop g 3 f 4
-bishop g 4 d 7
-bishop g 4 e 2
 bishop g 4 e 6
 bishop g 4 f 3
 bishop g 4 f 5
-bishop g 5 d 2
 bishop g 5 e 3
-bishop g 5 e 7
 bishop g 5 f 4
 bishop g 5 f 6
-bishop g 6 c 2
-bishop g 6 d 3
 bishop g 6 e 4
 bishop g 6 f 5
 bishop g 6 f 7
-bishop g 7 b 2
-bishop g 7 c 3
 bishop g 7 d 4
 bishop g 7 e 5
 bishop g 7 f 6
-bishop g 8 b 3
-bishop g 8 c 4
 bishop g 8 d 5
 bishop g 8 e 6
 bishop g 8 f 7
 bishop g takes
-bishop h 1 b 7
-bishop h 1 c 6
-bishop h 1 d 5
 bishop h 1 e 4
 bishop h 1 f 3
 bishop h 1 g 2
-bishop h 2 c 7
-bishop h 2 d 6
 bishop h 2 e 5
 bishop h 2 f 4
 bishop h 2 g 3
-bishop h 3 d 7
-bishop h 3 e 6
 bishop h 3 f 5
 bishop h 3 g 2
 bishop h 3 g 4
-bishop h 4 e 7
-bishop h 4 f 2
 bishop h 4 f 6
 bishop h 4 g 3
 bishop h 4 g 5
-bishop h 5 e 2
 bishop h 5 f 3
-bishop h 5 f 7
 bishop h 5 g 4
 bishop h 5 g 6
-bishop h 6 d 2
-bishop h 6 e 3
 bishop h 6 f 4
 bishop h 6 g 5
 bishop h 6 g 7
-bishop h 7 c 2
-bishop h 7 d 3
 bishop h 7 e 4
 bishop h 7 f 5
 bishop h 7 g 6
-bishop h 8 b 2
-bishop h 8 c 3
-bishop h 8 d 4
 bishop h 8 e 5
 bishop h 8 f 6
 bishop h 8 g 7
@@ -6224,12 +4977,10 @@ knight a 2 c 3
 knight a 3 b 5
 knight a 3 c 2
 knight a 3 c 4
-knight a 4 b 2
 knight a 4 b 6
 knight a 4 c 3
 knight a 4 c 5
 knight a 5 b 3
-knight a 5 b 7
 knight a 5 c 4
 knight a 5 c 6
 knight a 6 b 4
@@ -6240,125 +4991,81 @@ knight a 7 c 6
 knight a 8 b 6
 knight a 8 c 7
 knight a takes
-knight b 1 a 3
 knight b 1 c 3
 knight b 1 d 2
-knight b 2 a 4
 knight b 2 c 4
 knight b 2 d 3
-knight b 3 a 5
 knight b 3 c 5
 knight b 3 d 2
 knight b 3 d 4
-knight b 4 a 2
-knight b 4 a 6
-knight b 4 c 2
 knight b 4 c 6
 knight b 4 d 3
 knight b 4 d 5
-knight b 5 a 3
-knight b 5 a 7
 knight b 5 c 3
-knight b 5 c 7
 knight b 5 d 4
 knight b 5 d 6
-knight b 6 a 4
 knight b 6 c 4
 knight b 6 d 5
 knight b 6 d 7
-knight b 7 a 5
 knight b 7 c 5
 knight b 7 d 6
-knight b 8 a 6
 knight b 8 c 6
 knight b 8 d 7
 knight b takes
-knight c 1 a 2
 knight c 1 b 3
 knight c 1 d 3
 knight c 1 e 2
-knight c 2 a 3
 knight c 2 b 4
 knight c 2 d 4
 knight c 2 e 3
-knight c 3 a 2
-knight c 3 a 4
 knight c 3 b 5
 knight c 3 d 5
 knight c 3 e 2
 knight c 3 e 4
-knight c 4 a 3
-knight c 4 a 5
-knight c 4 b 2
 knight c 4 b 6
-knight c 4 d 2
 knight c 4 d 6
 knight c 4 e 3
 knight c 4 e 5
-knight c 5 a 4
-knight c 5 a 6
 knight c 5 b 3
-knight c 5 b 7
 knight c 5 d 3
-knight c 5 d 7
 knight c 5 e 4
 knight c 5 e 6
-knight c 6 a 5
-knight c 6 a 7
 knight c 6 b 4
 knight c 6 d 4
 knight c 6 e 5
 knight c 6 e 7
-knight c 7 a 6
 knight c 7 b 5
 knight c 7 d 5
 knight c 7 e 6
-knight c 8 a 7
 knight c 8 b 6
 knight c 8 d 6
 knight c 8 e 7
 knight c takes
-knight d 1 b 2
 knight d 1 c 3
 knight d 1 e 3
 knight d 1 f 2
-knight d 2 b 3
 knight d 2 c 4
 knight d 2 e 4
 knight d 2 f 3
-knight d 3 b 2
-knight d 3 b 4
 knight d 3 c 5
 knight d 3 e 5
 knight d 3 f 2
 knight d 3 f 4
-knight d 4 b 3
-knight d 4 b 5
-knight d 4 c 2
 knight d 4 c 6
-knight d 4 e 2
 knight d 4 e 6
 knight d 4 f 3
 knight d 4 f 5
-knight d 5 b 4
-knight d 5 b 6
 knight d 5 c 3
-knight d 5 c 7
 knight d 5 e 3
-knight d 5 e 7
 knight d 5 f 4
 knight d 5 f 6
-knight d 6 b 5
-knight d 6 b 7
 knight d 6 c 4
 knight d 6 e 4
 knight d 6 f 5
 knight d 6 f 7
-knight d 7 b 6
 knight d 7 c 5
 knight d 7 e 5
 knight d 7 f 6
-knight d 8 b 7
 knight d 8 c 6
 knight d 8 e 6
 knight d 8 f 7
@@ -6366,125 +5073,81 @@ knight d takes
 knight e 1 c 2
 knight e 1 d 3
 knight e 1 f 3
-knight e 1 g 2
 knight e 2 c 3
 knight e 2 d 4
 knight e 2 f 4
-knight e 2 g 3
 knight e 3 c 2
 knight e 3 c 4
 knight e 3 d 5
 knight e 3 f 5
-knight e 3 g 2
-knight e 3 g 4
 knight e 4 c 3
 knight e 4 c 5
-knight e 4 d 2
 knight e 4 d 6
-knight e 4 f 2
 knight e 4 f 6
-knight e 4 g 3
-knight e 4 g 5
 knight e 5 c 4
 knight e 5 c 6
 knight e 5 d 3
-knight e 5 d 7
 knight e 5 f 3
-knight e 5 f 7
-knight e 5 g 4
-knight e 5 g 6
 knight e 6 c 5
 knight e 6 c 7
 knight e 6 d 4
 knight e 6 f 4
-knight e 6 g 5
-knight e 6 g 7
 knight e 7 c 6
 knight e 7 d 5
 knight e 7 f 5
-knight e 7 g 6
 knight e 8 c 7
 knight e 8 d 6
 knight e 8 f 6
-knight e 8 g 7
 knight e takes
 knight f 1 d 2
 knight f 1 e 3
 knight f 1 g 3
-knight f 1 h 2
 knight f 2 d 3
 knight f 2 e 4
 knight f 2 g 4
-knight f 2 h 3
 knight f 3 d 2
 knight f 3 d 4
 knight f 3 e 5
 knight f 3 g 5
-knight f 3 h 2
-knight f 3 h 4
 knight f 4 d 3
 knight f 4 d 5
-knight f 4 e 2
 knight f 4 e 6
-knight f 4 g 2
 knight f 4 g 6
-knight f 4 h 3
-knight f 4 h 5
 knight f 5 d 4
 knight f 5 d 6
 knight f 5 e 3
-knight f 5 e 7
 knight f 5 g 3
-knight f 5 g 7
-knight f 5 h 4
-knight f 5 h 6
 knight f 6 d 5
 knight f 6 d 7
 knight f 6 e 4
 knight f 6 g 4
-knight f 6 h 5
-knight f 6 h 7
 knight f 7 d 6
 knight f 7 e 5
 knight f 7 g 5
-knight f 7 h 6
 knight f 8 d 7
 knight f 8 e 6
 knight f 8 g 6
-knight f 8 h 7
 knight f takes
 knight g 1 e 2
 knight g 1 f 3
-knight g 1 h 3
 knight g 2 e 3
 knight g 2 f 4
-knight g 2 h 4
 knight g 3 e 2
 knight g 3 e 4
 knight g 3 f 5
-knight g 3 h 5
 knight g 4 e 3
 knight g 4 e 5
-knight g 4 f 2
 knight g 4 f 6
-knight g 4 h 2
-knight g 4 h 6
 knight g 5 e 4
 knight g 5 e 6
 knight g 5 f 3
-knight g 5 f 7
-knight g 5 h 3
-knight g 5 h 7
 knight g 6 e 5
 knight g 6 e 7
 knight g 6 f 4
-knight g 6 h 4
 knight g 7 e 6
 knight g 7 f 5
-knight g 7 h 5
 knight g 8 e 7
 knight g 8 f 6
-knight g 8 h 6
 knight g takes
 knight h 1 f 2
 knight h 1 g 3
@@ -6495,12 +5158,10 @@ knight h 3 f 4
 knight h 3 g 5
 knight h 4 f 3
 knight h 4 f 5
-knight h 4 g 2
 knight h 4 g 6
 knight h 5 f 4
 knight h 5 f 6
 knight h 5 g 3
-knight h 5 g 7
 knight h 6 f 5
 knight h 6 f 7
 knight h 6 g 4
@@ -6509,70 +5170,6 @@ knight h 7 g 5
 knight h 8 f 7
 knight h 8 g 6
 knight h takes
-rook a 1 takes
-rook a 2 takes
-rook a 3 takes
-rook a 4 takes
-rook a 5 takes
-rook a 6 takes
-rook a 7 takes
-rook a 8 takes
-rook b 1 takes
-rook b 2 takes
-rook b 3 takes
-rook b 4 takes
-rook b 5 takes
-rook b 6 takes
-rook b 7 takes
-rook b 8 takes
-rook c 1 takes
-rook c 2 takes
-rook c 3 takes
-rook c 4 takes
-rook c 5 takes
-rook c 6 takes
-rook c 7 takes
-rook c 8 takes
-rook d 1 takes
-rook d 2 takes
-rook d 3 takes
-rook d 4 takes
-rook d 5 takes
-rook d 6 takes
-rook d 7 takes
-rook d 8 takes
-rook e 1 takes
-rook e 2 takes
-rook e 3 takes
-rook e 4 takes
-rook e 5 takes
-rook e 6 takes
-rook e 7 takes
-rook e 8 takes
-rook f 1 takes
-rook f 2 takes
-rook f 3 takes
-rook f 4 takes
-rook f 5 takes
-rook f 6 takes
-rook f 7 takes
-rook f 8 takes
-rook g 1 takes
-rook g 2 takes
-rook g 3 takes
-rook g 4 takes
-rook g 5 takes
-rook g 6 takes
-rook g 7 takes
-rook g 8 takes
-rook h 1 takes
-rook h 2 takes
-rook h 3 takes
-rook h 4 takes
-rook h 5 takes
-rook h 6 takes
-rook h 7 takes
-rook h 8 takes
 rook takes a 1
 rook takes a 2
 rook takes a 3
@@ -6893,12 +5490,14 @@ bishop h 5 takes
 bishop h 6 takes
 bishop h 7 takes
 bishop h 8 takes
+bishop takes a 1
 bishop takes a 2
 bishop takes a 3
 bishop takes a 4
 bishop takes a 5
 bishop takes a 6
 bishop takes a 7
+bishop takes a 8
 bishop takes b 1
 bishop takes b 2
 bishop takes b 3
@@ -6947,18 +5546,21 @@ bishop takes g 5
 bishop takes g 6
 bishop takes g 7
 bishop takes g 8
+bishop takes h 1
 bishop takes h 2
 bishop takes h 3
 bishop takes h 4
 bishop takes h 5
 bishop takes h 6
 bishop takes h 7
+bishop takes h 8
 c 1 equals queen
 c 8 equals queen
 c takes b 1 rook
 c takes b 8 rook
 c takes d 1 rook
 c takes d 8 rook
+castles kingside
 d 1 equals queen
 d 8 equals queen
 d takes c 1 rook
@@ -7166,294 +5768,246 @@ rook 1 takes h 4
 rook 1 takes h 5
 rook 1 takes h 6
 rook 1 takes h 7
-rook 2 takes a 2
 rook 2 takes a 3
 rook 2 takes a 4
 rook 2 takes a 5
 rook 2 takes a 6
 rook 2 takes a 7
-rook 2 takes b 2
 rook 2 takes b 3
 rook 2 takes b 4
 rook 2 takes b 5
 rook 2 takes b 6
 rook 2 takes b 7
-rook 2 takes c 2
 rook 2 takes c 3
 rook 2 takes c 4
 rook 2 takes c 5
 rook 2 takes c 6
 rook 2 takes c 7
-rook 2 takes d 2
 rook 2 takes d 3
 rook 2 takes d 4
 rook 2 takes d 5
 rook 2 takes d 6
 rook 2 takes d 7
-rook 2 takes e 2
 rook 2 takes e 3
 rook 2 takes e 4
 rook 2 takes e 5
 rook 2 takes e 6
 rook 2 takes e 7
-rook 2 takes f 2
 rook 2 takes f 3
 rook 2 takes f 4
 rook 2 takes f 5
 rook 2 takes f 6
 rook 2 takes f 7
-rook 2 takes g 2
 rook 2 takes g 3
 rook 2 takes g 4
 rook 2 takes g 5
 rook 2 takes g 6
 rook 2 takes g 7
-rook 2 takes h 2
 rook 2 takes h 3
 rook 2 takes h 4
 rook 2 takes h 5
 rook 2 takes h 6
 rook 2 takes h 7
 rook 3 takes a 2
-rook 3 takes a 3
 rook 3 takes a 4
 rook 3 takes a 5
 rook 3 takes a 6
 rook 3 takes a 7
 rook 3 takes b 2
-rook 3 takes b 3
 rook 3 takes b 4
 rook 3 takes b 5
 rook 3 takes b 6
 rook 3 takes b 7
 rook 3 takes c 2
-rook 3 takes c 3
 rook 3 takes c 4
 rook 3 takes c 5
 rook 3 takes c 6
 rook 3 takes c 7
 rook 3 takes d 2
-rook 3 takes d 3
 rook 3 takes d 4
 rook 3 takes d 5
 rook 3 takes d 6
 rook 3 takes d 7
 rook 3 takes e 2
-rook 3 takes e 3
 rook 3 takes e 4
 rook 3 takes e 5
 rook 3 takes e 6
 rook 3 takes e 7
 rook 3 takes f 2
-rook 3 takes f 3
 rook 3 takes f 4
 rook 3 takes f 5
 rook 3 takes f 6
 rook 3 takes f 7
 rook 3 takes g 2
-rook 3 takes g 3
 rook 3 takes g 4
 rook 3 takes g 5
 rook 3 takes g 6
 rook 3 takes g 7
 rook 3 takes h 2
-rook 3 takes h 3
 rook 3 takes h 4
 rook 3 takes h 5
 rook 3 takes h 6
 rook 3 takes h 7
 rook 4 takes a 2
 rook 4 takes a 3
-rook 4 takes a 4
 rook 4 takes a 5
 rook 4 takes a 6
 rook 4 takes a 7
 rook 4 takes b 2
 rook 4 takes b 3
-rook 4 takes b 4
 rook 4 takes b 5
 rook 4 takes b 6
 rook 4 takes b 7
 rook 4 takes c 2
 rook 4 takes c 3
-rook 4 takes c 4
 rook 4 takes c 5
 rook 4 takes c 6
 rook 4 takes c 7
 rook 4 takes d 2
 rook 4 takes d 3
-rook 4 takes d 4
 rook 4 takes d 5
 rook 4 takes d 6
 rook 4 takes d 7
 rook 4 takes e 2
 rook 4 takes e 3
-rook 4 takes e 4
 rook 4 takes e 5
 rook 4 takes e 6
 rook 4 takes e 7
 rook 4 takes f 2
 rook 4 takes f 3
-rook 4 takes f 4
 rook 4 takes f 5
 rook 4 takes f 6
 rook 4 takes f 7
 rook 4 takes g 2
 rook 4 takes g 3
-rook 4 takes g 4
 rook 4 takes g 5
 rook 4 takes g 6
 rook 4 takes g 7
 rook 4 takes h 2
 rook 4 takes h 3
-rook 4 takes h 4
 rook 4 takes h 5
 rook 4 takes h 6
 rook 4 takes h 7
 rook 5 takes a 2
 rook 5 takes a 3
 rook 5 takes a 4
-rook 5 takes a 5
 rook 5 takes a 6
 rook 5 takes a 7
 rook 5 takes b 2
 rook 5 takes b 3
 rook 5 takes b 4
-rook 5 takes b 5
 rook 5 takes b 6
 rook 5 takes b 7
 rook 5 takes c 2
 rook 5 takes c 3
 rook 5 takes c 4
-rook 5 takes c 5
 rook 5 takes c 6
 rook 5 takes c 7
 rook 5 takes d 2
 rook 5 takes d 3
 rook 5 takes d 4
-rook 5 takes d 5
 rook 5 takes d 6
 rook 5 takes d 7
 rook 5 takes e 2
 rook 5 takes e 3
 rook 5 takes e 4
-rook 5 takes e 5
 rook 5 takes e 6
 rook 5 takes e 7
 rook 5 takes f 2
 rook 5 takes f 3
 rook 5 takes f 4
-rook 5 takes f 5
 rook 5 takes f 6
 rook 5 takes f 7
 rook 5 takes g 2
 rook 5 takes g 3
 rook 5 takes g 4
-rook 5 takes g 5
 rook 5 takes g 6
 rook 5 takes g 7
 rook 5 takes h 2
 rook 5 takes h 3
 rook 5 takes h 4
-rook 5 takes h 5
 rook 5 takes h 6
 rook 5 takes h 7
 rook 6 takes a 2
 rook 6 takes a 3
 rook 6 takes a 4
 rook 6 takes a 5
-rook 6 takes a 6
 rook 6 takes a 7
 rook 6 takes b 2
 rook 6 takes b 3
 rook 6 takes b 4
 rook 6 takes b 5
-rook 6 takes b 6
 rook 6 takes b 7
 rook 6 takes c 2
 rook 6 takes c 3
 rook 6 takes c 4
 rook 6 takes c 5
-rook 6 takes c 6
 rook 6 takes c 7
 rook 6 takes d 2
 rook 6 takes d 3
 rook 6 takes d 4
 rook 6 takes d 5
-rook 6 takes d 6
 rook 6 takes d 7
 rook 6 takes e 2
 rook 6 takes e 3
 rook 6 takes e 4
 rook 6 takes e 5
-rook 6 takes e 6
 rook 6 takes e 7
 rook 6 takes f 2
 rook 6 takes f 3
 rook 6 takes f 4
 rook 6 takes f 5
-rook 6 takes f 6
 rook 6 takes f 7
 rook 6 takes g 2
 rook 6 takes g 3
 rook 6 takes g 4
 rook 6 takes g 5
-rook 6 takes g 6
 rook 6 takes g 7
 rook 6 takes h 2
 rook 6 takes h 3
 rook 6 takes h 4
 rook 6 takes h 5
-rook 6 takes h 6
 rook 6 takes h 7
 rook 7 takes a 2
 rook 7 takes a 3
 rook 7 takes a 4
 rook 7 takes a 5
 rook 7 takes a 6
-rook 7 takes a 7
 rook 7 takes b 2
 rook 7 takes b 3
 rook 7 takes b 4
 rook 7 takes b 5
 rook 7 takes b 6
-rook 7 takes b 7
 rook 7 takes c 2
 rook 7 takes c 3
 rook 7 takes c 4
 rook 7 takes c 5
 rook 7 takes c 6
-rook 7 takes c 7
 rook 7 takes d 2
 rook 7 takes d 3
 rook 7 takes d 4
 rook 7 takes d 5
 rook 7 takes d 6
-rook 7 takes d 7
 rook 7 takes e 2
 rook 7 takes e 3
 rook 7 takes e 4
 rook 7 takes e 5
 rook 7 takes e 6
-rook 7 takes e 7
 rook 7 takes f 2
 rook 7 takes f 3
 rook 7 takes f 4
 rook 7 takes f 5
 rook 7 takes f 6
-rook 7 takes f 7
 rook 7 takes g 2
 rook 7 takes g 3
 rook 7 takes g 4
 rook 7 takes g 5
 rook 7 takes g 6
-rook 7 takes g 7
 rook 7 takes h 2
 rook 7 takes h 3
 rook 7 takes h 4
 rook 7 takes h 5
 rook 7 takes h 6
-rook 7 takes h 7
 rook 8 takes a 2
 rook 8 takes a 3
 rook 8 takes a 4
@@ -8080,6 +6634,7 @@ c takes d 1 queen
 c takes d 8 queen
 c takes pawn rook
 c takes rook rook
+castles queenside
 d 1 equals bishop
 d 1 equals knight
 d 8 equals bishop
@@ -8147,7 +6702,6 @@ queen 1 takes b 4
 queen 1 takes b 5
 queen 1 takes b 6
 queen 1 takes b 7
-queen 1 takes b 8
 queen 1 takes c 1
 queen 1 takes c 2
 queen 1 takes c 3
@@ -8155,7 +6709,6 @@ queen 1 takes c 4
 queen 1 takes c 5
 queen 1 takes c 6
 queen 1 takes c 7
-queen 1 takes c 8
 queen 1 takes d 1
 queen 1 takes d 2
 queen 1 takes d 3
@@ -8163,7 +6716,6 @@ queen 1 takes d 4
 queen 1 takes d 5
 queen 1 takes d 6
 queen 1 takes d 7
-queen 1 takes d 8
 queen 1 takes e 1
 queen 1 takes e 2
 queen 1 takes e 3
@@ -8171,7 +6723,6 @@ queen 1 takes e 4
 queen 1 takes e 5
 queen 1 takes e 6
 queen 1 takes e 7
-queen 1 takes e 8
 queen 1 takes f 1
 queen 1 takes f 2
 queen 1 takes f 3
@@ -8179,7 +6730,6 @@ queen 1 takes f 4
 queen 1 takes f 5
 queen 1 takes f 6
 queen 1 takes f 7
-queen 1 takes f 8
 queen 1 takes g 1
 queen 1 takes g 2
 queen 1 takes g 3
@@ -8187,7 +6737,6 @@ queen 1 takes g 4
 queen 1 takes g 5
 queen 1 takes g 6
 queen 1 takes g 7
-queen 1 takes g 8
 queen 1 takes h 1
 queen 1 takes h 2
 queen 1 takes h 3
@@ -8219,7 +6768,6 @@ queen 2 takes c 4
 queen 2 takes c 5
 queen 2 takes c 6
 queen 2 takes c 7
-queen 2 takes c 8
 queen 2 takes d 1
 queen 2 takes d 2
 queen 2 takes d 3
@@ -8227,7 +6775,6 @@ queen 2 takes d 4
 queen 2 takes d 5
 queen 2 takes d 6
 queen 2 takes d 7
-queen 2 takes d 8
 queen 2 takes e 1
 queen 2 takes e 2
 queen 2 takes e 3
@@ -8235,7 +6782,6 @@ queen 2 takes e 4
 queen 2 takes e 5
 queen 2 takes e 6
 queen 2 takes e 7
-queen 2 takes e 8
 queen 2 takes f 1
 queen 2 takes f 2
 queen 2 takes f 3
@@ -8243,7 +6789,6 @@ queen 2 takes f 4
 queen 2 takes f 5
 queen 2 takes f 6
 queen 2 takes f 7
-queen 2 takes f 8
 queen 2 takes g 1
 queen 2 takes g 2
 queen 2 takes g 3
@@ -8291,7 +6836,6 @@ queen 3 takes d 4
 queen 3 takes d 5
 queen 3 takes d 6
 queen 3 takes d 7
-queen 3 takes d 8
 queen 3 takes e 1
 queen 3 takes e 2
 queen 3 takes e 3
@@ -8299,7 +6843,6 @@ queen 3 takes e 4
 queen 3 takes e 5
 queen 3 takes e 6
 queen 3 takes e 7
-queen 3 takes e 8
 queen 3 takes f 1
 queen 3 takes f 2
 queen 3 takes f 3
@@ -8476,7 +7019,6 @@ queen 6 takes c 5
 queen 6 takes c 6
 queen 6 takes c 7
 queen 6 takes c 8
-queen 6 takes d 1
 queen 6 takes d 2
 queen 6 takes d 3
 queen 6 takes d 4
@@ -8484,7 +7026,6 @@ queen 6 takes d 5
 queen 6 takes d 6
 queen 6 takes d 7
 queen 6 takes d 8
-queen 6 takes e 1
 queen 6 takes e 2
 queen 6 takes e 3
 queen 6 takes e 4
@@ -8532,7 +7073,6 @@ queen 7 takes b 5
 queen 7 takes b 6
 queen 7 takes b 7
 queen 7 takes b 8
-queen 7 takes c 1
 queen 7 takes c 2
 queen 7 takes c 3
 queen 7 takes c 4
@@ -8540,7 +7080,6 @@ queen 7 takes c 5
 queen 7 takes c 6
 queen 7 takes c 7
 queen 7 takes c 8
-queen 7 takes d 1
 queen 7 takes d 2
 queen 7 takes d 3
 queen 7 takes d 4
@@ -8548,7 +7087,6 @@ queen 7 takes d 5
 queen 7 takes d 6
 queen 7 takes d 7
 queen 7 takes d 8
-queen 7 takes e 1
 queen 7 takes e 2
 queen 7 takes e 3
 queen 7 takes e 4
@@ -8556,7 +7094,6 @@ queen 7 takes e 5
 queen 7 takes e 6
 queen 7 takes e 7
 queen 7 takes e 8
-queen 7 takes f 1
 queen 7 takes f 2
 queen 7 takes f 3
 queen 7 takes f 4
@@ -8588,7 +7125,6 @@ queen 8 takes a 5
 queen 8 takes a 6
 queen 8 takes a 7
 queen 8 takes a 8
-queen 8 takes b 1
 queen 8 takes b 2
 queen 8 takes b 3
 queen 8 takes b 4
@@ -8596,7 +7132,6 @@ queen 8 takes b 5
 queen 8 takes b 6
 queen 8 takes b 7
 queen 8 takes b 8
-queen 8 takes c 1
 queen 8 takes c 2
 queen 8 takes c 3
 queen 8 takes c 4
@@ -8604,7 +7139,6 @@ queen 8 takes c 5
 queen 8 takes c 6
 queen 8 takes c 7
 queen 8 takes c 8
-queen 8 takes d 1
 queen 8 takes d 2
 queen 8 takes d 3
 queen 8 takes d 4
@@ -8612,7 +7146,6 @@ queen 8 takes d 5
 queen 8 takes d 6
 queen 8 takes d 7
 queen 8 takes d 8
-queen 8 takes e 1
 queen 8 takes e 2
 queen 8 takes e 3
 queen 8 takes e 4
@@ -8620,7 +7153,6 @@ queen 8 takes e 5
 queen 8 takes e 6
 queen 8 takes e 7
 queen 8 takes e 8
-queen 8 takes f 1
 queen 8 takes f 2
 queen 8 takes f 3
 queen 8 takes f 4
@@ -8628,7 +7160,6 @@ queen 8 takes f 5
 queen 8 takes f 6
 queen 8 takes f 7
 queen 8 takes f 8
-queen 8 takes g 1
 queen 8 takes g 2
 queen 8 takes g 3
 queen 8 takes g 4
@@ -9222,33 +7753,21 @@ bishop 1 takes a 4
 bishop 1 takes b 2
 bishop 1 takes b 3
 bishop 1 takes b 4
-bishop 1 takes b 5
-bishop 1 takes b 6
-bishop 1 takes b 7
 bishop 1 takes c 2
 bishop 1 takes c 3
 bishop 1 takes c 4
-bishop 1 takes c 5
-bishop 1 takes c 6
 bishop 1 takes d 2
 bishop 1 takes d 3
 bishop 1 takes d 4
-bishop 1 takes d 5
 bishop 1 takes e 2
 bishop 1 takes e 3
 bishop 1 takes e 4
-bishop 1 takes e 5
 bishop 1 takes f 2
 bishop 1 takes f 3
 bishop 1 takes f 4
-bishop 1 takes f 5
-bishop 1 takes f 6
 bishop 1 takes g 2
 bishop 1 takes g 3
 bishop 1 takes g 4
-bishop 1 takes g 5
-bishop 1 takes g 6
-bishop 1 takes g 7
 bishop 1 takes h 2
 bishop 1 takes h 3
 bishop 1 takes h 4
@@ -9258,31 +7777,21 @@ bishop 2 takes a 5
 bishop 2 takes b 3
 bishop 2 takes b 4
 bishop 2 takes b 5
-bishop 2 takes b 6
-bishop 2 takes b 7
 bishop 2 takes c 3
 bishop 2 takes c 4
 bishop 2 takes c 5
-bishop 2 takes c 6
-bishop 2 takes c 7
 bishop 2 takes d 3
 bishop 2 takes d 4
 bishop 2 takes d 5
-bishop 2 takes d 6
 bishop 2 takes e 3
 bishop 2 takes e 4
 bishop 2 takes e 5
-bishop 2 takes e 6
 bishop 2 takes f 3
 bishop 2 takes f 4
 bishop 2 takes f 5
-bishop 2 takes f 6
-bishop 2 takes f 7
 bishop 2 takes g 3
 bishop 2 takes g 4
 bishop 2 takes g 5
-bishop 2 takes g 6
-bishop 2 takes g 7
 bishop 2 takes h 3
 bishop 2 takes h 4
 bishop 2 takes h 5
@@ -9292,138 +7801,90 @@ bishop 3 takes a 5
 bishop 3 takes b 2
 bishop 3 takes b 4
 bishop 3 takes b 5
-bishop 3 takes b 6
-bishop 3 takes b 7
 bishop 3 takes c 2
 bishop 3 takes c 4
 bishop 3 takes c 5
-bishop 3 takes c 6
-bishop 3 takes c 7
 bishop 3 takes d 2
 bishop 3 takes d 4
 bishop 3 takes d 5
-bishop 3 takes d 6
-bishop 3 takes d 7
 bishop 3 takes e 2
 bishop 3 takes e 4
 bishop 3 takes e 5
-bishop 3 takes e 6
-bishop 3 takes e 7
 bishop 3 takes f 2
 bishop 3 takes f 4
 bishop 3 takes f 5
-bishop 3 takes f 6
-bishop 3 takes f 7
 bishop 3 takes g 2
 bishop 3 takes g 4
 bishop 3 takes g 5
-bishop 3 takes g 6
-bishop 3 takes g 7
 bishop 3 takes h 2
 bishop 3 takes h 4
 bishop 3 takes h 5
 bishop 4 takes a 3
 bishop 4 takes a 5
 bishop 4 takes a 6
-bishop 4 takes b 2
 bishop 4 takes b 3
 bishop 4 takes b 5
 bishop 4 takes b 6
-bishop 4 takes b 7
-bishop 4 takes c 2
 bishop 4 takes c 3
 bishop 4 takes c 5
 bishop 4 takes c 6
-bishop 4 takes c 7
-bishop 4 takes d 2
 bishop 4 takes d 3
 bishop 4 takes d 5
 bishop 4 takes d 6
-bishop 4 takes d 7
-bishop 4 takes e 2
 bishop 4 takes e 3
 bishop 4 takes e 5
 bishop 4 takes e 6
-bishop 4 takes e 7
-bishop 4 takes f 2
 bishop 4 takes f 3
 bishop 4 takes f 5
 bishop 4 takes f 6
-bishop 4 takes f 7
-bishop 4 takes g 2
 bishop 4 takes g 3
 bishop 4 takes g 5
 bishop 4 takes g 6
-bishop 4 takes g 7
 bishop 4 takes h 3
 bishop 4 takes h 5
 bishop 4 takes h 6
 bishop 5 takes a 3
 bishop 5 takes a 4
 bishop 5 takes a 6
-bishop 5 takes b 2
 bishop 5 takes b 3
 bishop 5 takes b 4
 bishop 5 takes b 6
-bishop 5 takes b 7
-bishop 5 takes c 2
 bishop 5 takes c 3
 bishop 5 takes c 4
 bishop 5 takes c 6
-bishop 5 takes c 7
-bishop 5 takes d 2
 bishop 5 takes d 3
 bishop 5 takes d 4
 bishop 5 takes d 6
-bishop 5 takes d 7
-bishop 5 takes e 2
 bishop 5 takes e 3
 bishop 5 takes e 4
 bishop 5 takes e 6
-bishop 5 takes e 7
-bishop 5 takes f 2
 bishop 5 takes f 3
 bishop 5 takes f 4
 bishop 5 takes f 6
-bishop 5 takes f 7
-bishop 5 takes g 2
 bishop 5 takes g 3
 bishop 5 takes g 4
 bishop 5 takes g 6
-bishop 5 takes g 7
 bishop 5 takes h 3
 bishop 5 takes h 4
 bishop 5 takes h 6
 bishop 6 takes a 4
 bishop 6 takes a 5
 bishop 6 takes a 7
-bishop 6 takes b 2
-bishop 6 takes b 3
 bishop 6 takes b 4
 bishop 6 takes b 5
 bishop 6 takes b 7
-bishop 6 takes c 2
-bishop 6 takes c 3
 bishop 6 takes c 4
 bishop 6 takes c 5
 bishop 6 takes c 7
-bishop 6 takes d 2
-bishop 6 takes d 3
 bishop 6 takes d 4
 bishop 6 takes d 5
 bishop 6 takes d 7
-bishop 6 takes e 2
-bishop 6 takes e 3
 bishop 6 takes e 4
 bishop 6 takes e 5
 bishop 6 takes e 7
-bishop 6 takes f 2
-bishop 6 takes f 3
 bishop 6 takes f 4
 bishop 6 takes f 5
 bishop 6 takes f 7
-bishop 6 takes g 2
-bishop 6 takes g 3
 bishop 6 takes g 4
 bishop 6 takes g 5
 bishop 6 takes g 7
@@ -9433,31 +7894,21 @@ bishop 6 takes h 7
 bishop 7 takes a 4
 bishop 7 takes a 5
 bishop 7 takes a 6
-bishop 7 takes b 2
-bishop 7 takes b 3
 bishop 7 takes b 4
 bishop 7 takes b 5
 bishop 7 takes b 6
-bishop 7 takes c 2
-bishop 7 takes c 3
 bishop 7 takes c 4
 bishop 7 takes c 5
 bishop 7 takes c 6
-bishop 7 takes d 3
 bishop 7 takes d 4
 bishop 7 takes d 5
 bishop 7 takes d 6
-bishop 7 takes e 3
 bishop 7 takes e 4
 bishop 7 takes e 5
 bishop 7 takes e 6
-bishop 7 takes f 2
-bishop 7 takes f 3
 bishop 7 takes f 4
 bishop 7 takes f 5
 bishop 7 takes f 6
-bishop 7 takes g 2
-bishop 7 takes g 3
 bishop 7 takes g 4
 bishop 7 takes g 5
 bishop 7 takes g 6
@@ -9467,33 +7918,21 @@ bishop 7 takes h 6
 bishop 8 takes a 5
 bishop 8 takes a 6
 bishop 8 takes a 7
-bishop 8 takes b 2
-bishop 8 takes b 3
-bishop 8 takes b 4
 bishop 8 takes b 5
 bishop 8 takes b 6
 bishop 8 takes b 7
-bishop 8 takes c 3
-bishop 8 takes c 4
 bishop 8 takes c 5
 bishop 8 takes c 6
 bishop 8 takes c 7
-bishop 8 takes d 4
 bishop 8 takes d 5
 bishop 8 takes d 6
 bishop 8 takes d 7
-bishop 8 takes e 4
 bishop 8 takes e 5
 bishop 8 takes e 6
 bishop 8 takes e 7
-bishop 8 takes f 3
-bishop 8 takes f 4
 bishop 8 takes f 5
 bishop 8 takes f 6
 bishop 8 takes f 7
-bishop 8 takes g 2
-bishop 8 takes g 3
-bishop 8 takes g 4
 bishop 8 takes g 5
 bishop 8 takes g 6
 bishop 8 takes g 7
@@ -9999,70 +8438,54 @@ knight 3 takes g 5
 knight 3 takes h 2
 knight 3 takes h 4
 knight 3 takes h 5
-knight 4 takes a 2
 knight 4 takes a 3
 knight 4 takes a 5
 knight 4 takes a 6
-knight 4 takes b 2
 knight 4 takes b 3
 knight 4 takes b 5
 knight 4 takes b 6
-knight 4 takes c 2
 knight 4 takes c 3
 knight 4 takes c 5
 knight 4 takes c 6
-knight 4 takes d 2
 knight 4 takes d 3
 knight 4 takes d 5
 knight 4 takes d 6
-knight 4 takes e 2
 knight 4 takes e 3
 knight 4 takes e 5
 knight 4 takes e 6
-knight 4 takes f 2
 knight 4 takes f 3
 knight 4 takes f 5
 knight 4 takes f 6
-knight 4 takes g 2
 knight 4 takes g 3
 knight 4 takes g 5
 knight 4 takes g 6
-knight 4 takes h 2
 knight 4 takes h 3
 knight 4 takes h 5
 knight 4 takes h 6
 knight 5 takes a 3
 knight 5 takes a 4
 knight 5 takes a 6
-knight 5 takes a 7
 knight 5 takes b 3
 knight 5 takes b 4
 knight 5 takes b 6
-knight 5 takes b 7
 knight 5 takes c 3
 knight 5 takes c 4
 knight 5 takes c 6
-knight 5 takes c 7
 knight 5 takes d 3
 knight 5 takes d 4
 knight 5 takes d 6
-knight 5 takes d 7
 knight 5 takes e 3
 knight 5 takes e 4
 knight 5 takes e 6
-knight 5 takes e 7
 knight 5 takes f 3
 knight 5 takes f 4
 knight 5 takes f 6
-knight 5 takes f 7
 knight 5 takes g 3
 knight 5 takes g 4
 knight 5 takes g 6
-knight 5 takes g 7
 knight 5 takes h 3
 knight 5 takes h 4
 knight 5 takes h 6
-knight 5 takes h 7
 knight 6 takes a 4
 knight 6 takes a 5
 knight 6 takes a 7
@@ -10370,685 +8793,13 @@ rook 5 takes queen
 rook 6 takes queen
 rook 7 takes queen
 rook 8 takes queen
-rook a 1 takes a 2
-rook a 1 takes a 3
-rook a 1 takes a 4
-rook a 1 takes a 5
-rook a 1 takes a 6
-rook a 1 takes a 7
-rook a 2 takes a 3
-rook a 2 takes a 4
-rook a 2 takes a 5
-rook a 2 takes a 6
-rook a 2 takes a 7
-rook a 2 takes b 2
-rook a 2 takes c 2
-rook a 2 takes d 2
-rook a 2 takes e 2
-rook a 2 takes f 2
-rook a 2 takes g 2
-rook a 2 takes h 2
-rook a 3 takes a 2
-rook a 3 takes a 4
-rook a 3 takes a 5
-rook a 3 takes a 6
-rook a 3 takes a 7
-rook a 3 takes b 3
-rook a 3 takes c 3
-rook a 3 takes d 3
-rook a 3 takes e 3
-rook a 3 takes f 3
-rook a 3 takes g 3
-rook a 3 takes h 3
-rook a 4 takes a 2
-rook a 4 takes a 3
-rook a 4 takes a 5
-rook a 4 takes a 6
-rook a 4 takes a 7
-rook a 4 takes b 4
-rook a 4 takes c 4
-rook a 4 takes d 4
-rook a 4 takes e 4
-rook a 4 takes f 4
-rook a 4 takes g 4
-rook a 4 takes h 4
-rook a 5 takes a 2
-rook a 5 takes a 3
-rook a 5 takes a 4
-rook a 5 takes a 6
-rook a 5 takes a 7
-rook a 5 takes b 5
-rook a 5 takes c 5
-rook a 5 takes d 5
-rook a 5 takes e 5
-rook a 5 takes f 5
-rook a 5 takes g 5
-rook a 5 takes h 5
-rook a 6 takes a 2
-rook a 6 takes a 3
-rook a 6 takes a 4
-rook a 6 takes a 5
-rook a 6 takes a 7
-rook a 6 takes b 6
-rook a 6 takes c 6
-rook a 6 takes d 6
-rook a 6 takes e 6
-rook a 6 takes f 6
-rook a 6 takes g 6
-rook a 6 takes h 6
-rook a 7 takes a 2
-rook a 7 takes a 3
-rook a 7 takes a 4
-rook a 7 takes a 5
-rook a 7 takes a 6
-rook a 7 takes b 7
-rook a 7 takes c 7
-rook a 7 takes d 7
-rook a 7 takes e 7
-rook a 7 takes f 7
-rook a 7 takes g 7
-rook a 7 takes h 7
-rook a 8 takes a 2
-rook a 8 takes a 3
-rook a 8 takes a 4
-rook a 8 takes a 5
-rook a 8 takes a 6
-rook a 8 takes a 7
 rook a takes queen
-rook b 1 takes b 2
-rook b 1 takes b 3
-rook b 1 takes b 4
-rook b 1 takes b 5
-rook b 1 takes b 6
-rook b 1 takes b 7
-rook b 2 takes a 2
-rook b 2 takes b 3
-rook b 2 takes b 4
-rook b 2 takes b 5
-rook b 2 takes b 6
-rook b 2 takes b 7
-rook b 2 takes c 2
-rook b 2 takes d 2
-rook b 2 takes e 2
-rook b 2 takes f 2
-rook b 2 takes g 2
-rook b 2 takes h 2
-rook b 3 takes a 3
-rook b 3 takes b 2
-rook b 3 takes b 4
-rook b 3 takes b 5
-rook b 3 takes b 6
-rook b 3 takes b 7
-rook b 3 takes c 3
-rook b 3 takes d 3
-rook b 3 takes e 3
-rook b 3 takes f 3
-rook b 3 takes g 3
-rook b 3 takes h 3
-rook b 4 takes a 4
-rook b 4 takes b 2
-rook b 4 takes b 3
-rook b 4 takes b 5
-rook b 4 takes b 6
-rook b 4 takes b 7
-rook b 4 takes c 4
-rook b 4 takes d 4
-rook b 4 takes e 4
-rook b 4 takes f 4
-rook b 4 takes g 4
-rook b 4 takes h 4
-rook b 5 takes a 5
-rook b 5 takes b 2
-rook b 5 takes b 3
-rook b 5 takes b 4
-rook b 5 takes b 6
-rook b 5 takes b 7
-rook b 5 takes c 5
-rook b 5 takes d 5
-rook b 5 takes e 5
-rook b 5 takes f 5
-rook b 5 takes g 5
-rook b 5 takes h 5
-rook b 6 takes a 6
-rook b 6 takes b 2
-rook b 6 takes b 3
-rook b 6 takes b 4
-rook b 6 takes b 5
-rook b 6 takes b 7
-rook b 6 takes c 6
-rook b 6 takes d 6
-rook b 6 takes e 6
-rook b 6 takes f 6
-rook b 6 takes g 6
-rook b 6 takes h 6
-rook b 7 takes a 7
-rook b 7 takes b 2
-rook b 7 takes b 3
-rook b 7 takes b 4
-rook b 7 takes b 5
-rook b 7 takes b 6
-rook b 7 takes c 7
-rook b 7 takes d 7
-rook b 7 takes e 7
-rook b 7 takes f 7
-rook b 7 takes g 7
-rook b 7 takes h 7
-rook b 8 takes b 2
-rook b 8 takes b 3
-rook b 8 takes b 4
-rook b 8 takes b 5
-rook b 8 takes b 6
-rook b 8 takes b 7
 rook b takes queen
-rook c 1 takes c 2
-rook c 1 takes c 3
-rook c 1 takes c 4
-rook c 1 takes c 5
-rook c 1 takes c 6
-rook c 1 takes c 7
-rook c 2 takes a 2
-rook c 2 takes b 2
-rook c 2 takes c 3
-rook c 2 takes c 4
-rook c 2 takes c 5
-rook c 2 takes c 6
-rook c 2 takes c 7
-rook c 2 takes d 2
-rook c 2 takes e 2
-rook c 2 takes f 2
-rook c 2 takes g 2
-rook c 2 takes h 2
-rook c 3 takes a 3
-rook c 3 takes b 3
-rook c 3 takes c 2
-rook c 3 takes c 4
-rook c 3 takes c 5
-rook c 3 takes c 6
-rook c 3 takes c 7
-rook c 3 takes d 3
-rook c 3 takes e 3
-rook c 3 takes f 3
-rook c 3 takes g 3
-rook c 3 takes h 3
-rook c 4 takes a 4
-rook c 4 takes b 4
-rook c 4 takes c 2
-rook c 4 takes c 3
-rook c 4 takes c 5
-rook c 4 takes c 6
-rook c 4 takes c 7
-rook c 4 takes d 4
-rook c 4 takes e 4
-rook c 4 takes f 4
-rook c 4 takes g 4
-rook c 4 takes h 4
-rook c 5 takes a 5
-rook c 5 takes b 5
-rook c 5 takes c 2
-rook c 5 takes c 3
-rook c 5 takes c 4
-rook c 5 takes c 6
-rook c 5 takes c 7
-rook c 5 takes d 5
-rook c 5 takes e 5
-rook c 5 takes f 5
-rook c 5 takes g 5
-rook c 5 takes h 5
-rook c 6 takes a 6
-rook c 6 takes b 6
-rook c 6 takes c 2
-rook c 6 takes c 3
-rook c 6 takes c 4
-rook c 6 takes c 5
-rook c 6 takes c 7
-rook c 6 takes d 6
-rook c 6 takes e 6
-rook c 6 takes f 6
-rook c 6 takes g 6
-rook c 6 takes h 6
-rook c 7 takes a 7
-rook c 7 takes b 7
-rook c 7 takes c 2
-rook c 7 takes c 3
-rook c 7 takes c 4
-rook c 7 takes c 5
-rook c 7 takes c 6
-rook c 7 takes d 7
-rook c 7 takes e 7
-rook c 7 takes f 7
-rook c 7 takes g 7
-rook c 7 takes h 7
-rook c 8 takes c 2
-rook c 8 takes c 3
-rook c 8 takes c 4
-rook c 8 takes c 5
-rook c 8 takes c 6
-rook c 8 takes c 7
 rook c takes queen
-rook d 1 takes d 2
-rook d 1 takes d 3
-rook d 1 takes d 4
-rook d 1 takes d 5
-rook d 1 takes d 6
-rook d 1 takes d 7
-rook d 2 takes a 2
-rook d 2 takes b 2
-rook d 2 takes c 2
-rook d 2 takes d 3
-rook d 2 takes d 4
-rook d 2 takes d 5
-rook d 2 takes d 6
-rook d 2 takes d 7
-rook d 2 takes e 2
-rook d 2 takes f 2
-rook d 2 takes g 2
-rook d 2 takes h 2
-rook d 3 takes a 3
-rook d 3 takes b 3
-rook d 3 takes c 3
-rook d 3 takes d 2
-rook d 3 takes d 4
-rook d 3 takes d 5
-rook d 3 takes d 6
-rook d 3 takes d 7
-rook d 3 takes e 3
-rook d 3 takes f 3
-rook d 3 takes g 3
-rook d 3 takes h 3
-rook d 4 takes a 4
-rook d 4 takes b 4
-rook d 4 takes c 4
-rook d 4 takes d 2
-rook d 4 takes d 3
-rook d 4 takes d 5
-rook d 4 takes d 6
-rook d 4 takes d 7
-rook d 4 takes e 4
-rook d 4 takes f 4
-rook d 4 takes g 4
-rook d 4 takes h 4
-rook d 5 takes a 5
-rook d 5 takes b 5
-rook d 5 takes c 5
-rook d 5 takes d 2
-rook d 5 takes d 3
-rook d 5 takes d 4
-rook d 5 takes d 6
-rook d 5 takes d 7
-rook d 5 takes e 5
-rook d 5 takes f 5
-rook d 5 takes g 5
-rook d 5 takes h 5
-rook d 6 takes a 6
-rook d 6 takes b 6
-rook d 6 takes c 6
-rook d 6 takes d 2
-rook d 6 takes d 3
-rook d 6 takes d 4
-rook d 6 takes d 5
-rook d 6 takes d 7
-rook d 6 takes e 6
-rook d 6 takes f 6
-rook d 6 takes g 6
-rook d 6 takes h 6
-rook d 7 takes a 7
-rook d 7 takes b 7
-rook d 7 takes c 7
-rook d 7 takes d 2
-rook d 7 takes d 3
-rook d 7 takes d 4
-rook d 7 takes d 5
-rook d 7 takes d 6
-rook d 7 takes e 7
-rook d 7 takes f 7
-rook d 7 takes g 7
-rook d 7 takes h 7
-rook d 8 takes d 2
-rook d 8 takes d 3
-rook d 8 takes d 4
-rook d 8 takes d 5
-rook d 8 takes d 6
-rook d 8 takes d 7
 rook d takes queen
-rook e 1 takes e 2
-rook e 1 takes e 3
-rook e 1 takes e 4
-rook e 1 takes e 5
-rook e 1 takes e 6
-rook e 1 takes e 7
-rook e 2 takes a 2
-rook e 2 takes b 2
-rook e 2 takes c 2
-rook e 2 takes d 2
-rook e 2 takes e 3
-rook e 2 takes e 4
-rook e 2 takes e 5
-rook e 2 takes e 6
-rook e 2 takes e 7
-rook e 2 takes f 2
-rook e 2 takes g 2
-rook e 2 takes h 2
-rook e 3 takes a 3
-rook e 3 takes b 3
-rook e 3 takes c 3
-rook e 3 takes d 3
-rook e 3 takes e 2
-rook e 3 takes e 4
-rook e 3 takes e 5
-rook e 3 takes e 6
-rook e 3 takes e 7
-rook e 3 takes f 3
-rook e 3 takes g 3
-rook e 3 takes h 3
-rook e 4 takes a 4
-rook e 4 takes b 4
-rook e 4 takes c 4
-rook e 4 takes d 4
-rook e 4 takes e 2
-rook e 4 takes e 3
-rook e 4 takes e 5
-rook e 4 takes e 6
-rook e 4 takes e 7
-rook e 4 takes f 4
-rook e 4 takes g 4
-rook e 4 takes h 4
-rook e 5 takes a 5
-rook e 5 takes b 5
-rook e 5 takes c 5
-rook e 5 takes d 5
-rook e 5 takes e 2
-rook e 5 takes e 3
-rook e 5 takes e 4
-rook e 5 takes e 6
-rook e 5 takes e 7
-rook e 5 takes f 5
-rook e 5 takes g 5
-rook e 5 takes h 5
-rook e 6 takes a 6
-rook e 6 takes b 6
-rook e 6 takes c 6
-rook e 6 takes d 6
-rook e 6 takes e 2
-rook e 6 takes e 3
-rook e 6 takes e 4
-rook e 6 takes e 5
-rook e 6 takes e 7
-rook e 6 takes f 6
-rook e 6 takes g 6
-rook e 6 takes h 6
-rook e 7 takes a 7
-rook e 7 takes b 7
-rook e 7 takes c 7
-rook e 7 takes d 7
-rook e 7 takes e 2
-rook e 7 takes e 3
-rook e 7 takes e 4
-rook e 7 takes e 5
-rook e 7 takes e 6
-rook e 7 takes f 7
-rook e 7 takes g 7
-rook e 7 takes h 7
-rook e 8 takes e 2
-rook e 8 takes e 3
-rook e 8 takes e 4
-rook e 8 takes e 5
-rook e 8 takes e 6
-rook e 8 takes e 7
 rook e takes queen
-rook f 1 takes f 2
-rook f 1 takes f 3
-rook f 1 takes f 4
-rook f 1 takes f 5
-rook f 1 takes f 6
-rook f 1 takes f 7
-rook f 2 takes a 2
-rook f 2 takes b 2
-rook f 2 takes c 2
-rook f 2 takes d 2
-rook f 2 takes e 2
-rook f 2 takes f 3
-rook f 2 takes f 4
-rook f 2 takes f 5
-rook f 2 takes f 6
-rook f 2 takes f 7
-rook f 2 takes g 2
-rook f 2 takes h 2
-rook f 3 takes a 3
-rook f 3 takes b 3
-rook f 3 takes c 3
-rook f 3 takes d 3
-rook f 3 takes e 3
-rook f 3 takes f 2
-rook f 3 takes f 4
-rook f 3 takes f 5
-rook f 3 takes f 6
-rook f 3 takes f 7
-rook f 3 takes g 3
-rook f 3 takes h 3
-rook f 4 takes a 4
-rook f 4 takes b 4
-rook f 4 takes c 4
-rook f 4 takes d 4
-rook f 4 takes e 4
-rook f 4 takes f 2
-rook f 4 takes f 3
-rook f 4 takes f 5
-rook f 4 takes f 6
-rook f 4 takes f 7
-rook f 4 takes g 4
-rook f 4 takes h 4
-rook f 5 takes a 5
-rook f 5 takes b 5
-rook f 5 takes c 5
-rook f 5 takes d 5
-rook f 5 takes e 5
-rook f 5 takes f 2
-rook f 5 takes f 3
-rook f 5 takes f 4
-rook f 5 takes f 6
-rook f 5 takes f 7
-rook f 5 takes g 5
-rook f 5 takes h 5
-rook f 6 takes a 6
-rook f 6 takes b 6
-rook f 6 takes c 6
-rook f 6 takes d 6
-rook f 6 takes e 6
-rook f 6 takes f 2
-rook f 6 takes f 3
-rook f 6 takes f 4
-rook f 6 takes f 5
-rook f 6 takes f 7
-rook f 6 takes g 6
-rook f 6 takes h 6
-rook f 7 takes a 7
-rook f 7 takes b 7
-rook f 7 takes c 7
-rook f 7 takes d 7
-rook f 7 takes e 7
-rook f 7 takes f 2
-rook f 7 takes f 3
-rook f 7 takes f 4
-rook f 7 takes f 5
-rook f 7 takes f 6
-rook f 7 takes g 7
-rook f 7 takes h 7
-rook f 8 takes f 2
-rook f 8 takes f 3
-rook f 8 takes f 4
-rook f 8 takes f 5
-rook f 8 takes f 6
-rook f 8 takes f 7
 rook f takes queen
-rook g 1 takes g 2
-rook g 1 takes g 3
-rook g 1 takes g 4
-rook g 1 takes g 5
-rook g 1 takes g 6
-rook g 1 takes g 7
-rook g 2 takes a 2
-rook g 2 takes b 2
-rook g 2 takes c 2
-rook g 2 takes d 2
-rook g 2 takes e 2
-rook g 2 takes f 2
-rook g 2 takes g 3
-rook g 2 takes g 4
-rook g 2 takes g 5
-rook g 2 takes g 6
-rook g 2 takes g 7
-rook g 2 takes h 2
-rook g 3 takes a 3
-rook g 3 takes b 3
-rook g 3 takes c 3
-rook g 3 takes d 3
-rook g 3 takes e 3
-rook g 3 takes f 3
-rook g 3 takes g 2
-rook g 3 takes g 4
-rook g 3 takes g 5
-rook g 3 takes g 6
-rook g 3 takes g 7
-rook g 3 takes h 3
-rook g 4 takes a 4
-rook g 4 takes b 4
-rook g 4 takes c 4
-rook g 4 takes d 4
-rook g 4 takes e 4
-rook g 4 takes f 4
-rook g 4 takes g 2
-rook g 4 takes g 3
-rook g 4 takes g 5
-rook g 4 takes g 6
-rook g 4 takes g 7
-rook g 4 takes h 4
-rook g 5 takes a 5
-rook g 5 takes b 5
-rook g 5 takes c 5
-rook g 5 takes d 5
-rook g 5 takes e 5
-rook g 5 takes f 5
-rook g 5 takes g 2
-rook g 5 takes g 3
-rook g 5 takes g 4
-rook g 5 takes g 6
-rook g 5 takes g 7
-rook g 5 takes h 5
-rook g 6 takes a 6
-rook g 6 takes b 6
-rook g 6 takes c 6
-rook g 6 takes d 6
-rook g 6 takes e 6
-rook g 6 takes f 6
-rook g 6 takes g 2
-rook g 6 takes g 3
-rook g 6 takes g 4
-rook g 6 takes g 5
-rook g 6 takes g 7
-rook g 6 takes h 6
-rook g 7 takes a 7
-rook g 7 takes b 7
-rook g 7 takes c 7
-rook g 7 takes d 7
-rook g 7 takes e 7
-rook g 7 takes f 7
-rook g 7 takes g 2
-rook g 7 takes g 3
-rook g 7 takes g 4
-rook g 7 takes g 5
-rook g 7 takes g 6
-rook g 7 takes h 7
-rook g 8 takes g 2
-rook g 8 takes g 3
-rook g 8 takes g 4
-rook g 8 takes g 5
-rook g 8 takes g 6
-rook g 8 takes g 7
 rook g takes queen
-rook h 1 takes h 2
-rook h 1 takes h 3
-rook h 1 takes h 4
-rook h 1 takes h 5
-rook h 1 takes h 6
-rook h 1 takes h 7
-rook h 2 takes a 2
-rook h 2 takes b 2
-rook h 2 takes c 2
-rook h 2 takes d 2
-rook h 2 takes e 2
-rook h 2 takes f 2
-rook h 2 takes g 2
-rook h 2 takes h 3
-rook h 2 takes h 4
-rook h 2 takes h 5
-rook h 2 takes h 6
-rook h 2 takes h 7
-rook h 3 takes a 3
-rook h 3 takes b 3
-rook h 3 takes c 3
-rook h 3 takes d 3
-rook h 3 takes e 3
-rook h 3 takes f 3
-rook h 3 takes g 3
-rook h 3 takes h 2
-rook h 3 takes h 4
-rook h 3 takes h 5
-rook h 3 takes h 6
-rook h 3 takes h 7
-rook h 4 takes a 4
-rook h 4 takes b 4
-rook h 4 takes c 4
-rook h 4 takes d 4
-rook h 4 takes e 4
-rook h 4 takes f 4
-rook h 4 takes g 4
-rook h 4 takes h 2
-rook h 4 takes h 3
-rook h 4 takes h 5
-rook h 4 takes h 6
-rook h 4 takes h 7
-rook h 5 takes a 5
-rook h 5 takes b 5
-rook h 5 takes c 5
-rook h 5 takes d 5
-rook h 5 takes e 5
-rook h 5 takes f 5
-rook h 5 takes g 5
-rook h 5 takes h 2
-rook h 5 takes h 3
-rook h 5 takes h 4
-rook h 5 takes h 6
-rook h 5 takes h 7
-rook h 6 takes a 6
-rook h 6 takes b 6
-rook h 6 takes c 6
-rook h 6 takes d 6
-rook h 6 takes e 6
-rook h 6 takes f 6
-rook h 6 takes g 6
-rook h 6 takes h 2
-rook h 6 takes h 3
-rook h 6 takes h 4
-rook h 6 takes h 5
-rook h 6 takes h 7
-rook h 7 takes a 7
-rook h 7 takes b 7
-rook h 7 takes c 7
-rook h 7 takes d 7
-rook h 7 takes e 7
-rook h 7 takes f 7
-rook h 7 takes g 7
-rook h 7 takes h 2
-rook h 7 takes h 3
-rook h 7 takes h 4
-rook h 7 takes h 5
-rook h 7 takes h 6
-rook h 8 takes h 2
-rook h 8 takes h 3
-rook h 8 takes h 4
-rook h 8 takes h 5
-rook h 8 takes h 6
-rook h 8 takes h 7
 rook h takes queen
 takes bishop queen
 takes knight queen
@@ -11192,7 +8943,6 @@ queen a 1 takes a 4
 queen a 1 takes a 5
 queen a 1 takes a 6
 queen a 1 takes a 7
-queen a 1 takes a 8
 queen a 1 takes b 1
 queen a 1 takes b 2
 queen a 1 takes c 1
@@ -11205,15 +8955,12 @@ queen a 1 takes f 1
 queen a 1 takes f 6
 queen a 1 takes g 1
 queen a 1 takes g 7
-queen a 1 takes h 1
 queen a 1 takes h 8
-queen a 2 takes a 1
 queen a 2 takes a 3
 queen a 2 takes a 4
 queen a 2 takes a 5
 queen a 2 takes a 6
 queen a 2 takes a 7
-queen a 2 takes a 8
 queen a 2 takes b 1
 queen a 2 takes b 2
 queen a 2 takes b 3
@@ -11227,14 +8974,11 @@ queen a 2 takes f 2
 queen a 2 takes f 7
 queen a 2 takes g 2
 queen a 2 takes g 8
-queen a 2 takes h 2
-queen a 3 takes a 1
 queen a 3 takes a 2
 queen a 3 takes a 4
 queen a 3 takes a 5
 queen a 3 takes a 6
 queen a 3 takes a 7
-queen a 3 takes a 8
 queen a 3 takes b 2
 queen a 3 takes b 3
 queen a 3 takes b 4
@@ -11247,15 +8991,11 @@ queen a 3 takes e 3
 queen a 3 takes e 7
 queen a 3 takes f 3
 queen a 3 takes f 8
-queen a 3 takes g 3
-queen a 3 takes h 3
-queen a 4 takes a 1
 queen a 4 takes a 2
 queen a 4 takes a 3
 queen a 4 takes a 5
 queen a 4 takes a 6
 queen a 4 takes a 7
-queen a 4 takes a 8
 queen a 4 takes b 3
 queen a 4 takes b 4
 queen a 4 takes b 5
@@ -11267,16 +9007,11 @@ queen a 4 takes d 4
 queen a 4 takes d 7
 queen a 4 takes e 4
 queen a 4 takes e 8
-queen a 4 takes f 4
-queen a 4 takes g 4
-queen a 4 takes h 4
-queen a 5 takes a 1
 queen a 5 takes a 2
 queen a 5 takes a 3
 queen a 5 takes a 4
 queen a 5 takes a 6
 queen a 5 takes a 7
-queen a 5 takes a 8
 queen a 5 takes b 4
 queen a 5 takes b 5
 queen a 5 takes b 6
@@ -11288,16 +9023,11 @@ queen a 5 takes d 5
 queen a 5 takes d 8
 queen a 5 takes e 1
 queen a 5 takes e 5
-queen a 5 takes f 5
-queen a 5 takes g 5
-queen a 5 takes h 5
-queen a 6 takes a 1
 queen a 6 takes a 2
 queen a 6 takes a 3
 queen a 6 takes a 4
 queen a 6 takes a 5
 queen a 6 takes a 7
-queen a 6 takes a 8
 queen a 6 takes b 5
 queen a 6 takes b 6
 queen a 6 takes b 7
@@ -11310,15 +9040,11 @@ queen a 6 takes e 2
 queen a 6 takes e 6
 queen a 6 takes f 1
 queen a 6 takes f 6
-queen a 6 takes g 6
-queen a 6 takes h 6
-queen a 7 takes a 1
 queen a 7 takes a 2
 queen a 7 takes a 3
 queen a 7 takes a 4
 queen a 7 takes a 5
 queen a 7 takes a 6
-queen a 7 takes a 8
 queen a 7 takes b 6
 queen a 7 takes b 7
 queen a 7 takes b 8
@@ -11332,8 +9058,6 @@ queen a 7 takes f 2
 queen a 7 takes f 7
 queen a 7 takes g 1
 queen a 7 takes g 7
-queen a 7 takes h 7
-queen a 8 takes a 1
 queen a 8 takes a 2
 queen a 8 takes a 3
 queen a 8 takes a 4
@@ -11353,9 +9077,7 @@ queen a 8 takes f 8
 queen a 8 takes g 2
 queen a 8 takes g 8
 queen a 8 takes h 1
-queen a 8 takes h 8
 queen a takes queen
-queen b 1 takes a 1
 queen b 1 takes a 2
 queen b 1 takes b 2
 queen b 1 takes b 3
@@ -11363,7 +9085,6 @@ queen b 1 takes b 4
 queen b 1 takes b 5
 queen b 1 takes b 6
 queen b 1 takes b 7
-queen b 1 takes b 8
 queen b 1 takes c 1
 queen b 1 takes c 2
 queen b 1 takes d 1
@@ -11374,18 +9095,14 @@ queen b 1 takes f 1
 queen b 1 takes f 5
 queen b 1 takes g 1
 queen b 1 takes g 6
-queen b 1 takes h 1
 queen b 1 takes h 7
 queen b 2 takes a 1
-queen b 2 takes a 2
 queen b 2 takes a 3
-queen b 2 takes b 1
 queen b 2 takes b 3
 queen b 2 takes b 4
 queen b 2 takes b 5
 queen b 2 takes b 6
 queen b 2 takes b 7
-queen b 2 takes b 8
 queen b 2 takes c 1
 queen b 2 takes c 2
 queen b 2 takes c 3
@@ -11397,18 +9114,14 @@ queen b 2 takes f 2
 queen b 2 takes f 6
 queen b 2 takes g 2
 queen b 2 takes g 7
-queen b 2 takes h 2
 queen b 2 takes h 8
 queen b 3 takes a 2
-queen b 3 takes a 3
 queen b 3 takes a 4
-queen b 3 takes b 1
 queen b 3 takes b 2
 queen b 3 takes b 4
 queen b 3 takes b 5
 queen b 3 takes b 6
 queen b 3 takes b 7
-queen b 3 takes b 8
 queen b 3 takes c 2
 queen b 3 takes c 3
 queen b 3 takes c 4
@@ -11421,17 +9134,13 @@ queen b 3 takes f 3
 queen b 3 takes f 7
 queen b 3 takes g 3
 queen b 3 takes g 8
-queen b 3 takes h 3
 queen b 4 takes a 3
-queen b 4 takes a 4
 queen b 4 takes a 5
-queen b 4 takes b 1
 queen b 4 takes b 2
 queen b 4 takes b 3
 queen b 4 takes b 5
 queen b 4 takes b 6
 queen b 4 takes b 7
-queen b 4 takes b 8
 queen b 4 takes c 3
 queen b 4 takes c 4
 queen b 4 takes c 5
@@ -11443,18 +9152,13 @@ queen b 4 takes e 4
 queen b 4 takes e 7
 queen b 4 takes f 4
 queen b 4 takes f 8
-queen b 4 takes g 4
-queen b 4 takes h 4
 queen b 5 takes a 4
-queen b 5 takes a 5
 queen b 5 takes a 6
-queen b 5 takes b 1
 queen b 5 takes b 2
 queen b 5 takes b 3
 queen b 5 takes b 4
 queen b 5 takes b 6
 queen b 5 takes b 7
-queen b 5 takes b 8
 queen b 5 takes c 4
 queen b 5 takes c 5
 queen b 5 takes c 6
@@ -11466,18 +9170,13 @@ queen b 5 takes e 5
 queen b 5 takes e 8
 queen b 5 takes f 1
 queen b 5 takes f 5
-queen b 5 takes g 5
-queen b 5 takes h 5
 queen b 6 takes a 5
-queen b 6 takes a 6
 queen b 6 takes a 7
-queen b 6 takes b 1
 queen b 6 takes b 2
 queen b 6 takes b 3
 queen b 6 takes b 4
 queen b 6 takes b 5
 queen b 6 takes b 7
-queen b 6 takes b 8
 queen b 6 takes c 5
 queen b 6 takes c 6
 queen b 6 takes c 7
@@ -11490,17 +9189,13 @@ queen b 6 takes f 2
 queen b 6 takes f 6
 queen b 6 takes g 1
 queen b 6 takes g 6
-queen b 6 takes h 6
 queen b 7 takes a 6
-queen b 7 takes a 7
 queen b 7 takes a 8
-queen b 7 takes b 1
 queen b 7 takes b 2
 queen b 7 takes b 3
 queen b 7 takes b 4
 queen b 7 takes b 5
 queen b 7 takes b 6
-queen b 7 takes b 8
 queen b 7 takes c 6
 queen b 7 takes c 7
 queen b 7 takes c 8
@@ -11513,10 +9208,7 @@ queen b 7 takes f 7
 queen b 7 takes g 2
 queen b 7 takes g 7
 queen b 7 takes h 1
-queen b 7 takes h 7
 queen b 8 takes a 7
-queen b 8 takes a 8
-queen b 8 takes b 1
 queen b 8 takes b 2
 queen b 8 takes b 3
 queen b 8 takes b 4
@@ -11534,9 +9226,7 @@ queen b 8 takes f 8
 queen b 8 takes g 3
 queen b 8 takes g 8
 queen b 8 takes h 2
-queen b 8 takes h 8
 queen b takes queen
-queen c 1 takes a 1
 queen c 1 takes a 3
 queen c 1 takes b 1
 queen c 1 takes b 2
@@ -11545,8 +9235,6 @@ queen c 1 takes c 3
 queen c 1 takes c 4
 queen c 1 takes c 5
 queen c 1 takes c 6
-queen c 1 takes c 7
-queen c 1 takes c 8
 queen c 1 takes d 1
 queen c 1 takes d 2
 queen c 1 takes e 1
@@ -11555,20 +9243,16 @@ queen c 1 takes f 1
 queen c 1 takes f 4
 queen c 1 takes g 1
 queen c 1 takes g 5
-queen c 1 takes h 1
 queen c 1 takes h 6
-queen c 2 takes a 2
 queen c 2 takes a 4
 queen c 2 takes b 1
 queen c 2 takes b 2
 queen c 2 takes b 3
-queen c 2 takes c 1
 queen c 2 takes c 3
 queen c 2 takes c 4
 queen c 2 takes c 5
 queen c 2 takes c 6
 queen c 2 takes c 7
-queen c 2 takes c 8
 queen c 2 takes d 1
 queen c 2 takes d 2
 queen c 2 takes d 3
@@ -11578,21 +9262,17 @@ queen c 2 takes f 2
 queen c 2 takes f 5
 queen c 2 takes g 2
 queen c 2 takes g 6
-queen c 2 takes h 2
 queen c 2 takes h 7
 queen c 3 takes a 1
-queen c 3 takes a 3
 queen c 3 takes a 5
 queen c 3 takes b 2
 queen c 3 takes b 3
 queen c 3 takes b 4
-queen c 3 takes c 1
 queen c 3 takes c 2
 queen c 3 takes c 4
 queen c 3 takes c 5
 queen c 3 takes c 6
 queen c 3 takes c 7
-queen c 3 takes c 8
 queen c 3 takes d 2
 queen c 3 takes d 3
 queen c 3 takes d 4
@@ -11603,21 +9283,17 @@ queen c 3 takes f 3
 queen c 3 takes f 6
 queen c 3 takes g 3
 queen c 3 takes g 7
-queen c 3 takes h 3
 queen c 3 takes h 8
 queen c 4 takes a 2
-queen c 4 takes a 4
 queen c 4 takes a 6
 queen c 4 takes b 3
 queen c 4 takes b 4
 queen c 4 takes b 5
-queen c 4 takes c 1
 queen c 4 takes c 2
 queen c 4 takes c 3
 queen c 4 takes c 5
 queen c 4 takes c 6
 queen c 4 takes c 7
-queen c 4 takes c 8
 queen c 4 takes d 3
 queen c 4 takes d 4
 queen c 4 takes d 5
@@ -11629,20 +9305,16 @@ queen c 4 takes f 4
 queen c 4 takes f 7
 queen c 4 takes g 4
 queen c 4 takes g 8
-queen c 4 takes h 4
 queen c 5 takes a 3
-queen c 5 takes a 5
 queen c 5 takes a 7
 queen c 5 takes b 4
 queen c 5 takes b 5
 queen c 5 takes b 6
-queen c 5 takes c 1
 queen c 5 takes c 2
 queen c 5 takes c 3
 queen c 5 takes c 4
 queen c 5 takes c 6
 queen c 5 takes c 7
-queen c 5 takes c 8
 queen c 5 takes d 4
 queen c 5 takes d 5
 queen c 5 takes d 6
@@ -11654,20 +9326,16 @@ queen c 5 takes f 5
 queen c 5 takes f 8
 queen c 5 takes g 1
 queen c 5 takes g 5
-queen c 5 takes h 5
 queen c 6 takes a 4
-queen c 6 takes a 6
 queen c 6 takes a 8
 queen c 6 takes b 5
 queen c 6 takes b 6
 queen c 6 takes b 7
-queen c 6 takes c 1
 queen c 6 takes c 2
 queen c 6 takes c 3
 queen c 6 takes c 4
 queen c 6 takes c 5
 queen c 6 takes c 7
-queen c 6 takes c 8
 queen c 6 takes d 5
 queen c 6 takes d 6
 queen c 6 takes d 7
@@ -11679,19 +9347,15 @@ queen c 6 takes f 6
 queen c 6 takes g 2
 queen c 6 takes g 6
 queen c 6 takes h 1
-queen c 6 takes h 6
 queen c 7 takes a 5
-queen c 7 takes a 7
 queen c 7 takes b 6
 queen c 7 takes b 7
 queen c 7 takes b 8
-queen c 7 takes c 1
 queen c 7 takes c 2
 queen c 7 takes c 3
 queen c 7 takes c 4
 queen c 7 takes c 5
 queen c 7 takes c 6
-queen c 7 takes c 8
 queen c 7 takes d 6
 queen c 7 takes d 7
 queen c 7 takes d 8
@@ -11702,13 +9366,9 @@ queen c 7 takes f 7
 queen c 7 takes g 3
 queen c 7 takes g 7
 queen c 7 takes h 2
-queen c 7 takes h 7
 queen c 8 takes a 6
-queen c 8 takes a 8
 queen c 8 takes b 7
 queen c 8 takes b 8
-queen c 8 takes c 1
-queen c 8 takes c 2
 queen c 8 takes c 3
 queen c 8 takes c 4
 queen c 8 takes c 5
@@ -11723,9 +9383,7 @@ queen c 8 takes f 8
 queen c 8 takes g 4
 queen c 8 takes g 8
 queen c 8 takes h 3
-queen c 8 takes h 8
 queen c takes queen
-queen d 1 takes a 1
 queen d 1 takes a 4
 queen d 1 takes b 1
 queen d 1 takes b 3
@@ -11735,31 +9393,23 @@ queen d 1 takes d 2
 queen d 1 takes d 3
 queen d 1 takes d 4
 queen d 1 takes d 5
-queen d 1 takes d 6
-queen d 1 takes d 7
-queen d 1 takes d 8
 queen d 1 takes e 1
 queen d 1 takes e 2
 queen d 1 takes f 1
 queen d 1 takes f 3
 queen d 1 takes g 1
 queen d 1 takes g 4
-queen d 1 takes h 1
 queen d 1 takes h 5
-queen d 2 takes a 2
 queen d 2 takes a 5
 queen d 2 takes b 2
 queen d 2 takes b 4
 queen d 2 takes c 1
 queen d 2 takes c 2
 queen d 2 takes c 3
-queen d 2 takes d 1
 queen d 2 takes d 3
 queen d 2 takes d 4
 queen d 2 takes d 5
 queen d 2 takes d 6
-queen d 2 takes d 7
-queen d 2 takes d 8
 queen d 2 takes e 1
 queen d 2 takes e 2
 queen d 2 takes e 3
@@ -11767,9 +9417,7 @@ queen d 2 takes f 2
 queen d 2 takes f 4
 queen d 2 takes g 2
 queen d 2 takes g 5
-queen d 2 takes h 2
 queen d 2 takes h 6
-queen d 3 takes a 3
 queen d 3 takes a 6
 queen d 3 takes b 1
 queen d 3 takes b 3
@@ -11777,13 +9425,11 @@ queen d 3 takes b 5
 queen d 3 takes c 2
 queen d 3 takes c 3
 queen d 3 takes c 4
-queen d 3 takes d 1
 queen d 3 takes d 2
 queen d 3 takes d 4
 queen d 3 takes d 5
 queen d 3 takes d 6
 queen d 3 takes d 7
-queen d 3 takes d 8
 queen d 3 takes e 2
 queen d 3 takes e 3
 queen d 3 takes e 4
@@ -11792,10 +9438,8 @@ queen d 3 takes f 3
 queen d 3 takes f 5
 queen d 3 takes g 3
 queen d 3 takes g 6
-queen d 3 takes h 3
 queen d 3 takes h 7
 queen d 4 takes a 1
-queen d 4 takes a 4
 queen d 4 takes a 7
 queen d 4 takes b 2
 queen d 4 takes b 4
@@ -11803,13 +9447,11 @@ queen d 4 takes b 6
 queen d 4 takes c 3
 queen d 4 takes c 4
 queen d 4 takes c 5
-queen d 4 takes d 1
 queen d 4 takes d 2
 queen d 4 takes d 3
 queen d 4 takes d 5
 queen d 4 takes d 6
 queen d 4 takes d 7
-queen d 4 takes d 8
 queen d 4 takes e 3
 queen d 4 takes e 4
 queen d 4 takes e 5
@@ -11819,10 +9461,8 @@ queen d 4 takes f 6
 queen d 4 takes g 1
 queen d 4 takes g 4
 queen d 4 takes g 7
-queen d 4 takes h 4
 queen d 4 takes h 8
 queen d 5 takes a 2
-queen d 5 takes a 5
 queen d 5 takes a 8
 queen d 5 takes b 3
 queen d 5 takes b 5
@@ -11830,13 +9470,11 @@ queen d 5 takes b 7
 queen d 5 takes c 4
 queen d 5 takes c 5
 queen d 5 takes c 6
-queen d 5 takes d 1
 queen d 5 takes d 2
 queen d 5 takes d 3
 queen d 5 takes d 4
 queen d 5 takes d 6
 queen d 5 takes d 7
-queen d 5 takes d 8
 queen d 5 takes e 4
 queen d 5 takes e 5
 queen d 5 takes e 6
@@ -11847,22 +9485,18 @@ queen d 5 takes g 2
 queen d 5 takes g 5
 queen d 5 takes g 8
 queen d 5 takes h 1
-queen d 5 takes h 5
 queen d 6 takes a 3
-queen d 6 takes a 6
 queen d 6 takes b 4
 queen d 6 takes b 6
 queen d 6 takes b 8
 queen d 6 takes c 5
 queen d 6 takes c 6
 queen d 6 takes c 7
-queen d 6 takes d 1
 queen d 6 takes d 2
 queen d 6 takes d 3
 queen d 6 takes d 4
 queen d 6 takes d 5
 queen d 6 takes d 7
-queen d 6 takes d 8
 queen d 6 takes e 5
 queen d 6 takes e 6
 queen d 6 takes e 7
@@ -11872,21 +9506,16 @@ queen d 6 takes f 8
 queen d 6 takes g 3
 queen d 6 takes g 6
 queen d 6 takes h 2
-queen d 6 takes h 6
 queen d 7 takes a 4
-queen d 7 takes a 7
 queen d 7 takes b 5
 queen d 7 takes b 7
 queen d 7 takes c 6
 queen d 7 takes c 7
 queen d 7 takes c 8
-queen d 7 takes d 1
-queen d 7 takes d 2
 queen d 7 takes d 3
 queen d 7 takes d 4
 queen d 7 takes d 5
 queen d 7 takes d 6
-queen d 7 takes d 8
 queen d 7 takes e 6
 queen d 7 takes e 7
 queen d 7 takes e 8
@@ -11895,16 +9524,11 @@ queen d 7 takes f 7
 queen d 7 takes g 4
 queen d 7 takes g 7
 queen d 7 takes h 3
-queen d 7 takes h 7
 queen d 8 takes a 5
-queen d 8 takes a 8
 queen d 8 takes b 6
 queen d 8 takes b 8
 queen d 8 takes c 7
 queen d 8 takes c 8
-queen d 8 takes d 1
-queen d 8 takes d 2
-queen d 8 takes d 3
 queen d 8 takes d 4
 queen d 8 takes d 5
 queen d 8 takes d 6
@@ -11916,9 +9540,7 @@ queen d 8 takes f 8
 queen d 8 takes g 5
 queen d 8 takes g 8
 queen d 8 takes h 4
-queen d 8 takes h 8
 queen d takes queen
-queen e 1 takes a 1
 queen e 1 takes a 5
 queen e 1 takes b 1
 queen e 1 takes b 4
@@ -11930,16 +9552,11 @@ queen e 1 takes e 2
 queen e 1 takes e 3
 queen e 1 takes e 4
 queen e 1 takes e 5
-queen e 1 takes e 6
-queen e 1 takes e 7
-queen e 1 takes e 8
 queen e 1 takes f 1
 queen e 1 takes f 2
 queen e 1 takes g 1
 queen e 1 takes g 3
-queen e 1 takes h 1
 queen e 1 takes h 4
-queen e 2 takes a 2
 queen e 2 takes a 6
 queen e 2 takes b 2
 queen e 2 takes b 5
@@ -11948,21 +9565,16 @@ queen e 2 takes c 4
 queen e 2 takes d 1
 queen e 2 takes d 2
 queen e 2 takes d 3
-queen e 2 takes e 1
 queen e 2 takes e 3
 queen e 2 takes e 4
 queen e 2 takes e 5
 queen e 2 takes e 6
-queen e 2 takes e 7
-queen e 2 takes e 8
 queen e 2 takes f 1
 queen e 2 takes f 2
 queen e 2 takes f 3
 queen e 2 takes g 2
 queen e 2 takes g 4
-queen e 2 takes h 2
 queen e 2 takes h 5
-queen e 3 takes a 3
 queen e 3 takes a 7
 queen e 3 takes b 3
 queen e 3 takes b 6
@@ -11972,22 +9584,18 @@ queen e 3 takes c 5
 queen e 3 takes d 2
 queen e 3 takes d 3
 queen e 3 takes d 4
-queen e 3 takes e 1
 queen e 3 takes e 2
 queen e 3 takes e 4
 queen e 3 takes e 5
 queen e 3 takes e 6
 queen e 3 takes e 7
-queen e 3 takes e 8
 queen e 3 takes f 2
 queen e 3 takes f 3
 queen e 3 takes f 4
 queen e 3 takes g 1
 queen e 3 takes g 3
 queen e 3 takes g 5
-queen e 3 takes h 3
 queen e 3 takes h 6
-queen e 4 takes a 4
 queen e 4 takes a 8
 queen e 4 takes b 1
 queen e 4 takes b 4
@@ -11998,13 +9606,11 @@ queen e 4 takes c 6
 queen e 4 takes d 3
 queen e 4 takes d 4
 queen e 4 takes d 5
-queen e 4 takes e 1
 queen e 4 takes e 2
 queen e 4 takes e 3
 queen e 4 takes e 5
 queen e 4 takes e 6
 queen e 4 takes e 7
-queen e 4 takes e 8
 queen e 4 takes f 3
 queen e 4 takes f 4
 queen e 4 takes f 5
@@ -12012,10 +9618,8 @@ queen e 4 takes g 2
 queen e 4 takes g 4
 queen e 4 takes g 6
 queen e 4 takes h 1
-queen e 4 takes h 4
 queen e 4 takes h 7
 queen e 5 takes a 1
-queen e 5 takes a 5
 queen e 5 takes b 2
 queen e 5 takes b 5
 queen e 5 takes b 8
@@ -12025,13 +9629,11 @@ queen e 5 takes c 7
 queen e 5 takes d 4
 queen e 5 takes d 5
 queen e 5 takes d 6
-queen e 5 takes e 1
 queen e 5 takes e 2
 queen e 5 takes e 3
 queen e 5 takes e 4
 queen e 5 takes e 6
 queen e 5 takes e 7
-queen e 5 takes e 8
 queen e 5 takes f 4
 queen e 5 takes f 5
 queen e 5 takes f 6
@@ -12039,10 +9641,8 @@ queen e 5 takes g 3
 queen e 5 takes g 5
 queen e 5 takes g 7
 queen e 5 takes h 2
-queen e 5 takes h 5
 queen e 5 takes h 8
 queen e 6 takes a 2
-queen e 6 takes a 6
 queen e 6 takes b 3
 queen e 6 takes b 6
 queen e 6 takes c 4
@@ -12051,13 +9651,11 @@ queen e 6 takes c 8
 queen e 6 takes d 5
 queen e 6 takes d 6
 queen e 6 takes d 7
-queen e 6 takes e 1
 queen e 6 takes e 2
 queen e 6 takes e 3
 queen e 6 takes e 4
 queen e 6 takes e 5
 queen e 6 takes e 7
-queen e 6 takes e 8
 queen e 6 takes f 5
 queen e 6 takes f 6
 queen e 6 takes f 7
@@ -12065,9 +9663,7 @@ queen e 6 takes g 4
 queen e 6 takes g 6
 queen e 6 takes g 8
 queen e 6 takes h 3
-queen e 6 takes h 6
 queen e 7 takes a 3
-queen e 7 takes a 7
 queen e 7 takes b 4
 queen e 7 takes b 7
 queen e 7 takes c 5
@@ -12075,31 +9671,23 @@ queen e 7 takes c 7
 queen e 7 takes d 6
 queen e 7 takes d 7
 queen e 7 takes d 8
-queen e 7 takes e 1
-queen e 7 takes e 2
 queen e 7 takes e 3
 queen e 7 takes e 4
 queen e 7 takes e 5
 queen e 7 takes e 6
-queen e 7 takes e 8
 queen e 7 takes f 6
 queen e 7 takes f 7
 queen e 7 takes f 8
 queen e 7 takes g 5
 queen e 7 takes g 7
 queen e 7 takes h 4
-queen e 7 takes h 7
 queen e 8 takes a 4
-queen e 8 takes a 8
 queen e 8 takes b 5
 queen e 8 takes b 8
 queen e 8 takes c 6
 queen e 8 takes c 8
 queen e 8 takes d 7
 queen e 8 takes d 8
-queen e 8 takes e 1
-queen e 8 takes e 2
-queen e 8 takes e 3
 queen e 8 takes e 4
 queen e 8 takes e 5
 queen e 8 takes e 6
@@ -12109,9 +9697,7 @@ queen e 8 takes f 8
 queen e 8 takes g 6
 queen e 8 takes g 8
 queen e 8 takes h 5
-queen e 8 takes h 8
 queen e takes queen
-queen f 1 takes a 1
 queen f 1 takes a 6
 queen f 1 takes b 1
 queen f 1 takes b 5
@@ -12126,13 +9712,9 @@ queen f 1 takes f 3
 queen f 1 takes f 4
 queen f 1 takes f 5
 queen f 1 takes f 6
-queen f 1 takes f 7
-queen f 1 takes f 8
 queen f 1 takes g 1
 queen f 1 takes g 2
-queen f 1 takes h 1
 queen f 1 takes h 3
-queen f 2 takes a 2
 queen f 2 takes a 7
 queen f 2 takes b 2
 queen f 2 takes b 6
@@ -12143,19 +9725,15 @@ queen f 2 takes d 4
 queen f 2 takes e 1
 queen f 2 takes e 2
 queen f 2 takes e 3
-queen f 2 takes f 1
 queen f 2 takes f 3
 queen f 2 takes f 4
 queen f 2 takes f 5
 queen f 2 takes f 6
 queen f 2 takes f 7
-queen f 2 takes f 8
 queen f 2 takes g 1
 queen f 2 takes g 2
 queen f 2 takes g 3
-queen f 2 takes h 2
 queen f 2 takes h 4
-queen f 3 takes a 3
 queen f 3 takes a 8
 queen f 3 takes b 3
 queen f 3 takes b 7
@@ -12167,20 +9745,16 @@ queen f 3 takes d 5
 queen f 3 takes e 2
 queen f 3 takes e 3
 queen f 3 takes e 4
-queen f 3 takes f 1
 queen f 3 takes f 2
 queen f 3 takes f 4
 queen f 3 takes f 5
 queen f 3 takes f 6
 queen f 3 takes f 7
-queen f 3 takes f 8
 queen f 3 takes g 2
 queen f 3 takes g 3
 queen f 3 takes g 4
 queen f 3 takes h 1
-queen f 3 takes h 3
 queen f 3 takes h 5
-queen f 4 takes a 4
 queen f 4 takes b 4
 queen f 4 takes b 8
 queen f 4 takes c 1
@@ -12192,20 +9766,16 @@ queen f 4 takes d 6
 queen f 4 takes e 3
 queen f 4 takes e 4
 queen f 4 takes e 5
-queen f 4 takes f 1
 queen f 4 takes f 2
 queen f 4 takes f 3
 queen f 4 takes f 5
 queen f 4 takes f 6
 queen f 4 takes f 7
-queen f 4 takes f 8
 queen f 4 takes g 3
 queen f 4 takes g 4
 queen f 4 takes g 5
 queen f 4 takes h 2
-queen f 4 takes h 4
 queen f 4 takes h 6
-queen f 5 takes a 5
 queen f 5 takes b 1
 queen f 5 takes b 5
 queen f 5 takes c 2
@@ -12217,21 +9787,17 @@ queen f 5 takes d 7
 queen f 5 takes e 4
 queen f 5 takes e 5
 queen f 5 takes e 6
-queen f 5 takes f 1
 queen f 5 takes f 2
 queen f 5 takes f 3
 queen f 5 takes f 4
 queen f 5 takes f 6
 queen f 5 takes f 7
-queen f 5 takes f 8
 queen f 5 takes g 4
 queen f 5 takes g 5
 queen f 5 takes g 6
 queen f 5 takes h 3
-queen f 5 takes h 5
 queen f 5 takes h 7
 queen f 6 takes a 1
-queen f 6 takes a 6
 queen f 6 takes b 2
 queen f 6 takes b 6
 queen f 6 takes c 3
@@ -12242,21 +9808,17 @@ queen f 6 takes d 8
 queen f 6 takes e 5
 queen f 6 takes e 6
 queen f 6 takes e 7
-queen f 6 takes f 1
 queen f 6 takes f 2
 queen f 6 takes f 3
 queen f 6 takes f 4
 queen f 6 takes f 5
 queen f 6 takes f 7
-queen f 6 takes f 8
 queen f 6 takes g 5
 queen f 6 takes g 6
 queen f 6 takes g 7
 queen f 6 takes h 4
-queen f 6 takes h 6
 queen f 6 takes h 8
 queen f 7 takes a 2
-queen f 7 takes a 7
 queen f 7 takes b 3
 queen f 7 takes b 7
 queen f 7 takes c 4
@@ -12266,20 +9828,16 @@ queen f 7 takes d 7
 queen f 7 takes e 6
 queen f 7 takes e 7
 queen f 7 takes e 8
-queen f 7 takes f 1
 queen f 7 takes f 2
 queen f 7 takes f 3
 queen f 7 takes f 4
 queen f 7 takes f 5
 queen f 7 takes f 6
-queen f 7 takes f 8
 queen f 7 takes g 6
 queen f 7 takes g 7
 queen f 7 takes g 8
 queen f 7 takes h 5
-queen f 7 takes h 7
 queen f 8 takes a 3
-queen f 8 takes a 8
 queen f 8 takes b 4
 queen f 8 takes b 8
 queen f 8 takes c 5
@@ -12288,8 +9846,6 @@ queen f 8 takes d 6
 queen f 8 takes d 8
 queen f 8 takes e 7
 queen f 8 takes e 8
-queen f 8 takes f 1
-queen f 8 takes f 2
 queen f 8 takes f 3
 queen f 8 takes f 4
 queen f 8 takes f 5
@@ -12298,9 +9854,7 @@ queen f 8 takes f 7
 queen f 8 takes g 7
 queen f 8 takes g 8
 queen f 8 takes h 6
-queen f 8 takes h 8
 queen f takes queen
-queen g 1 takes a 1
 queen g 1 takes a 7
 queen g 1 takes b 1
 queen g 1 takes b 6
@@ -12318,10 +9872,7 @@ queen g 1 takes g 4
 queen g 1 takes g 5
 queen g 1 takes g 6
 queen g 1 takes g 7
-queen g 1 takes g 8
-queen g 1 takes h 1
 queen g 1 takes h 2
-queen g 2 takes a 2
 queen g 2 takes a 8
 queen g 2 takes b 2
 queen g 2 takes b 7
@@ -12334,17 +9885,13 @@ queen g 2 takes e 4
 queen g 2 takes f 1
 queen g 2 takes f 2
 queen g 2 takes f 3
-queen g 2 takes g 1
 queen g 2 takes g 3
 queen g 2 takes g 4
 queen g 2 takes g 5
 queen g 2 takes g 6
 queen g 2 takes g 7
-queen g 2 takes g 8
 queen g 2 takes h 1
-queen g 2 takes h 2
 queen g 2 takes h 3
-queen g 3 takes a 3
 queen g 3 takes b 3
 queen g 3 takes b 8
 queen g 3 takes c 3
@@ -12357,18 +9904,13 @@ queen g 3 takes e 5
 queen g 3 takes f 2
 queen g 3 takes f 3
 queen g 3 takes f 4
-queen g 3 takes g 1
 queen g 3 takes g 2
 queen g 3 takes g 4
 queen g 3 takes g 5
 queen g 3 takes g 6
 queen g 3 takes g 7
-queen g 3 takes g 8
 queen g 3 takes h 2
-queen g 3 takes h 3
 queen g 3 takes h 4
-queen g 4 takes a 4
-queen g 4 takes b 4
 queen g 4 takes c 4
 queen g 4 takes c 8
 queen g 4 takes d 1
@@ -12380,18 +9922,13 @@ queen g 4 takes e 6
 queen g 4 takes f 3
 queen g 4 takes f 4
 queen g 4 takes f 5
-queen g 4 takes g 1
 queen g 4 takes g 2
 queen g 4 takes g 3
 queen g 4 takes g 5
 queen g 4 takes g 6
 queen g 4 takes g 7
-queen g 4 takes g 8
 queen g 4 takes h 3
-queen g 4 takes h 4
 queen g 4 takes h 5
-queen g 5 takes a 5
-queen g 5 takes b 5
 queen g 5 takes c 1
 queen g 5 takes c 5
 queen g 5 takes d 2
@@ -12403,17 +9940,13 @@ queen g 5 takes e 7
 queen g 5 takes f 4
 queen g 5 takes f 5
 queen g 5 takes f 6
-queen g 5 takes g 1
 queen g 5 takes g 2
 queen g 5 takes g 3
 queen g 5 takes g 4
 queen g 5 takes g 6
 queen g 5 takes g 7
-queen g 5 takes g 8
 queen g 5 takes h 4
-queen g 5 takes h 5
 queen g 5 takes h 6
-queen g 6 takes a 6
 queen g 6 takes b 1
 queen g 6 takes b 6
 queen g 6 takes c 2
@@ -12426,18 +9959,14 @@ queen g 6 takes e 8
 queen g 6 takes f 5
 queen g 6 takes f 6
 queen g 6 takes f 7
-queen g 6 takes g 1
 queen g 6 takes g 2
 queen g 6 takes g 3
 queen g 6 takes g 4
 queen g 6 takes g 5
 queen g 6 takes g 7
-queen g 6 takes g 8
 queen g 6 takes h 5
-queen g 6 takes h 6
 queen g 6 takes h 7
 queen g 7 takes a 1
-queen g 7 takes a 7
 queen g 7 takes b 2
 queen g 7 takes b 7
 queen g 7 takes c 3
@@ -12449,18 +9978,14 @@ queen g 7 takes e 7
 queen g 7 takes f 6
 queen g 7 takes f 7
 queen g 7 takes f 8
-queen g 7 takes g 1
 queen g 7 takes g 2
 queen g 7 takes g 3
 queen g 7 takes g 4
 queen g 7 takes g 5
 queen g 7 takes g 6
-queen g 7 takes g 8
 queen g 7 takes h 6
-queen g 7 takes h 7
 queen g 7 takes h 8
 queen g 8 takes a 2
-queen g 8 takes a 8
 queen g 8 takes b 3
 queen g 8 takes b 8
 queen g 8 takes c 4
@@ -12471,7 +9996,6 @@ queen g 8 takes e 6
 queen g 8 takes e 8
 queen g 8 takes f 7
 queen g 8 takes f 8
-queen g 8 takes g 1
 queen g 8 takes g 2
 queen g 8 takes g 3
 queen g 8 takes g 4
@@ -12479,9 +10003,7 @@ queen g 8 takes g 5
 queen g 8 takes g 6
 queen g 8 takes g 7
 queen g 8 takes h 7
-queen g 8 takes h 8
 queen g takes queen
-queen h 1 takes a 1
 queen h 1 takes a 8
 queen h 1 takes b 1
 queen h 1 takes b 7
@@ -12501,8 +10023,6 @@ queen h 1 takes h 4
 queen h 1 takes h 5
 queen h 1 takes h 6
 queen h 1 takes h 7
-queen h 1 takes h 8
-queen h 2 takes a 2
 queen h 2 takes b 2
 queen h 2 takes b 8
 queen h 2 takes c 2
@@ -12516,15 +10036,11 @@ queen h 2 takes f 4
 queen h 2 takes g 1
 queen h 2 takes g 2
 queen h 2 takes g 3
-queen h 2 takes h 1
 queen h 2 takes h 3
 queen h 2 takes h 4
 queen h 2 takes h 5
 queen h 2 takes h 6
 queen h 2 takes h 7
-queen h 2 takes h 8
-queen h 3 takes a 3
-queen h 3 takes b 3
 queen h 3 takes c 3
 queen h 3 takes c 8
 queen h 3 takes d 3
@@ -12537,16 +10053,11 @@ queen h 3 takes f 5
 queen h 3 takes g 2
 queen h 3 takes g 3
 queen h 3 takes g 4
-queen h 3 takes h 1
 queen h 3 takes h 2
 queen h 3 takes h 4
 queen h 3 takes h 5
 queen h 3 takes h 6
 queen h 3 takes h 7
-queen h 3 takes h 8
-queen h 4 takes a 4
-queen h 4 takes b 4
-queen h 4 takes c 4
 queen h 4 takes d 4
 queen h 4 takes d 8
 queen h 4 takes e 1
@@ -12558,16 +10069,11 @@ queen h 4 takes f 6
 queen h 4 takes g 3
 queen h 4 takes g 4
 queen h 4 takes g 5
-queen h 4 takes h 1
 queen h 4 takes h 2
 queen h 4 takes h 3
 queen h 4 takes h 5
 queen h 4 takes h 6
 queen h 4 takes h 7
-queen h 4 takes h 8
-queen h 5 takes a 5
-queen h 5 takes b 5
-queen h 5 takes c 5
 queen h 5 takes d 1
 queen h 5 takes d 5
 queen h 5 takes e 2
@@ -12579,15 +10085,11 @@ queen h 5 takes f 7
 queen h 5 takes g 4
 queen h 5 takes g 5
 queen h 5 takes g 6
-queen h 5 takes h 1
 queen h 5 takes h 2
 queen h 5 takes h 3
 queen h 5 takes h 4
 queen h 5 takes h 6
 queen h 5 takes h 7
-queen h 5 takes h 8
-queen h 6 takes a 6
-queen h 6 takes b 6
 queen h 6 takes c 1
 queen h 6 takes c 6
 queen h 6 takes d 2
@@ -12600,14 +10102,11 @@ queen h 6 takes f 8
 queen h 6 takes g 5
 queen h 6 takes g 6
 queen h 6 takes g 7
-queen h 6 takes h 1
 queen h 6 takes h 2
 queen h 6 takes h 3
 queen h 6 takes h 4
 queen h 6 takes h 5
 queen h 6 takes h 7
-queen h 6 takes h 8
-queen h 7 takes a 7
 queen h 7 takes b 1
 queen h 7 takes b 7
 queen h 7 takes c 2
@@ -12621,15 +10120,12 @@ queen h 7 takes f 7
 queen h 7 takes g 6
 queen h 7 takes g 7
 queen h 7 takes g 8
-queen h 7 takes h 1
 queen h 7 takes h 2
 queen h 7 takes h 3
 queen h 7 takes h 4
 queen h 7 takes h 5
 queen h 7 takes h 6
-queen h 7 takes h 8
 queen h 8 takes a 1
-queen h 8 takes a 8
 queen h 8 takes b 2
 queen h 8 takes b 8
 queen h 8 takes c 3
@@ -12642,7 +10138,6 @@ queen h 8 takes f 6
 queen h 8 takes f 8
 queen h 8 takes g 7
 queen h 8 takes g 8
-queen h 8 takes h 1
 queen h 8 takes h 2
 queen h 8 takes h 3
 queen h 8 takes h 4
@@ -12666,148 +10161,20 @@ rook 7 takes bishop
 rook 7 takes knight
 rook 8 takes bishop
 rook 8 takes knight
-rook a 1 takes pawn
-rook a 1 takes rook
-rook a 2 takes pawn
-rook a 2 takes rook
-rook a 3 takes pawn
-rook a 3 takes rook
-rook a 4 takes pawn
-rook a 4 takes rook
-rook a 5 takes pawn
-rook a 5 takes rook
-rook a 6 takes pawn
-rook a 6 takes rook
-rook a 7 takes pawn
-rook a 7 takes rook
-rook a 8 takes pawn
-rook a 8 takes rook
 rook a takes bishop
 rook a takes knight
-rook b 1 takes pawn
-rook b 1 takes rook
-rook b 2 takes pawn
-rook b 2 takes rook
-rook b 3 takes pawn
-rook b 3 takes rook
-rook b 4 takes pawn
-rook b 4 takes rook
-rook b 5 takes pawn
-rook b 5 takes rook
-rook b 6 takes pawn
-rook b 6 takes rook
-rook b 7 takes pawn
-rook b 7 takes rook
-rook b 8 takes pawn
-rook b 8 takes rook
 rook b takes bishop
 rook b takes knight
-rook c 1 takes pawn
-rook c 1 takes rook
-rook c 2 takes pawn
-rook c 2 takes rook
-rook c 3 takes pawn
-rook c 3 takes rook
-rook c 4 takes pawn
-rook c 4 takes rook
-rook c 5 takes pawn
-rook c 5 takes rook
-rook c 6 takes pawn
-rook c 6 takes rook
-rook c 7 takes pawn
-rook c 7 takes rook
-rook c 8 takes pawn
-rook c 8 takes rook
 rook c takes bishop
 rook c takes knight
-rook d 1 takes pawn
-rook d 1 takes rook
-rook d 2 takes pawn
-rook d 2 takes rook
-rook d 3 takes pawn
-rook d 3 takes rook
-rook d 4 takes pawn
-rook d 4 takes rook
-rook d 5 takes pawn
-rook d 5 takes rook
-rook d 6 takes pawn
-rook d 6 takes rook
-rook d 7 takes pawn
-rook d 7 takes rook
-rook d 8 takes pawn
-rook d 8 takes rook
 rook d takes bishop
 rook d takes knight
-rook e 1 takes pawn
-rook e 1 takes rook
-rook e 2 takes pawn
-rook e 2 takes rook
-rook e 3 takes pawn
-rook e 3 takes rook
-rook e 4 takes pawn
-rook e 4 takes rook
-rook e 5 takes pawn
-rook e 5 takes rook
-rook e 6 takes pawn
-rook e 6 takes rook
-rook e 7 takes pawn
-rook e 7 takes rook
-rook e 8 takes pawn
-rook e 8 takes rook
 rook e takes bishop
 rook e takes knight
-rook f 1 takes pawn
-rook f 1 takes rook
-rook f 2 takes pawn
-rook f 2 takes rook
-rook f 3 takes pawn
-rook f 3 takes rook
-rook f 4 takes pawn
-rook f 4 takes rook
-rook f 5 takes pawn
-rook f 5 takes rook
-rook f 6 takes pawn
-rook f 6 takes rook
-rook f 7 takes pawn
-rook f 7 takes rook
-rook f 8 takes pawn
-rook f 8 takes rook
 rook f takes bishop
 rook f takes knight
-rook g 1 takes pawn
-rook g 1 takes rook
-rook g 2 takes pawn
-rook g 2 takes rook
-rook g 3 takes pawn
-rook g 3 takes rook
-rook g 4 takes pawn
-rook g 4 takes rook
-rook g 5 takes pawn
-rook g 5 takes rook
-rook g 6 takes pawn
-rook g 6 takes rook
-rook g 7 takes pawn
-rook g 7 takes rook
-rook g 8 takes pawn
-rook g 8 takes rook
 rook g takes bishop
 rook g takes knight
-rook h 1 takes pawn
-rook h 1 takes rook
-rook h 2 takes pawn
-rook h 2 takes rook
-rook h 3 takes pawn
-rook h 3 takes rook
-rook h 4 takes pawn
-rook h 4 takes rook
-rook h 5 takes pawn
-rook h 5 takes rook
-rook h 6 takes pawn
-rook h 6 takes rook
-rook h 7 takes pawn
-rook h 7 takes rook
-rook h 8 takes pawn
-rook h 8 takes rook
 rook h takes bishop
 rook h takes knight
 takes bishop bishop
@@ -12833,371 +10200,231 @@ bishop 8 takes queen
 bishop a 1 takes b 2
 bishop a 1 takes c 3
 bishop a 1 takes d 4
-bishop a 1 takes e 5
-bishop a 1 takes f 6
-bishop a 1 takes g 7
 bishop a 2 takes b 3
 bishop a 2 takes c 4
 bishop a 2 takes d 5
-bishop a 2 takes e 6
-bishop a 2 takes f 7
 bishop a 3 takes b 2
 bishop a 3 takes b 4
 bishop a 3 takes c 5
-bishop a 3 takes d 6
-bishop a 3 takes e 7
 bishop a 4 takes b 3
 bishop a 4 takes b 5
-bishop a 4 takes c 2
 bishop a 4 takes c 6
-bishop a 4 takes d 7
 bishop a 5 takes b 4
 bishop a 5 takes b 6
 bishop a 5 takes c 3
-bishop a 5 takes c 7
-bishop a 5 takes d 2
 bishop a 6 takes b 5
 bishop a 6 takes b 7
 bishop a 6 takes c 4
-bishop a 6 takes d 3
-bishop a 6 takes e 2
 bishop a 7 takes b 6
 bishop a 7 takes c 5
 bishop a 7 takes d 4
-bishop a 7 takes e 3
-bishop a 7 takes f 2
 bishop a 8 takes b 7
 bishop a 8 takes c 6
 bishop a 8 takes d 5
-bishop a 8 takes e 4
-bishop a 8 takes f 3
-bishop a 8 takes g 2
 bishop a takes queen
 bishop b 1 takes c 2
 bishop b 1 takes d 3
 bishop b 1 takes e 4
-bishop b 1 takes f 5
-bishop b 1 takes g 6
 bishop b 2 takes c 3
 bishop b 2 takes d 4
 bishop b 2 takes e 5
-bishop b 2 takes f 6
-bishop b 2 takes g 7
 bishop b 3 takes c 2
 bishop b 3 takes c 4
 bishop b 3 takes d 5
-bishop b 3 takes e 6
-bishop b 3 takes f 7
 bishop b 4 takes c 3
 bishop b 4 takes c 5
-bishop b 4 takes d 2
 bishop b 4 takes d 6
-bishop b 4 takes e 7
 bishop b 5 takes c 4
 bishop b 5 takes c 6
 bishop b 5 takes d 3
-bishop b 5 takes d 7
-bishop b 5 takes e 2
 bishop b 6 takes c 5
 bishop b 6 takes c 7
 bishop b 6 takes d 4
-bishop b 6 takes e 3
-bishop b 6 takes f 2
 bishop b 7 takes c 6
 bishop b 7 takes d 5
 bishop b 7 takes e 4
-bishop b 7 takes f 3
-bishop b 7 takes g 2
 bishop b 8 takes c 7
 bishop b 8 takes d 6
 bishop b 8 takes e 5
-bishop b 8 takes f 4
-bishop b 8 takes g 3
 bishop b takes queen
 bishop c 1 takes b 2
 bishop c 1 takes d 2
 bishop c 1 takes e 3
-bishop c 1 takes f 4
-bishop c 1 takes g 5
 bishop c 2 takes b 3
 bishop c 2 takes d 3
 bishop c 2 takes e 4
-bishop c 2 takes f 5
-bishop c 2 takes g 6
 bishop c 3 takes b 2
 bishop c 3 takes b 4
 bishop c 3 takes d 2
 bishop c 3 takes d 4
 bishop c 3 takes e 5
-bishop c 3 takes f 6
-bishop c 3 takes g 7
 bishop c 4 takes b 3
 bishop c 4 takes b 5
 bishop c 4 takes d 3
 bishop c 4 takes d 5
-bishop c 4 takes e 2
 bishop c 4 takes e 6
-bishop c 4 takes f 7
 bishop c 5 takes b 4
 bishop c 5 takes b 6
 bishop c 5 takes d 4
 bishop c 5 takes d 6
 bishop c 5 takes e 3
-bishop c 5 takes e 7
-bishop c 5 takes f 2
 bishop c 6 takes b 5
 bishop c 6 takes b 7
 bishop c 6 takes d 5
 bishop c 6 takes d 7
 bishop c 6 takes e 4
-bishop c 6 takes f 3
-bishop c 6 takes g 2
 bishop c 7 takes b 6
 bishop c 7 takes d 6
 bishop c 7 takes e 5
-bishop c 7 takes f 4
-bishop c 7 takes g 3
 bishop c 8 takes b 7
 bishop c 8 takes d 7
 bishop c 8 takes e 6
-bishop c 8 takes f 5
-bishop c 8 takes g 4
 bishop c takes queen
-bishop d 1 takes b 3
 bishop d 1 takes c 2
 bishop d 1 takes e 2
 bishop d 1 takes f 3
-bishop d 1 takes g 4
-bishop d 2 takes b 4
 bishop d 2 takes c 3
 bishop d 2 takes e 3
 bishop d 2 takes f 4
-bishop d 2 takes g 5
-bishop d 3 takes b 5
 bishop d 3 takes c 2
 bishop d 3 takes c 4
 bishop d 3 takes e 2
 bishop d 3 takes e 4
 bishop d 3 takes f 5
-bishop d 3 takes g 6
-bishop d 4 takes b 2
-bishop d 4 takes b 6
 bishop d 4 takes c 3
 bishop d 4 takes c 5
 bishop d 4 takes e 3
 bishop d 4 takes e 5
-bishop d 4 takes f 2
 bishop d 4 takes f 6
-bishop d 4 takes g 7
-bishop d 5 takes b 3
-bishop d 5 takes b 7
 bishop d 5 takes c 4
 bishop d 5 takes c 6
 bishop d 5 takes e 4
 bishop d 5 takes e 6
 bishop d 5 takes f 3
-bishop d 5 takes f 7
-bishop d 5 takes g 2
-bishop d 6 takes b 4
 bishop d 6 takes c 5
 bishop d 6 takes c 7
 bishop d 6 takes e 5
 bishop d 6 takes e 7
 bishop d 6 takes f 4
-bishop d 6 takes g 3
-bishop d 7 takes b 5
 bishop d 7 takes c 6
 bishop d 7 takes e 6
 bishop d 7 takes f 5
-bishop d 7 takes g 4
-bishop d 8 takes b 6
 bishop d 8 takes c 7
 bishop d 8 takes e 7
 bishop d 8 takes f 6
-bishop d 8 takes g 5
 bishop d takes queen
-bishop e 1 takes b 4
 bishop e 1 takes c 3
 bishop e 1 takes d 2
 bishop e 1 takes f 2
-bishop e 1 takes g 3
-bishop e 2 takes b 5
 bishop e 2 takes c 4
 bishop e 2 takes d 3
 bishop e 2 takes f 3
-bishop e 2 takes g 4
-bishop e 3 takes b 6
 bishop e 3 takes c 5
 bishop e 3 takes d 2
 bishop e 3 takes d 4
 bishop e 3 takes f 2
 bishop e 3 takes f 4
-bishop e 3 takes g 5
-bishop e 4 takes b 7
-bishop e 4 takes c 2
 bishop e 4 takes c 6
 bishop e 4 takes d 3
 bishop e 4 takes d 5
 bishop e 4 takes f 3
 bishop e 4 takes f 5
-bishop e 4 takes g 2
-bishop e 4 takes g 6
-bishop e 5 takes b 2
 bishop e 5 takes c 3
-bishop e 5 takes c 7
 bishop e 5 takes d 4
 bishop e 5 takes d 6
 bishop e 5 takes f 4
 bishop e 5 takes f 6
-bishop e 5 takes g 3
-bishop e 5 takes g 7
-bishop e 6 takes b 3
 bishop e 6 takes c 4
 bishop e 6 takes d 5
 bishop e 6 takes d 7
 bishop e 6 takes f 5
 bishop e 6 takes f 7
-bishop e 6 takes g 4
-bishop e 7 takes b 4
 bishop e 7 takes c 5
 bishop e 7 takes d 6
 bishop e 7 takes f 6
-bishop e 7 takes g 5
-bishop e 8 takes b 5
 bishop e 8 takes c 6
 bishop e 8 takes d 7
 bishop e 8 takes f 7
-bishop e 8 takes g 6
 bishop e takes queen
-bishop f 1 takes b 5
-bishop f 1 takes c 4
 bishop f 1 takes d 3
 bishop f 1 takes e 2
 bishop f 1 takes g 2
-bishop f 2 takes b 6
-bishop f 2 takes c 5
 bishop f 2 takes d 4
 bishop f 2 takes e 3
 bishop f 2 takes g 3
-bishop f 3 takes b 7
-bishop f 3 takes c 6
 bishop f 3 takes d 5
 bishop f 3 takes e 2
 bishop f 3 takes e 4
 bishop f 3 takes g 2
 bishop f 3 takes g 4
-bishop f 4 takes c 7
-bishop f 4 takes d 2
 bishop f 4 takes d 6
 bishop f 4 takes e 3
 bishop f 4 takes e 5
 bishop f 4 takes g 3
 bishop f 4 takes g 5
-bishop f 5 takes c 2
 bishop f 5 takes d 3
-bishop f 5 takes d 7
 bishop f 5 takes e 4
 bishop f 5 takes e 6
 bishop f 5 takes g 4
 bishop f 5 takes g 6
-bishop f 6 takes b 2
-bishop f 6 takes c 3
 bishop f 6 takes d 4
 bishop f 6 takes e 5
 bishop f 6 takes e 7
 bishop f 6 takes g 5
 bishop f 6 takes g 7
-bishop f 7 takes b 3
-bishop f 7 takes c 4
 bishop f 7 takes d 5
 bishop f 7 takes e 6
 bishop f 7 takes g 6
-bishop f 8 takes b 4
-bishop f 8 takes c 5
 bishop f 8 takes d 6
 bishop f 8 takes e 7
 bishop f 8 takes g 7
 bishop f takes queen
-bishop g 1 takes b 6
-bishop g 1 takes c 5
 bishop g 1 takes d 4
 bishop g 1 takes e 3
 bishop g 1 takes f 2
-bishop g 2 takes b 7
-bishop g 2 takes c 6
 bishop g 2 takes d 5
 bishop g 2 takes e 4
 bishop g 2 takes f 3
-bishop g 3 takes c 7
-bishop g 3 takes d 6
 bishop g 3 takes e 5
 bishop g 3 takes f 2
 bishop g 3 takes f 4
-bishop g 4 takes d 7
-bishop g 4 takes e 2
 bishop g 4 takes e 6
 bishop g 4 takes f 3
 bishop g 4 takes f 5
-bishop g 5 takes d 2
 bishop g 5 takes e 3
-bishop g 5 takes e 7
 bishop g 5 takes f 4
 bishop g 5 takes f 6
-bishop g 6 takes c 2
-bishop g 6 takes d 3
 bishop g 6 takes e 4
 bishop g 6 takes f 5
 bishop g 6 takes f 7
-bishop g 7 takes b 2
-bishop g 7 takes c 3
 bishop g 7 takes d 4
 bishop g 7 takes e 5
 bishop g 7 takes f 6
-bishop g 8 takes b 3
-bishop g 8 takes c 4
 bishop g 8 takes d 5
 bishop g 8 takes e 6
 bishop g 8 takes f 7
 bishop g takes queen
-bishop h 1 takes b 7
-bishop h 1 takes c 6
-bishop h 1 takes d 5
 bishop h 1 takes e 4
 bishop h 1 takes f 3
 bishop h 1 takes g 2
-bishop h 2 takes c 7
-bishop h 2 takes d 6
 bishop h 2 takes e 5
 bishop h 2 takes f 4
 bishop h 2 takes g 3
-bishop h 3 takes d 7
-bishop h 3 takes e 6
 bishop h 3 takes f 5
 bishop h 3 takes g 2
 bishop h 3 takes g 4
-bishop h 4 takes e 7
-bishop h 4 takes f 2
 bishop h 4 takes f 6
 bishop h 4 takes g 3
 bishop h 4 takes g 5
-bishop h 5 takes e 2
 bishop h 5 takes f 3
-bishop h 5 takes f 7
 bishop h 5 takes g 4
 bishop h 5 takes g 6
-bishop h 6 takes d 2
-bishop h 6 takes e 3
 bishop h 6 takes f 4
 bishop h 6 takes g 5
 bishop h 6 takes g 7
-bishop h 7 takes c 2
-bishop h 7 takes d 3
 bishop h 7 takes e 4
 bishop h 7 takes f 5
 bishop h 7 takes g 6
-bishop h 8 takes b 2
-bishop h 8 takes c 3
-bishop h 8 takes d 4
 bishop h 8 takes e 5
 bishop h 8 takes f 6
 bishop h 8 takes g 7
@@ -13241,12 +10468,10 @@ knight a 2 takes c 3
 knight a 3 takes b 5
 knight a 3 takes c 2
 knight a 3 takes c 4
-knight a 4 takes b 2
 knight a 4 takes b 6
 knight a 4 takes c 3
 knight a 4 takes c 5
 knight a 5 takes b 3
-knight a 5 takes b 7
 knight a 5 takes c 4
 knight a 5 takes c 6
 knight a 6 takes b 4
@@ -13257,125 +10482,81 @@ knight a 7 takes c 6
 knight a 8 takes b 6
 knight a 8 takes c 7
 knight a takes queen
-knight b 1 takes a 3
 knight b 1 takes c 3
 knight b 1 takes d 2
-knight b 2 takes a 4
 knight b 2 takes c 4
 knight b 2 takes d 3
-knight b 3 takes a 5
 knight b 3 takes c 5
 knight b 3 takes d 2
 knight b 3 takes d 4
-knight b 4 takes a 2
-knight b 4 takes a 6
-knight b 4 takes c 2
 knight b 4 takes c 6
 knight b 4 takes d 3
 knight b 4 takes d 5
-knight b 5 takes a 3
-knight b 5 takes a 7
 knight b 5 takes c 3
-knight b 5 takes c 7
 knight b 5 takes d 4
 knight b 5 takes d 6
-knight b 6 takes a 4
 knight b 6 takes c 4
 knight b 6 takes d 5
 knight b 6 takes d 7
-knight b 7 takes a 5
 knight b 7 takes c 5
 knight b 7 takes d 6
-knight b 8 takes a 6
 knight b 8 takes c 6
 knight b 8 takes d 7
 knight b takes queen
-knight c 1 takes a 2
 knight c 1 takes b 3
 knight c 1 takes d 3
 knight c 1 takes e 2
-knight c 2 takes a 3
 knight c 2 takes b 4
 knight c 2 takes d 4
 knight c 2 takes e 3
-knight c 3 takes a 2
-knight c 3 takes a 4
 knight c 3 takes b 5
 knight c 3 takes d 5
 knight c 3 takes e 2
 knight c 3 takes e 4
-knight c 4 takes a 3
-knight c 4 takes a 5
-knight c 4 takes b 2
 knight c 4 takes b 6
-knight c 4 takes d 2
 knight c 4 takes d 6
 knight c 4 takes e 3
 knight c 4 takes e 5
-knight c 5 takes a 4
-knight c 5 takes a 6
 knight c 5 takes b 3
-knight c 5 takes b 7
 knight c 5 takes d 3
-knight c 5 takes d 7
 knight c 5 takes e 4
 knight c 5 takes e 6
-knight c 6 takes a 5
-knight c 6 takes a 7
 knight c 6 takes b 4
 knight c 6 takes d 4
 knight c 6 takes e 5
 knight c 6 takes e 7
-knight c 7 takes a 6
 knight c 7 takes b 5
 knight c 7 takes d 5
 knight c 7 takes e 6
-knight c 8 takes a 7
 knight c 8 takes b 6
 knight c 8 takes d 6
 knight c 8 takes e 7
 knight c takes queen
-knight d 1 takes b 2
 knight d 1 takes c 3
 knight d 1 takes e 3
 knight d 1 takes f 2
-knight d 2 takes b 3
 knight d 2 takes c 4
 knight d 2 takes e 4
 knight d 2 takes f 3
-knight d 3 takes b 2
-knight d 3 takes b 4
 knight d 3 takes c 5
 knight d 3 takes e 5
 knight d 3 takes f 2
 knight d 3 takes f 4
-knight d 4 takes b 3
-knight d 4 takes b 5
-knight d 4 takes c 2
 knight d 4 takes c 6
-knight d 4 takes e 2
 knight d 4 takes e 6
 knight d 4 takes f 3
 knight d 4 takes f 5
-knight d 5 takes b 4
-knight d 5 takes b 6
 knight d 5 takes c 3
-knight d 5 takes c 7
 knight d 5 takes e 3
-knight d 5 takes e 7
 knight d 5 takes f 4
 knight d 5 takes f 6
-knight d 6 takes b 5
-knight d 6 takes b 7
 knight d 6 takes c 4
 knight d 6 takes e 4
 knight d 6 takes f 5
 knight d 6 takes f 7
-knight d 7 takes b 6
 knight d 7 takes c 5
 knight d 7 takes e 5
 knight d 7 takes f 6
-knight d 8 takes b 7
 knight d 8 takes c 6
 knight d 8 takes e 6
 knight d 8 takes f 7
@@ -13383,125 +10564,81 @@ knight d takes queen
 knight e 1 takes c 2
 knight e 1 takes d 3
 knight e 1 takes f 3
-knight e 1 takes g 2
 knight e 2 takes c 3
 knight e 2 takes d 4
 knight e 2 takes f 4
-knight e 2 takes g 3
 knight e 3 takes c 2
 knight e 3 takes c 4
 knight e 3 takes d 5
 knight e 3 takes f 5
-knight e 3 takes g 2
-knight e 3 takes g 4
 knight e 4 takes c 3
 knight e 4 takes c 5
-knight e 4 takes d 2
 knight e 4 takes d 6
-knight e 4 takes f 2
 knight e 4 takes f 6
-knight e 4 takes g 3
-knight e 4 takes g 5
 knight e 5 takes c 4
 knight e 5 takes c 6
 knight e 5 takes d 3
-knight e 5 takes d 7
 knight e 5 takes f 3
-knight e 5 takes f 7
-knight e 5 takes g 4
-knight e 5 takes g 6
 knight e 6 takes c 5
 knight e 6 takes c 7
 knight e 6 takes d 4
 knight e 6 takes f 4
-knight e 6 takes g 5
-knight e 6 takes g 7
 knight e 7 takes c 6
 knight e 7 takes d 5
 knight e 7 takes f 5
-knight e 7 takes g 6
 knight e 8 takes c 7
 knight e 8 takes d 6
 knight e 8 takes f 6
-knight e 8 takes g 7
 knight e takes queen
 knight f 1 takes d 2
 knight f 1 takes e 3
 knight f 1 takes g 3
-knight f 1 takes h 2
 knight f 2 takes d 3
 knight f 2 takes e 4
 knight f 2 takes g 4
-knight f 2 takes h 3
 knight f 3 takes d 2
 knight f 3 takes d 4
 knight f 3 takes e 5
 knight f 3 takes g 5
-knight f 3 takes h 2
-knight f 3 takes h 4
 knight f 4 takes d 3
 knight f 4 takes d 5
-knight f 4 takes e 2
 knight f 4 takes e 6
-knight f 4 takes g 2
 knight f 4 takes g 6
-knight f 4 takes h 3
-knight f 4 takes h 5
 knight f 5 takes d 4
 knight f 5 takes d 6
 knight f 5 takes e 3
-knight f 5 takes e 7
 knight f 5 takes g 3
-knight f 5 takes g 7
-knight f 5 takes h 4
-knight f 5 takes h 6
 knight f 6 takes d 5
 knight f 6 takes d 7
 knight f 6 takes e 4
 knight f 6 takes g 4
-knight f 6 takes h 5
-knight f 6 takes h 7
 knight f 7 takes d 6
 knight f 7 takes e 5
 knight f 7 takes g 5
-knight f 7 takes h 6
 knight f 8 takes d 7
 knight f 8 takes e 6
 knight f 8 takes g 6
-knight f 8 takes h 7
 knight f takes queen
 knight g 1 takes e 2
 knight g 1 takes f 3
-knight g 1 takes h 3
 knight g 2 takes e 3
 knight g 2 takes f 4
-knight g 2 takes h 4
 knight g 3 takes e 2
 knight g 3 takes e 4
 knight g 3 takes f 5
-knight g 3 takes h 5
 knight g 4 takes e 3
 knight g 4 takes e 5
-knight g 4 takes f 2
 knight g 4 takes f 6
-knight g 4 takes h 2
-knight g 4 takes h 6
 knight g 5 takes e 4
 knight g 5 takes e 6
 knight g 5 takes f 3
-knight g 5 takes f 7
-knight g 5 takes h 3
-knight g 5 takes h 7
 knight g 6 takes e 5
 knight g 6 takes e 7
 knight g 6 takes f 4
-knight g 6 takes h 4
 knight g 7 takes e 6
 knight g 7 takes f 5
-knight g 7 takes h 5
 knight g 8 takes e 7
 knight g 8 takes f 6
-knight g 8 takes h 6
 knight g takes queen
 knight h 1 takes f 2
 knight h 1 takes g 3
@@ -13512,12 +10649,10 @@ knight h 3 takes f 4
 knight h 3 takes g 5
 knight h 4 takes f 3
 knight h 4 takes f 5
-knight h 4 takes g 2
 knight h 4 takes g 6
 knight h 5 takes f 4
 knight h 5 takes f 6
 knight h 5 takes g 3
-knight h 5 takes g 7
 knight h 6 takes f 5
 knight h 6 takes f 7
 knight h 6 takes g 4
@@ -13686,70 +10821,6 @@ queen h 8 takes pawn
 queen h 8 takes rook
 queen h takes bishop
 queen h takes knight
-rook a 1 takes queen
-rook a 2 takes queen
-rook a 3 takes queen
-rook a 4 takes queen
-rook a 5 takes queen
-rook a 6 takes queen
-rook a 7 takes queen
-rook a 8 takes queen
-rook b 1 takes queen
-rook b 2 takes queen
-rook b 3 takes queen
-rook b 4 takes queen
-rook b 5 takes queen
-rook b 6 takes queen
-rook b 7 takes queen
-rook b 8 takes queen
-rook c 1 takes queen
-rook c 2 takes queen
-rook c 3 takes queen
-rook c 4 takes queen
-rook c 5 takes queen
-rook c 6 takes queen
-rook c 7 takes queen
-rook c 8 takes queen
-rook d 1 takes queen
-rook d 2 takes queen
-rook d 3 takes queen
-rook d 4 takes queen
-rook d 5 takes queen
-rook d 6 takes queen
-rook d 7 takes queen
-rook d 8 takes queen
-rook e 1 takes queen
-rook e 2 takes queen
-rook e 3 takes queen
-rook e 4 takes queen
-rook e 5 takes queen
-rook e 6 takes queen
-rook e 7 takes queen
-rook e 8 takes queen
-rook f 1 takes queen
-rook f 2 takes queen
-rook f 3 takes queen
-rook f 4 takes queen
-rook f 5 takes queen
-rook f 6 takes queen
-rook f 7 takes queen
-rook f 8 takes queen
-rook g 1 takes queen
-rook g 2 takes queen
-rook g 3 takes queen
-rook g 4 takes queen
-rook g 5 takes queen
-rook g 6 takes queen
-rook g 7 takes queen
-rook g 8 takes queen
-rook h 1 takes queen
-rook h 2 takes queen
-rook h 3 takes queen
-rook h 4 takes queen
-rook h 5 takes queen
-rook h 6 takes queen
-rook h 7 takes queen
-rook h 8 takes queen
 a takes bishop bishop
 a takes bishop knight
 a takes knight bishop
@@ -14166,134 +11237,6 @@ queen h 5 takes queen
 queen h 6 takes queen
 queen h 7 takes queen
 queen h 8 takes queen
-rook a 1 takes bishop
-rook a 1 takes knight
-rook a 2 takes bishop
-rook a 2 takes knight
-rook a 3 takes bishop
-rook a 3 takes knight
-rook a 4 takes bishop
-rook a 4 takes knight
-rook a 5 takes bishop
-rook a 5 takes knight
-rook a 6 takes bishop
-rook a 6 takes knight
-rook a 7 takes bishop
-rook a 7 takes knight
-rook a 8 takes bishop
-rook a 8 takes knight
-rook b 1 takes bishop
-rook b 1 takes knight
-rook b 2 takes bishop
-rook b 2 takes knight
-rook b 3 takes bishop
-rook b 3 takes knight
-rook b 4 takes bishop
-rook b 4 takes knight
-rook b 5 takes bishop
-rook b 5 takes knight
-rook b 6 takes bishop
-rook b 6 takes knight
-rook b 7 takes bishop
-rook b 7 takes knight
-rook b 8 takes bishop
-rook b 8 takes knight
-rook c 1 takes bishop
-rook c 1 takes knight
-rook c 2 takes bishop
-rook c 2 takes knight
-rook c 3 takes bishop
-rook c 3 takes knight
-rook c 4 takes bishop
-rook c 4 takes knight
-rook c 5 takes bishop
-rook c 5 takes knight
-rook c 6 takes bishop
-rook c 6 takes knight
-rook c 7 takes bishop
-rook c 7 takes knight
-rook c 8 takes bishop
-rook c 8 takes knight
-rook d 1 takes bishop
-rook d 1 takes knight
-rook d 2 takes bishop
-rook d 2 takes knight
-rook d 3 takes bishop
-rook d 3 takes knight
-rook d 4 takes bishop
-rook d 4 takes knight
-rook d 5 takes bishop
-rook d 5 takes knight
-rook d 6 takes bishop
-rook d 6 takes knight
-rook d 7 takes bishop
-rook d 7 takes knight
-rook d 8 takes bishop
-rook d 8 takes knight
-rook e 1 takes bishop
-rook e 1 takes knight
-rook e 2 takes bishop
-rook e 2 takes knight
-rook e 3 takes bishop
-rook e 3 takes knight
-rook e 4 takes bishop
-rook e 4 takes knight
-rook e 5 takes bishop
-rook e 5 takes knight
-rook e 6 takes bishop
-rook e 6 takes knight
-rook e 7 takes bishop
-rook e 7 takes knight
-rook e 8 takes bishop
-rook e 8 takes knight
-rook f 1 takes bishop
-rook f 1 takes knight
-rook f 2 takes bishop
-rook f 2 takes knight
-rook f 3 takes bishop
-rook f 3 takes knight
-rook f 4 takes bishop
-rook f 4 takes knight
-rook f 5 takes bishop
-rook f 5 takes knight
-rook f 6 takes bishop
-rook f 6 takes knight
-rook f 7 takes bishop
-rook f 7 takes knight
-rook f 8 takes bishop
-rook f 8 takes knight
-rook g 1 takes bishop
-rook g 1 takes knight
-rook g 2 takes bishop
-rook g 2 takes knight
-rook g 3 takes bishop
-rook g 3 takes knight
-rook g 4 takes bishop
-rook g 4 takes knight
-rook g 5 takes bishop
-rook g 5 takes knight
-rook g 6 takes bishop
-rook g 6 takes knight
-rook g 7 takes bishop
-rook g 7 takes knight
-rook g 8 takes bishop
-rook g 8 takes knight
-rook h 1 takes bishop
-rook h 1 takes knight
-rook h 2 takes bishop
-rook h 2 takes knight
-rook h 3 takes bishop
-rook h 3 takes knight
-rook h 4 takes bishop
-rook h 4 takes knight
-rook h 5 takes bishop
-rook h 5 takes knight
-rook h 6 takes bishop
-rook h 6 takes knight
-rook h 7 takes bishop
-rook h 7 takes knight
-rook h 8 takes bishop
-rook h 8 takes knight
 bishop a 1 takes queen
 bishop a 2 takes queen
 bishop a 3 takes queen

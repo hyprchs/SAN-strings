@@ -1,0 +1,3 @@
+[submodule "src/chess_action_space"]
+	path = src/chess_action_space
+	url = https://github.com/hyprchs/chess_action_space.git
